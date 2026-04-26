@@ -1,8725 +1,2879 @@
-{
-	"name": "monorepo",
-	"version": "0.0.0",
-	"lockfileVersion": 3,
-	"requires": true,
-	"packages": {
-		"": {
-			"name": "monorepo",
-			"version": "0.0.0",
-			"workspaces": [
-				"apps/*"
-			],
-			"devDependencies": {
-				"concurrently": "^9.1.2"
-			}
-		},
-		"apps/web": {
-			"version": "0.0.0",
-			"dependencies": {
-				"@hookform/resolvers": "^5.2.2",
-				"@radix-ui/react-accordion": "^1.2.12",
-				"@radix-ui/react-alert-dialog": "^1.1.15",
-				"@radix-ui/react-aspect-ratio": "^1.1.8",
-				"@radix-ui/react-avatar": "^1.1.11",
-				"@radix-ui/react-checkbox": "^1.3.3",
-				"@radix-ui/react-collapsible": "^1.1.12",
-				"@radix-ui/react-context-menu": "^2.2.16",
-				"@radix-ui/react-dialog": "^1.1.15",
-				"@radix-ui/react-dropdown-menu": "^2.1.16",
-				"@radix-ui/react-hover-card": "^1.1.15",
-				"@radix-ui/react-label": "^2.1.8",
-				"@radix-ui/react-menubar": "^1.1.16",
-				"@radix-ui/react-navigation-menu": "^1.2.14",
-				"@radix-ui/react-popover": "^1.1.15",
-				"@radix-ui/react-progress": "^1.1.8",
-				"@radix-ui/react-radio-group": "^1.3.8",
-				"@radix-ui/react-scroll-area": "^1.2.10",
-				"@radix-ui/react-select": "^2.2.6",
-				"@radix-ui/react-separator": "^1.1.8",
-				"@radix-ui/react-slider": "^1.3.6",
-				"@radix-ui/react-slot": "^1.2.4",
-				"@radix-ui/react-switch": "^1.2.6",
-				"@radix-ui/react-tabs": "^1.1.13",
-				"@radix-ui/react-toast": "^1.2.15",
-				"@radix-ui/react-toggle": "^1.1.10",
-				"@radix-ui/react-toggle-group": "^1.1.11",
-				"@radix-ui/react-tooltip": "^1.2.8",
-				"class-variance-authority": "^0.7.1",
-				"clsx": "^2.1.1",
-				"cmdk": "^1.1.1",
-				"date-fns": "^4.1.0",
-				"embla-carousel-react": "^8.6.0",
-				"framer-motion": "^11.15.0",
-				"input-otp": "^1.4.2",
-				"lucide-react": "^0.469.0",
-				"next-themes": "^0.4.6",
-				"react": "^18.3.1",
-				"react-day-picker": "^9.14.0",
-				"react-dom": "^18.3.1",
-				"react-helmet": "^6.1.0",
-				"react-hook-form": "^7.71.2",
-				"react-resizable-panels": "^4.7.2",
-				"react-router-dom": "^7.13.0",
-				"recharts": "^2.15.4",
-				"sonner": "^2.0.7",
-				"tailwind-merge": "^2.6.0",
-				"tailwindcss-animate": "^1.0.7",
-				"vaul": "^1.1.2",
-				"zod": "^4.3.6"
-			},
-			"devDependencies": {
-				"@babel/generator": "^7.26.3",
-				"@babel/parser": "^7.26.3",
-				"@babel/traverse": "^7.26.4",
-				"@babel/types": "^7.26.3",
-				"@types/node": "^20.17.10",
-				"@types/react": "^18.3.18",
-				"@types/react-dom": "^18.3.5",
-				"@vitejs/plugin-react": "^5.1.4",
-				"autoprefixer": "^10.4.20",
-				"eslint": "^9.39.4",
-				"eslint-import-resolver-alias": "^1.1.2",
-				"eslint-plugin-import": "^2.32.0",
-				"eslint-plugin-react": "^7.37.5",
-				"eslint-plugin-react-hooks": "^5.1.0",
-				"globals": "^15.14.0",
-				"postcss": "^8.4.49",
-				"tailwindcss": "^3.4.17",
-				"terser": "^5.37.0",
-				"vite": "^7.3.1"
-			}
-		},
-		"node_modules/@alloc/quick-lru": {
-			"version": "5.2.0",
-			"resolved": "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz",
-			"integrity": "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/@babel/code-frame": {
-			"version": "7.29.0",
-			"resolved": "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.29.0.tgz",
-			"integrity": "sha512-9NhCeYjq9+3uxgdtp20LSiJXJvN0FeCtNGpJxuMFZ1Kv3cWUNb6DOhJwUvcVCzKGR66cw4njwM6hrJLqgOwbcw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/helper-validator-identifier": "^7.28.5",
-				"js-tokens": "^4.0.0",
-				"picocolors": "^1.1.1"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/compat-data": {
-			"version": "7.29.0",
-			"resolved": "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.29.0.tgz",
-			"integrity": "sha512-T1NCJqT/j9+cn8fvkt7jtwbLBfLC/1y1c7NtCeXFRgzGTsafi68MRv8yzkYSapBnFA6L3U2VSc02ciDzoAJhJg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/core": {
-			"version": "7.29.0",
-			"resolved": "https://registry.npmjs.org/@babel/core/-/core-7.29.0.tgz",
-			"integrity": "sha512-CGOfOJqWjg2qW/Mb6zNsDm+u5vFQ8DxXfbM09z69p5Z6+mE1ikP2jUXw+j42Pf1XTYED2Rni5f95npYeuwMDQA==",
-			"dev": true,
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"@babel/code-frame": "^7.29.0",
-				"@babel/generator": "^7.29.0",
-				"@babel/helper-compilation-targets": "^7.28.6",
-				"@babel/helper-module-transforms": "^7.28.6",
-				"@babel/helpers": "^7.28.6",
-				"@babel/parser": "^7.29.0",
-				"@babel/template": "^7.28.6",
-				"@babel/traverse": "^7.29.0",
-				"@babel/types": "^7.29.0",
-				"@jridgewell/remapping": "^2.3.5",
-				"convert-source-map": "^2.0.0",
-				"debug": "^4.1.0",
-				"gensync": "^1.0.0-beta.2",
-				"json5": "^2.2.3",
-				"semver": "^6.3.1"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			},
-			"funding": {
-				"type": "opencollective",
-				"url": "https://opencollective.com/babel"
-			}
-		},
-		"node_modules/@babel/generator": {
-			"version": "7.29.1",
-			"resolved": "https://registry.npmjs.org/@babel/generator/-/generator-7.29.1.tgz",
-			"integrity": "sha512-qsaF+9Qcm2Qv8SRIMMscAvG4O3lJ0F1GuMo5HR/Bp02LopNgnZBC/EkbevHFeGs4ls/oPz9v+Bsmzbkbe+0dUw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/parser": "^7.29.0",
-				"@babel/types": "^7.29.0",
-				"@jridgewell/gen-mapping": "^0.3.12",
-				"@jridgewell/trace-mapping": "^0.3.28",
-				"jsesc": "^3.0.2"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/helper-compilation-targets": {
-			"version": "7.28.6",
-			"resolved": "https://registry.npmjs.org/@babel/helper-compilation-targets/-/helper-compilation-targets-7.28.6.tgz",
-			"integrity": "sha512-JYtls3hqi15fcx5GaSNL7SCTJ2MNmjrkHXg4FSpOA/grxK8KwyZ5bubHsCq8FXCkua6xhuaaBit+3b7+VZRfcA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/compat-data": "^7.28.6",
-				"@babel/helper-validator-option": "^7.27.1",
-				"browserslist": "^4.24.0",
-				"lru-cache": "^5.1.1",
-				"semver": "^6.3.1"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/helper-globals": {
-			"version": "7.28.0",
-			"resolved": "https://registry.npmjs.org/@babel/helper-globals/-/helper-globals-7.28.0.tgz",
-			"integrity": "sha512-+W6cISkXFa1jXsDEdYA8HeevQT/FULhxzR99pxphltZcVaugps53THCeiWA8SguxxpSp3gKPiuYfSWopkLQ4hw==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/helper-module-imports": {
-			"version": "7.28.6",
-			"resolved": "https://registry.npmjs.org/@babel/helper-module-imports/-/helper-module-imports-7.28.6.tgz",
-			"integrity": "sha512-l5XkZK7r7wa9LucGw9LwZyyCUscb4x37JWTPz7swwFE/0FMQAGpiWUZn8u9DzkSBWEcK25jmvubfpw2dnAMdbw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/traverse": "^7.28.6",
-				"@babel/types": "^7.28.6"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/helper-module-transforms": {
-			"version": "7.28.6",
-			"resolved": "https://registry.npmjs.org/@babel/helper-module-transforms/-/helper-module-transforms-7.28.6.tgz",
-			"integrity": "sha512-67oXFAYr2cDLDVGLXTEABjdBJZ6drElUSI7WKp70NrpyISso3plG9SAGEF6y7zbha/wOzUByWWTJvEDVNIUGcA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/helper-module-imports": "^7.28.6",
-				"@babel/helper-validator-identifier": "^7.28.5",
-				"@babel/traverse": "^7.28.6"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			},
-			"peerDependencies": {
-				"@babel/core": "^7.0.0"
-			}
-		},
-		"node_modules/@babel/helper-plugin-utils": {
-			"version": "7.28.6",
-			"resolved": "https://registry.npmjs.org/@babel/helper-plugin-utils/-/helper-plugin-utils-7.28.6.tgz",
-			"integrity": "sha512-S9gzZ/bz83GRysI7gAD4wPT/AI3uCnY+9xn+Mx/KPs2JwHJIz1W8PZkg2cqyt3RNOBM8ejcXhV6y8Og7ly/Dug==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/helper-string-parser": {
-			"version": "7.27.1",
-			"resolved": "https://registry.npmjs.org/@babel/helper-string-parser/-/helper-string-parser-7.27.1.tgz",
-			"integrity": "sha512-qMlSxKbpRlAridDExk92nSobyDdpPijUq2DW6oDnUqd0iOGxmQjyqhMIihI9+zv4LPyZdRje2cavWPbCbWm3eA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/helper-validator-identifier": {
-			"version": "7.28.5",
-			"resolved": "https://registry.npmjs.org/@babel/helper-validator-identifier/-/helper-validator-identifier-7.28.5.tgz",
-			"integrity": "sha512-qSs4ifwzKJSV39ucNjsvc6WVHs6b7S03sOh2OcHF9UHfVPqWWALUsNUVzhSBiItjRZoLHx7nIarVjqKVusUZ1Q==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/helper-validator-option": {
-			"version": "7.27.1",
-			"resolved": "https://registry.npmjs.org/@babel/helper-validator-option/-/helper-validator-option-7.27.1.tgz",
-			"integrity": "sha512-YvjJow9FxbhFFKDSuFnVCe2WxXk1zWc22fFePVNEaWJEu8IrZVlda6N0uHwzZrUM1il7NC9Mlp4MaJYbYd9JSg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/helpers": {
-			"version": "7.29.2",
-			"resolved": "https://registry.npmjs.org/@babel/helpers/-/helpers-7.29.2.tgz",
-			"integrity": "sha512-HoGuUs4sCZNezVEKdVcwqmZN8GoHirLUcLaYVNBK2J0DadGtdcqgr3BCbvH8+XUo4NGjNl3VOtSjEKNzqfFgKw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/template": "^7.28.6",
-				"@babel/types": "^7.29.0"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/parser": {
-			"version": "7.29.2",
-			"resolved": "https://registry.npmjs.org/@babel/parser/-/parser-7.29.2.tgz",
-			"integrity": "sha512-4GgRzy/+fsBa72/RZVJmGKPmZu9Byn8o4MoLpmNe1m8ZfYnz5emHLQz3U4gLud6Zwl0RZIcgiLD7Uq7ySFuDLA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/types": "^7.29.0"
-			},
-			"bin": {
-				"parser": "bin/babel-parser.js"
-			},
-			"engines": {
-				"node": ">=6.0.0"
-			}
-		},
-		"node_modules/@babel/plugin-transform-react-jsx-self": {
-			"version": "7.27.1",
-			"resolved": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.27.1.tgz",
-			"integrity": "sha512-6UzkCs+ejGdZ5mFFC/OCUrv028ab2fp1znZmCZjAOBKiBK2jXD1O+BPSfX8X2qjJ75fZBMSnQn3Rq2mrBJK2mw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/helper-plugin-utils": "^7.27.1"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			},
-			"peerDependencies": {
-				"@babel/core": "^7.0.0-0"
-			}
-		},
-		"node_modules/@babel/plugin-transform-react-jsx-source": {
-			"version": "7.27.1",
-			"resolved": "https://registry.npmjs.org/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.27.1.tgz",
-			"integrity": "sha512-zbwoTsBruTeKB9hSq73ha66iFeJHuaFkUbwvqElnygoNbj/jHRsSeokowZFN3CZ64IvEqcmmkVe89OPXc7ldAw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/helper-plugin-utils": "^7.27.1"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			},
-			"peerDependencies": {
-				"@babel/core": "^7.0.0-0"
-			}
-		},
-		"node_modules/@babel/runtime": {
-			"version": "7.29.2",
-			"resolved": "https://registry.npmjs.org/@babel/runtime/-/runtime-7.29.2.tgz",
-			"integrity": "sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/template": {
-			"version": "7.28.6",
-			"resolved": "https://registry.npmjs.org/@babel/template/-/template-7.28.6.tgz",
-			"integrity": "sha512-YA6Ma2KsCdGb+WC6UpBVFJGXL58MDA6oyONbjyF/+5sBgxY/dwkhLogbMT2GXXyU84/IhRw/2D1Os1B/giz+BQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/code-frame": "^7.28.6",
-				"@babel/parser": "^7.28.6",
-				"@babel/types": "^7.28.6"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/traverse": {
-			"version": "7.29.0",
-			"resolved": "https://registry.npmjs.org/@babel/traverse/-/traverse-7.29.0.tgz",
-			"integrity": "sha512-4HPiQr0X7+waHfyXPZpWPfWL/J7dcN1mx9gL6WdQVMbPnF3+ZhSMs8tCxN7oHddJE9fhNE7+lxdnlyemKfJRuA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/code-frame": "^7.29.0",
-				"@babel/generator": "^7.29.0",
-				"@babel/helper-globals": "^7.28.0",
-				"@babel/parser": "^7.29.0",
-				"@babel/template": "^7.28.6",
-				"@babel/types": "^7.29.0",
-				"debug": "^4.3.1"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@babel/types": {
-			"version": "7.29.0",
-			"resolved": "https://registry.npmjs.org/@babel/types/-/types-7.29.0.tgz",
-			"integrity": "sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/helper-string-parser": "^7.27.1",
-				"@babel/helper-validator-identifier": "^7.28.5"
-			},
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/@date-fns/tz": {
-			"version": "1.4.1",
-			"resolved": "https://registry.npmjs.org/@date-fns/tz/-/tz-1.4.1.tgz",
-			"integrity": "sha512-P5LUNhtbj6YfI3iJjw5EL9eUAG6OitD0W3fWQcpQjDRc/QIsL0tRNuO1PcDvPccWL1fSTXXdE1ds+l95DV/OFA==",
-			"license": "MIT"
-		},
-		"node_modules/@esbuild/aix-ppc64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/aix-ppc64/-/aix-ppc64-0.27.4.tgz",
-			"integrity": "sha512-cQPwL2mp2nSmHHJlCyoXgHGhbEPMrEEU5xhkcy3Hs/O7nGZqEpZ2sUtLaL9MORLtDfRvVl2/3PAuEkYZH0Ty8Q==",
-			"cpu": [
-				"ppc64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"aix"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/android-arm": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/android-arm/-/android-arm-0.27.4.tgz",
-			"integrity": "sha512-X9bUgvxiC8CHAGKYufLIHGXPJWnr0OCdR0anD2e21vdvgCI8lIfqFbnoeOz7lBjdrAGUhqLZLcQo6MLhTO2DKQ==",
-			"cpu": [
-				"arm"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"android"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/android-arm64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/android-arm64/-/android-arm64-0.27.4.tgz",
-			"integrity": "sha512-gdLscB7v75wRfu7QSm/zg6Rx29VLdy9eTr2t44sfTW7CxwAtQghZ4ZnqHk3/ogz7xao0QAgrkradbBzcqFPasw==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"android"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/android-x64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/android-x64/-/android-x64-0.27.4.tgz",
-			"integrity": "sha512-PzPFnBNVF292sfpfhiyiXCGSn9HZg5BcAz+ivBuSsl6Rk4ga1oEXAamhOXRFyMcjwr2DVtm40G65N3GLeH1Lvw==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"android"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/darwin-arm64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.27.4.tgz",
-			"integrity": "sha512-b7xaGIwdJlht8ZFCvMkpDN6uiSmnxxK56N2GDTMYPr2/gzvfdQN8rTfBsvVKmIVY/X7EM+/hJKEIbbHs9oA4tQ==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"darwin"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/darwin-x64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/darwin-x64/-/darwin-x64-0.27.4.tgz",
-			"integrity": "sha512-sR+OiKLwd15nmCdqpXMnuJ9W2kpy0KigzqScqHI3Hqwr7IXxBp3Yva+yJwoqh7rE8V77tdoheRYataNKL4QrPw==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"darwin"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/freebsd-arm64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/freebsd-arm64/-/freebsd-arm64-0.27.4.tgz",
-			"integrity": "sha512-jnfpKe+p79tCnm4GVav68A7tUFeKQwQyLgESwEAUzyxk/TJr4QdGog9sqWNcUbr/bZt/O/HXouspuQDd9JxFSw==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"freebsd"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/freebsd-x64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/freebsd-x64/-/freebsd-x64-0.27.4.tgz",
-			"integrity": "sha512-2kb4ceA/CpfUrIcTUl1wrP/9ad9Atrp5J94Lq69w7UwOMolPIGrfLSvAKJp0RTvkPPyn6CIWrNy13kyLikZRZQ==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"freebsd"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-arm": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-arm/-/linux-arm-0.27.4.tgz",
-			"integrity": "sha512-aBYgcIxX/wd5n2ys0yESGeYMGF+pv6g0DhZr3G1ZG4jMfruU9Tl1i2Z+Wnj9/KjGz1lTLCcorqE2viePZqj4Eg==",
-			"cpu": [
-				"arm"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-arm64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-arm64/-/linux-arm64-0.27.4.tgz",
-			"integrity": "sha512-7nQOttdzVGth1iz57kxg9uCz57dxQLHWxopL6mYuYthohPKEK0vU0C3O21CcBK6KDlkYVcnDXY099HcCDXd9dA==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-ia32": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-ia32/-/linux-ia32-0.27.4.tgz",
-			"integrity": "sha512-oPtixtAIzgvzYcKBQM/qZ3R+9TEUd1aNJQu0HhGyqtx6oS7qTpvjheIWBbes4+qu1bNlo2V4cbkISr8q6gRBFA==",
-			"cpu": [
-				"ia32"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-loong64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-loong64/-/linux-loong64-0.27.4.tgz",
-			"integrity": "sha512-8mL/vh8qeCoRcFH2nM8wm5uJP+ZcVYGGayMavi8GmRJjuI3g1v6Z7Ni0JJKAJW+m0EtUuARb6Lmp4hMjzCBWzA==",
-			"cpu": [
-				"loong64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-mips64el": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-mips64el/-/linux-mips64el-0.27.4.tgz",
-			"integrity": "sha512-1RdrWFFiiLIW7LQq9Q2NES+HiD4NyT8Itj9AUeCl0IVCA459WnPhREKgwrpaIfTOe+/2rdntisegiPWn/r/aAw==",
-			"cpu": [
-				"mips64el"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-ppc64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-ppc64/-/linux-ppc64-0.27.4.tgz",
-			"integrity": "sha512-tLCwNG47l3sd9lpfyx9LAGEGItCUeRCWeAx6x2Jmbav65nAwoPXfewtAdtbtit/pJFLUWOhpv0FpS6GQAmPrHA==",
-			"cpu": [
-				"ppc64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-riscv64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-riscv64/-/linux-riscv64-0.27.4.tgz",
-			"integrity": "sha512-BnASypppbUWyqjd1KIpU4AUBiIhVr6YlHx/cnPgqEkNoVOhHg+YiSVxM1RLfiy4t9cAulbRGTNCKOcqHrEQLIw==",
-			"cpu": [
-				"riscv64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-s390x": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-s390x/-/linux-s390x-0.27.4.tgz",
-			"integrity": "sha512-+eUqgb/Z7vxVLezG8bVB9SfBie89gMueS+I0xYh2tJdw3vqA/0ImZJ2ROeWwVJN59ihBeZ7Tu92dF/5dy5FttA==",
-			"cpu": [
-				"s390x"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/linux-x64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.27.4.tgz",
-			"integrity": "sha512-S5qOXrKV8BQEzJPVxAwnryi2+Iq5pB40gTEIT69BQONqR7JH1EPIcQ/Uiv9mCnn05jff9umq/5nqzxlqTOg9NA==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/netbsd-arm64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/netbsd-arm64/-/netbsd-arm64-0.27.4.tgz",
-			"integrity": "sha512-xHT8X4sb0GS8qTqiwzHqpY00C95DPAq7nAwX35Ie/s+LO9830hrMd3oX0ZMKLvy7vsonee73x0lmcdOVXFzd6Q==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"netbsd"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/netbsd-x64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/netbsd-x64/-/netbsd-x64-0.27.4.tgz",
-			"integrity": "sha512-RugOvOdXfdyi5Tyv40kgQnI0byv66BFgAqjdgtAKqHoZTbTF2QqfQrFwa7cHEORJf6X2ht+l9ABLMP0dnKYsgg==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"netbsd"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/openbsd-arm64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/openbsd-arm64/-/openbsd-arm64-0.27.4.tgz",
-			"integrity": "sha512-2MyL3IAaTX+1/qP0O1SwskwcwCoOI4kV2IBX1xYnDDqthmq5ArrW94qSIKCAuRraMgPOmG0RDTA74mzYNQA9ow==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"openbsd"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/openbsd-x64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/openbsd-x64/-/openbsd-x64-0.27.4.tgz",
-			"integrity": "sha512-u8fg/jQ5aQDfsnIV6+KwLOf1CmJnfu1ShpwqdwC0uA7ZPwFws55Ngc12vBdeUdnuWoQYx/SOQLGDcdlfXhYmXQ==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"openbsd"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/openharmony-arm64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/openharmony-arm64/-/openharmony-arm64-0.27.4.tgz",
-			"integrity": "sha512-JkTZrl6VbyO8lDQO3yv26nNr2RM2yZzNrNHEsj9bm6dOwwu9OYN28CjzZkH57bh4w0I2F7IodpQvUAEd1mbWXg==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"openharmony"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/sunos-x64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/sunos-x64/-/sunos-x64-0.27.4.tgz",
-			"integrity": "sha512-/gOzgaewZJfeJTlsWhvUEmUG4tWEY2Spp5M20INYRg2ZKl9QPO3QEEgPeRtLjEWSW8FilRNacPOg8R1uaYkA6g==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"sunos"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/win32-arm64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/win32-arm64/-/win32-arm64-0.27.4.tgz",
-			"integrity": "sha512-Z9SExBg2y32smoDQdf1HRwHRt6vAHLXcxD2uGgO/v2jK7Y718Ix4ndsbNMU/+1Qiem9OiOdaqitioZwxivhXYg==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"win32"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/win32-ia32": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/win32-ia32/-/win32-ia32-0.27.4.tgz",
-			"integrity": "sha512-DAyGLS0Jz5G5iixEbMHi5KdiApqHBWMGzTtMiJ72ZOLhbu/bzxgAe8Ue8CTS3n3HbIUHQz/L51yMdGMeoxXNJw==",
-			"cpu": [
-				"ia32"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"win32"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@esbuild/win32-x64": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/@esbuild/win32-x64/-/win32-x64-0.27.4.tgz",
-			"integrity": "sha512-+knoa0BDoeXgkNvvV1vvbZX4+hizelrkwmGJBdT17t8FNPwG2lKemmuMZlmaNQ3ws3DKKCxpb4zRZEIp3UxFCg==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"win32"
-			],
-			"engines": {
-				"node": ">=18"
-			}
-		},
-		"node_modules/@eslint-community/eslint-utils": {
-			"version": "4.9.1",
-			"resolved": "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.9.1.tgz",
-			"integrity": "sha512-phrYmNiYppR7znFEdqgfWHXR6NCkZEK7hwWDHZUjit/2/U0r6XvkDl0SYnoM51Hq7FhCGdLDT6zxCCOY1hexsQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"eslint-visitor-keys": "^3.4.3"
-			},
-			"engines": {
-				"node": "^12.22.0 || ^14.17.0 || >=16.0.0"
-			},
-			"funding": {
-				"url": "https://opencollective.com/eslint"
-			},
-			"peerDependencies": {
-				"eslint": "^6.0.0 || ^7.0.0 || >=8.0.0"
-			}
-		},
-		"node_modules/@eslint-community/eslint-utils/node_modules/eslint-visitor-keys": {
-			"version": "3.4.3",
-			"resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz",
-			"integrity": "sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"engines": {
-				"node": "^12.22.0 || ^14.17.0 || >=16.0.0"
-			},
-			"funding": {
-				"url": "https://opencollective.com/eslint"
-			}
-		},
-		"node_modules/@eslint-community/regexpp": {
-			"version": "4.12.2",
-			"resolved": "https://registry.npmjs.org/@eslint-community/regexpp/-/regexpp-4.12.2.tgz",
-			"integrity": "sha512-EriSTlt5OC9/7SXkRSCAhfSxxoSUgBm33OH+IkwbdpgoqsSsUg7y3uh+IICI/Qg4BBWr3U2i39RpmycbxMq4ew==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": "^12.0.0 || ^14.0.0 || >=16.0.0"
-			}
-		},
-		"node_modules/@eslint/config-array": {
-			"version": "0.21.2",
-			"resolved": "https://registry.npmjs.org/@eslint/config-array/-/config-array-0.21.2.tgz",
-			"integrity": "sha512-nJl2KGTlrf9GjLimgIru+V/mzgSK0ABCDQRvxw5BjURL7WfH5uoWmizbH7QB6MmnMBd8cIC9uceWnezL1VZWWw==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"dependencies": {
-				"@eslint/object-schema": "^2.1.7",
-				"debug": "^4.3.1",
-				"minimatch": "^3.1.5"
-			},
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			}
-		},
-		"node_modules/@eslint/config-helpers": {
-			"version": "0.4.2",
-			"resolved": "https://registry.npmjs.org/@eslint/config-helpers/-/config-helpers-0.4.2.tgz",
-			"integrity": "sha512-gBrxN88gOIf3R7ja5K9slwNayVcZgK6SOUORm2uBzTeIEfeVaIhOpCtTox3P6R7o2jLFwLFTLnC7kU/RGcYEgw==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"dependencies": {
-				"@eslint/core": "^0.17.0"
-			},
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			}
-		},
-		"node_modules/@eslint/core": {
-			"version": "0.17.0",
-			"resolved": "https://registry.npmjs.org/@eslint/core/-/core-0.17.0.tgz",
-			"integrity": "sha512-yL/sLrpmtDaFEiUj1osRP4TI2MDz1AddJL+jZ7KSqvBuliN4xqYY54IfdN8qD8Toa6g1iloph1fxQNkjOxrrpQ==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"dependencies": {
-				"@types/json-schema": "^7.0.15"
-			},
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			}
-		},
-		"node_modules/@eslint/eslintrc": {
-			"version": "3.3.5",
-			"resolved": "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-3.3.5.tgz",
-			"integrity": "sha512-4IlJx0X0qftVsN5E+/vGujTRIFtwuLbNsVUe7TO6zYPDR1O6nFwvwhIKEKSrl6dZchmYBITazxKoUYOjdtjlRg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"ajv": "^6.14.0",
-				"debug": "^4.3.2",
-				"espree": "^10.0.1",
-				"globals": "^14.0.0",
-				"ignore": "^5.2.0",
-				"import-fresh": "^3.2.1",
-				"js-yaml": "^4.1.1",
-				"minimatch": "^3.1.5",
-				"strip-json-comments": "^3.1.1"
-			},
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			},
-			"funding": {
-				"url": "https://opencollective.com/eslint"
-			}
-		},
-		"node_modules/@eslint/eslintrc/node_modules/globals": {
-			"version": "14.0.0",
-			"resolved": "https://registry.npmjs.org/globals/-/globals-14.0.0.tgz",
-			"integrity": "sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=18"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/@eslint/js": {
-			"version": "9.39.4",
-			"resolved": "https://registry.npmjs.org/@eslint/js/-/js-9.39.4.tgz",
-			"integrity": "sha512-nE7DEIchvtiFTwBw4Lfbu59PG+kCofhjsKaCWzxTpt4lfRjRMqG6uMBzKXuEcyXhOHoUp9riAm7/aWYGhXZ9cw==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			},
-			"funding": {
-				"url": "https://eslint.org/donate"
-			}
-		},
-		"node_modules/@eslint/object-schema": {
-			"version": "2.1.7",
-			"resolved": "https://registry.npmjs.org/@eslint/object-schema/-/object-schema-2.1.7.tgz",
-			"integrity": "sha512-VtAOaymWVfZcmZbp6E2mympDIHvyjXs/12LqWYjVw6qjrfF+VK+fyG33kChz3nnK+SU5/NeHOqrTEHS8sXO3OA==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			}
-		},
-		"node_modules/@eslint/plugin-kit": {
-			"version": "0.4.1",
-			"resolved": "https://registry.npmjs.org/@eslint/plugin-kit/-/plugin-kit-0.4.1.tgz",
-			"integrity": "sha512-43/qtrDUokr7LJqoF2c3+RInu/t4zfrpYdoSDfYyhg52rwLV6TnOvdG4fXm7IkSB3wErkcmJS9iEhjVtOSEjjA==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"dependencies": {
-				"@eslint/core": "^0.17.0",
-				"levn": "^0.4.1"
-			},
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			}
-		},
-		"node_modules/@floating-ui/core": {
-			"version": "1.7.5",
-			"resolved": "https://registry.npmjs.org/@floating-ui/core/-/core-1.7.5.tgz",
-			"integrity": "sha512-1Ih4WTWyw0+lKyFMcBHGbb5U5FtuHJuujoyyr5zTaWS5EYMeT6Jb2AuDeftsCsEuchO+mM2ij5+q9crhydzLhQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@floating-ui/utils": "^0.2.11"
-			}
-		},
-		"node_modules/@floating-ui/dom": {
-			"version": "1.7.6",
-			"resolved": "https://registry.npmjs.org/@floating-ui/dom/-/dom-1.7.6.tgz",
-			"integrity": "sha512-9gZSAI5XM36880PPMm//9dfiEngYoC6Am2izES1FF406YFsjvyBMmeJ2g4SAju3xWwtuynNRFL2s9hgxpLI5SQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@floating-ui/core": "^1.7.5",
-				"@floating-ui/utils": "^0.2.11"
-			}
-		},
-		"node_modules/@floating-ui/react-dom": {
-			"version": "2.1.8",
-			"resolved": "https://registry.npmjs.org/@floating-ui/react-dom/-/react-dom-2.1.8.tgz",
-			"integrity": "sha512-cC52bHwM/n/CxS87FH0yWdngEZrjdtLW/qVruo68qg+prK7ZQ4YGdut2GyDVpoGeAYe/h899rVeOVm6Oi40k2A==",
-			"license": "MIT",
-			"dependencies": {
-				"@floating-ui/dom": "^1.7.6"
-			},
-			"peerDependencies": {
-				"react": ">=16.8.0",
-				"react-dom": ">=16.8.0"
-			}
-		},
-		"node_modules/@floating-ui/utils": {
-			"version": "0.2.11",
-			"resolved": "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.11.tgz",
-			"integrity": "sha512-RiB/yIh78pcIxl6lLMG0CgBXAZ2Y0eVHqMPYugu+9U0AeT6YBeiJpf7lbdJNIugFP5SIjwNRgo4DhR1Qxi26Gg==",
-			"license": "MIT"
-		},
-		"node_modules/@hookform/resolvers": {
-			"version": "5.2.2",
-			"resolved": "https://registry.npmjs.org/@hookform/resolvers/-/resolvers-5.2.2.tgz",
-			"integrity": "sha512-A/IxlMLShx3KjV/HeTcTfaMxdwy690+L/ZADoeaTltLx+CVuzkeVIPuybK3jrRfw7YZnmdKsVVHAlEPIAEUNlA==",
-			"license": "MIT",
-			"dependencies": {
-				"@standard-schema/utils": "^0.3.0"
-			},
-			"peerDependencies": {
-				"react-hook-form": "^7.55.0"
-			}
-		},
-		"node_modules/@humanfs/core": {
-			"version": "0.19.1",
-			"resolved": "https://registry.npmjs.org/@humanfs/core/-/core-0.19.1.tgz",
-			"integrity": "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"engines": {
-				"node": ">=18.18.0"
-			}
-		},
-		"node_modules/@humanfs/node": {
-			"version": "0.16.7",
-			"resolved": "https://registry.npmjs.org/@humanfs/node/-/node-0.16.7.tgz",
-			"integrity": "sha512-/zUx+yOsIrG4Y43Eh2peDeKCxlRt/gET6aHfaKpuq267qXdYDFViVHfMaLyygZOnl0kGWxFIgsBy8QFuTLUXEQ==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"dependencies": {
-				"@humanfs/core": "^0.19.1",
-				"@humanwhocodes/retry": "^0.4.0"
-			},
-			"engines": {
-				"node": ">=18.18.0"
-			}
-		},
-		"node_modules/@humanwhocodes/module-importer": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/@humanwhocodes/module-importer/-/module-importer-1.0.1.tgz",
-			"integrity": "sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"engines": {
-				"node": ">=12.22"
-			},
-			"funding": {
-				"type": "github",
-				"url": "https://github.com/sponsors/nzakas"
-			}
-		},
-		"node_modules/@humanwhocodes/retry": {
-			"version": "0.4.3",
-			"resolved": "https://registry.npmjs.org/@humanwhocodes/retry/-/retry-0.4.3.tgz",
-			"integrity": "sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"engines": {
-				"node": ">=18.18"
-			},
-			"funding": {
-				"type": "github",
-				"url": "https://github.com/sponsors/nzakas"
-			}
-		},
-		"node_modules/@jridgewell/gen-mapping": {
-			"version": "0.3.13",
-			"resolved": "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.13.tgz",
-			"integrity": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA==",
-			"license": "MIT",
-			"dependencies": {
-				"@jridgewell/sourcemap-codec": "^1.5.0",
-				"@jridgewell/trace-mapping": "^0.3.24"
-			}
-		},
-		"node_modules/@jridgewell/remapping": {
-			"version": "2.3.5",
-			"resolved": "https://registry.npmjs.org/@jridgewell/remapping/-/remapping-2.3.5.tgz",
-			"integrity": "sha512-LI9u/+laYG4Ds1TDKSJW2YPrIlcVYOwi2fUC6xB43lueCjgxV4lffOCZCtYFiH6TNOX+tQKXx97T4IKHbhyHEQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@jridgewell/gen-mapping": "^0.3.5",
-				"@jridgewell/trace-mapping": "^0.3.24"
-			}
-		},
-		"node_modules/@jridgewell/resolve-uri": {
-			"version": "3.1.2",
-			"resolved": "https://registry.npmjs.org/@jridgewell/resolve-uri/-/resolve-uri-3.1.2.tgz",
-			"integrity": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.0.0"
-			}
-		},
-		"node_modules/@jridgewell/source-map": {
-			"version": "0.3.11",
-			"resolved": "https://registry.npmjs.org/@jridgewell/source-map/-/source-map-0.3.11.tgz",
-			"integrity": "sha512-ZMp1V8ZFcPG5dIWnQLr3NSI1MiCU7UETdS/A0G8V/XWHvJv3ZsFqutJn1Y5RPmAPX6F3BiE397OqveU/9NCuIA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@jridgewell/gen-mapping": "^0.3.5",
-				"@jridgewell/trace-mapping": "^0.3.25"
-			}
-		},
-		"node_modules/@jridgewell/sourcemap-codec": {
-			"version": "1.5.5",
-			"resolved": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.5.5.tgz",
-			"integrity": "sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==",
-			"license": "MIT"
-		},
-		"node_modules/@jridgewell/trace-mapping": {
-			"version": "0.3.31",
-			"resolved": "https://registry.npmjs.org/@jridgewell/trace-mapping/-/trace-mapping-0.3.31.tgz",
-			"integrity": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==",
-			"license": "MIT",
-			"dependencies": {
-				"@jridgewell/resolve-uri": "^3.1.0",
-				"@jridgewell/sourcemap-codec": "^1.4.14"
-			}
-		},
-		"node_modules/@nodelib/fs.scandir": {
-			"version": "2.1.5",
-			"resolved": "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz",
-			"integrity": "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==",
-			"license": "MIT",
-			"dependencies": {
-				"@nodelib/fs.stat": "2.0.5",
-				"run-parallel": "^1.1.9"
-			},
-			"engines": {
-				"node": ">= 8"
-			}
-		},
-		"node_modules/@nodelib/fs.stat": {
-			"version": "2.0.5",
-			"resolved": "https://registry.npmjs.org/@nodelib/fs.stat/-/fs.stat-2.0.5.tgz",
-			"integrity": "sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==",
-			"license": "MIT",
-			"engines": {
-				"node": ">= 8"
-			}
-		},
-		"node_modules/@nodelib/fs.walk": {
-			"version": "1.2.8",
-			"resolved": "https://registry.npmjs.org/@nodelib/fs.walk/-/fs.walk-1.2.8.tgz",
-			"integrity": "sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==",
-			"license": "MIT",
-			"dependencies": {
-				"@nodelib/fs.scandir": "2.1.5",
-				"fastq": "^1.6.0"
-			},
-			"engines": {
-				"node": ">= 8"
-			}
-		},
-		"node_modules/@radix-ui/number": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/number/-/number-1.1.1.tgz",
-			"integrity": "sha512-MkKCwxlXTgz6CFoJx3pCwn07GKp36+aZyu/u2Ln2VrA5DcdyCZkASEDBTd8x5whTQQL5CiYf4prXKLcgQdv29g==",
-			"license": "MIT"
-		},
-		"node_modules/@radix-ui/primitive": {
-			"version": "1.1.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/primitive/-/primitive-1.1.3.tgz",
-			"integrity": "sha512-JTF99U/6XIjCBo0wqkU5sK10glYe27MRRsfwoiq5zzOEZLHU3A3KCMa5X/azekYRCJ0HlwI0crAXS/5dEHTzDg==",
-			"license": "MIT"
-		},
-		"node_modules/@radix-ui/react-accordion": {
-			"version": "1.2.12",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-accordion/-/react-accordion-1.2.12.tgz",
-			"integrity": "sha512-T4nygeh9YE9dLRPhAHSeOZi7HBXo+0kYIPJXayZfvWOWA0+n3dESrZbjfDPUABkUNym6Hd+f2IR113To8D2GPA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-collapsible": "1.1.12",
-				"@radix-ui/react-collection": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-alert-dialog": {
-			"version": "1.1.15",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-alert-dialog/-/react-alert-dialog-1.1.15.tgz",
-			"integrity": "sha512-oTVLkEw5GpdRe29BqJ0LSDFWI3qu0vR1M0mUkOQWDIUnY/QIkLpgDMWuKxP94c2NAC2LGcgVhG1ImF3jkZ5wXw==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-dialog": "1.1.15",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-slot": "1.2.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-alert-dialog/node_modules/@radix-ui/react-slot": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz",
-			"integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-arrow": {
-			"version": "1.1.7",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-arrow/-/react-arrow-1.1.7.tgz",
-			"integrity": "sha512-F+M1tLhO+mlQaOWspE8Wstg+z6PwxwRd8oQ8IXceWz92kfAmalTRf0EjrouQeo7QssEPfCn05B4Ihs1K9WQ/7w==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-primitive": "2.1.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-aspect-ratio": {
-			"version": "1.1.8",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-aspect-ratio/-/react-aspect-ratio-1.1.8.tgz",
-			"integrity": "sha512-5nZrJTF7gH+e0nZS7/QxFz6tJV4VimhQb1avEgtsJxvvIp5JilL+c58HICsKzPxghdwaDt48hEfPM1au4zGy+w==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-primitive": "2.1.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-aspect-ratio/node_modules/@radix-ui/react-primitive": {
-			"version": "2.1.4",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.4.tgz",
-			"integrity": "sha512-9hQc4+GNVtJAIEPEqlYqW5RiYdrr8ea5XQ0ZOnD6fgru+83kqT15mq2OCcbe8KnjRZl5vF3ks69AKz3kh1jrhg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-slot": "1.2.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-avatar": {
-			"version": "1.1.11",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-avatar/-/react-avatar-1.1.11.tgz",
-			"integrity": "sha512-0Qk603AHGV28BOBO34p7IgD5m+V5Sg/YovfayABkoDDBM5d3NCx0Mp4gGrjzLGes1jV5eNOE1r3itqOR33VC6Q==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-context": "1.1.3",
-				"@radix-ui/react-primitive": "2.1.4",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-is-hydrated": "0.1.0",
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-avatar/node_modules/@radix-ui/react-context": {
-			"version": "1.1.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.3.tgz",
-			"integrity": "sha512-ieIFACdMpYfMEjF0rEf5KLvfVyIkOz6PDGyNnP+u+4xQ6jny3VCgA4OgXOwNx2aUkxn8zx9fiVcM8CfFYv9Lxw==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-avatar/node_modules/@radix-ui/react-primitive": {
-			"version": "2.1.4",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.4.tgz",
-			"integrity": "sha512-9hQc4+GNVtJAIEPEqlYqW5RiYdrr8ea5XQ0ZOnD6fgru+83kqT15mq2OCcbe8KnjRZl5vF3ks69AKz3kh1jrhg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-slot": "1.2.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-checkbox": {
-			"version": "1.3.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-checkbox/-/react-checkbox-1.3.3.tgz",
-			"integrity": "sha512-wBbpv+NQftHDdG86Qc0pIyXk5IR3tM8Vd0nWLKDcX8nNn4nXFOFwsKuqw2okA/1D/mpaAkmuyndrPJTYDNZtFw==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-use-previous": "1.1.1",
-				"@radix-ui/react-use-size": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-collapsible": {
-			"version": "1.1.12",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-collapsible/-/react-collapsible-1.1.12.tgz",
-			"integrity": "sha512-Uu+mSh4agx2ib1uIGPP4/CKNULyajb3p92LsVXmH2EHVMTfZWpll88XJ0j4W0z3f8NK1eYl1+Mf/szHPmcHzyA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-collection": {
-			"version": "1.1.7",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-collection/-/react-collection-1.1.7.tgz",
-			"integrity": "sha512-Fh9rGN0MoI4ZFUNyfFVNU4y9LUz93u9/0K+yLgA2bwRojxM8JU1DyvvMBabnZPBgMWREAJvU2jjVzq+LrFUglw==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-slot": "1.2.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-collection/node_modules/@radix-ui/react-slot": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz",
-			"integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-compose-refs": {
-			"version": "1.1.2",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-compose-refs/-/react-compose-refs-1.1.2.tgz",
-			"integrity": "sha512-z4eqJvfiNnFMHIIvXP3CY57y2WJs5g2v3X0zm9mEJkrkNv4rDxu+sg9Jh8EkXyeqBkB7SOcboo9dMVqhyrACIg==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-context": {
-			"version": "1.1.2",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.2.tgz",
-			"integrity": "sha512-jCi/QKUM2r1Ju5a3J64TH2A5SpKAgh0LpknyqdQ4m6DCV0xJ2HG1xARRwNGPQfi1SLdLWZ1OJz6F4OMBBNiGJA==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-context-menu": {
-			"version": "2.2.16",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-context-menu/-/react-context-menu-2.2.16.tgz",
-			"integrity": "sha512-O8morBEW+HsVG28gYDZPTrT9UUovQUlJue5YO836tiTJhuIWBm/zQHc7j388sHWtdH/xUZurK9olD2+pcqx5ww==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-menu": "2.1.16",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-dialog": {
-			"version": "1.1.15",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-dialog/-/react-dialog-1.1.15.tgz",
-			"integrity": "sha512-TCglVRtzlffRNxRMEyR36DGBLJpeusFcgMVD9PZEzAKnUs1lKCgX5u9BmC2Yg+LL9MgZDugFFs1Vl+Jp4t/PGw==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-dismissable-layer": "1.1.11",
-				"@radix-ui/react-focus-guards": "1.1.3",
-				"@radix-ui/react-focus-scope": "1.1.7",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-portal": "1.1.9",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-slot": "1.2.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"aria-hidden": "^1.2.4",
-				"react-remove-scroll": "^2.6.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-slot": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz",
-			"integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-direction": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-direction/-/react-direction-1.1.1.tgz",
-			"integrity": "sha512-1UEWRX6jnOA2y4H5WczZ44gOOjTEmlqv1uNW4GAJEO5+bauCBhv8snY65Iw5/VOS/ghKN9gr2KjnLKxrsvoMVw==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-dismissable-layer": {
-			"version": "1.1.11",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-dismissable-layer/-/react-dismissable-layer-1.1.11.tgz",
-			"integrity": "sha512-Nqcp+t5cTB8BinFkZgXiMJniQH0PsUt2k51FUhbdfeKvc4ACcG2uQniY/8+h1Yv6Kza4Q7lD7PQV0z0oicE0Mg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-escape-keydown": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-dropdown-menu": {
-			"version": "2.1.16",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-dropdown-menu/-/react-dropdown-menu-2.1.16.tgz",
-			"integrity": "sha512-1PLGQEynI/3OX/ftV54COn+3Sud/Mn8vALg2rWnBLnRaGtJDduNW/22XjlGgPdpcIbiQxjKtb7BkcjP00nqfJw==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-menu": "2.1.16",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-focus-guards": {
-			"version": "1.1.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-focus-guards/-/react-focus-guards-1.1.3.tgz",
-			"integrity": "sha512-0rFg/Rj2Q62NCm62jZw0QX7a3sz6QCQU0LpZdNrJX8byRGaGVTqbrW9jAoIAHyMQqsNpeZ81YgSizOt5WXq0Pw==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-focus-scope": {
-			"version": "1.1.7",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-focus-scope/-/react-focus-scope-1.1.7.tgz",
-			"integrity": "sha512-t2ODlkXBQyn7jkl6TNaw/MtVEVvIGelJDCG41Okq/KwUsJBwQ4XVZsHAVUkK4mBv3ewiAS3PGuUWuY2BoK4ZUw==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-hover-card": {
-			"version": "1.1.15",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-hover-card/-/react-hover-card-1.1.15.tgz",
-			"integrity": "sha512-qgTkjNT1CfKMoP0rcasmlH2r1DAiYicWsDsufxl940sT2wHNEWWv6FMWIQXWhVdmC1d/HYfbhQx60KYyAtKxjg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-dismissable-layer": "1.1.11",
-				"@radix-ui/react-popper": "1.2.8",
-				"@radix-ui/react-portal": "1.1.9",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-id": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-id/-/react-id-1.1.1.tgz",
-			"integrity": "sha512-kGkGegYIdQsOb4XjsfM97rXsiHaBwco+hFI66oO4s9LU+PLAC5oJ7khdOVFxkhsmlbpUqDAvXw11CluXP+jkHg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-label": {
-			"version": "2.1.8",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-label/-/react-label-2.1.8.tgz",
-			"integrity": "sha512-FmXs37I6hSBVDlO4y764TNz1rLgKwjJMQ0EGte6F3Cb3f4bIuHB/iLa/8I9VKkmOy+gNHq8rql3j686ACVV21A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-primitive": "2.1.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-label/node_modules/@radix-ui/react-primitive": {
-			"version": "2.1.4",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.4.tgz",
-			"integrity": "sha512-9hQc4+GNVtJAIEPEqlYqW5RiYdrr8ea5XQ0ZOnD6fgru+83kqT15mq2OCcbe8KnjRZl5vF3ks69AKz3kh1jrhg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-slot": "1.2.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-menu": {
-			"version": "2.1.16",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-menu/-/react-menu-2.1.16.tgz",
-			"integrity": "sha512-72F2T+PLlphrqLcAotYPp0uJMr5SjP5SL01wfEspJbru5Zs5vQaSHb4VB3ZMJPimgHHCHG7gMOeOB9H3Hdmtxg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-collection": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-dismissable-layer": "1.1.11",
-				"@radix-ui/react-focus-guards": "1.1.3",
-				"@radix-ui/react-focus-scope": "1.1.7",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-popper": "1.2.8",
-				"@radix-ui/react-portal": "1.1.9",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-roving-focus": "1.1.11",
-				"@radix-ui/react-slot": "1.2.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"aria-hidden": "^1.2.4",
-				"react-remove-scroll": "^2.6.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-menu/node_modules/@radix-ui/react-slot": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz",
-			"integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-menubar": {
-			"version": "1.1.16",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-menubar/-/react-menubar-1.1.16.tgz",
-			"integrity": "sha512-EB1FktTz5xRRi2Er974AUQZWg2yVBb1yjip38/lgwtCVRd3a+maUoGHN/xs9Yv8SY8QwbSEb+YrxGadVWbEutA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-collection": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-menu": "2.1.16",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-roving-focus": "1.1.11",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-navigation-menu": {
-			"version": "1.2.14",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-navigation-menu/-/react-navigation-menu-1.2.14.tgz",
-			"integrity": "sha512-YB9mTFQvCOAQMHU+C/jVl96WmuWeltyUEpRJJky51huhds5W2FQr1J8D/16sQlf0ozxkPK8uF3niQMdUwZPv5w==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-collection": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-dismissable-layer": "1.1.11",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-use-layout-effect": "1.1.1",
-				"@radix-ui/react-use-previous": "1.1.1",
-				"@radix-ui/react-visually-hidden": "1.2.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-popover": {
-			"version": "1.1.15",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-popover/-/react-popover-1.1.15.tgz",
-			"integrity": "sha512-kr0X2+6Yy/vJzLYJUPCZEc8SfQcf+1COFoAqauJm74umQhta9M7lNJHP7QQS3vkvcGLQUbWpMzwrXYwrYztHKA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-dismissable-layer": "1.1.11",
-				"@radix-ui/react-focus-guards": "1.1.3",
-				"@radix-ui/react-focus-scope": "1.1.7",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-popper": "1.2.8",
-				"@radix-ui/react-portal": "1.1.9",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-slot": "1.2.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"aria-hidden": "^1.2.4",
-				"react-remove-scroll": "^2.6.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-popover/node_modules/@radix-ui/react-slot": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz",
-			"integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-popper": {
-			"version": "1.2.8",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-popper/-/react-popper-1.2.8.tgz",
-			"integrity": "sha512-0NJQ4LFFUuWkE7Oxf0htBKS6zLkkjBH+hM1uk7Ng705ReR8m/uelduy1DBo0PyBXPKVnBA6YBlU94MBGXrSBCw==",
-			"license": "MIT",
-			"dependencies": {
-				"@floating-ui/react-dom": "^2.0.0",
-				"@radix-ui/react-arrow": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-layout-effect": "1.1.1",
-				"@radix-ui/react-use-rect": "1.1.1",
-				"@radix-ui/react-use-size": "1.1.1",
-				"@radix-ui/rect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-portal": {
-			"version": "1.1.9",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-portal/-/react-portal-1.1.9.tgz",
-			"integrity": "sha512-bpIxvq03if6UNwXZ+HTK71JLh4APvnXntDc6XOX8UVq4XQOVl7lwok0AvIl+b8zgCw3fSaVTZMpAPPagXbKmHQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-presence": {
-			"version": "1.1.5",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-presence/-/react-presence-1.1.5.tgz",
-			"integrity": "sha512-/jfEwNDdQVBCNvjkGit4h6pMOzq8bHkopq458dPt2lMjx+eBQUohZNG9A7DtO/O5ukSbxuaNGXMjHicgwy6rQQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-primitive": {
-			"version": "2.1.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.3.tgz",
-			"integrity": "sha512-m9gTwRkhy2lvCPe6QJp4d3G1TYEUHn/FzJUtq9MjH46an1wJU+GdoGC5VLof8RX8Ft/DlpshApkhswDLZzHIcQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-slot": "1.2.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-primitive/node_modules/@radix-ui/react-slot": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz",
-			"integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-progress": {
-			"version": "1.1.8",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-progress/-/react-progress-1.1.8.tgz",
-			"integrity": "sha512-+gISHcSPUJ7ktBy9RnTqbdKW78bcGke3t6taawyZ71pio1JewwGSJizycs7rLhGTvMJYCQB1DBK4KQsxs7U8dA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-context": "1.1.3",
-				"@radix-ui/react-primitive": "2.1.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-progress/node_modules/@radix-ui/react-context": {
-			"version": "1.1.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-context/-/react-context-1.1.3.tgz",
-			"integrity": "sha512-ieIFACdMpYfMEjF0rEf5KLvfVyIkOz6PDGyNnP+u+4xQ6jny3VCgA4OgXOwNx2aUkxn8zx9fiVcM8CfFYv9Lxw==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-progress/node_modules/@radix-ui/react-primitive": {
-			"version": "2.1.4",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.4.tgz",
-			"integrity": "sha512-9hQc4+GNVtJAIEPEqlYqW5RiYdrr8ea5XQ0ZOnD6fgru+83kqT15mq2OCcbe8KnjRZl5vF3ks69AKz3kh1jrhg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-slot": "1.2.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-radio-group": {
-			"version": "1.3.8",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-radio-group/-/react-radio-group-1.3.8.tgz",
-			"integrity": "sha512-VBKYIYImA5zsxACdisNQ3BjCBfmbGH3kQlnFVqlWU4tXwjy7cGX8ta80BcrO+WJXIn5iBylEH3K6ZTlee//lgQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-roving-focus": "1.1.11",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-use-previous": "1.1.1",
-				"@radix-ui/react-use-size": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-roving-focus": {
-			"version": "1.1.11",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-roving-focus/-/react-roving-focus-1.1.11.tgz",
-			"integrity": "sha512-7A6S9jSgm/S+7MdtNDSb+IU859vQqJ/QAtcYQcfFC6W8RS4IxIZDldLR0xqCFZ6DCyrQLjLPsxtTNch5jVA4lA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-collection": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-scroll-area": {
-			"version": "1.2.10",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-scroll-area/-/react-scroll-area-1.2.10.tgz",
-			"integrity": "sha512-tAXIa1g3sM5CGpVT0uIbUx/U3Gs5N8T52IICuCtObaos1S8fzsrPXG5WObkQN3S6NVl6wKgPhAIiBGbWnvc97A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/number": "1.1.1",
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-select": {
-			"version": "2.2.6",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-select/-/react-select-2.2.6.tgz",
-			"integrity": "sha512-I30RydO+bnn2PQztvo25tswPH+wFBjehVGtmagkU78yMdwTwVf12wnAOF+AeP8S2N8xD+5UPbGhkUfPyvT+mwQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/number": "1.1.1",
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-collection": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-dismissable-layer": "1.1.11",
-				"@radix-ui/react-focus-guards": "1.1.3",
-				"@radix-ui/react-focus-scope": "1.1.7",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-popper": "1.2.8",
-				"@radix-ui/react-portal": "1.1.9",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-slot": "1.2.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-use-layout-effect": "1.1.1",
-				"@radix-ui/react-use-previous": "1.1.1",
-				"@radix-ui/react-visually-hidden": "1.2.3",
-				"aria-hidden": "^1.2.4",
-				"react-remove-scroll": "^2.6.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-select/node_modules/@radix-ui/react-slot": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz",
-			"integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-separator": {
-			"version": "1.1.8",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-separator/-/react-separator-1.1.8.tgz",
-			"integrity": "sha512-sDvqVY4itsKwwSMEe0jtKgfTh+72Sy3gPmQpjqcQneqQ4PFmr/1I0YA+2/puilhggCe2gJcx5EBAYFkWkdpa5g==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-primitive": "2.1.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-separator/node_modules/@radix-ui/react-primitive": {
-			"version": "2.1.4",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-primitive/-/react-primitive-2.1.4.tgz",
-			"integrity": "sha512-9hQc4+GNVtJAIEPEqlYqW5RiYdrr8ea5XQ0ZOnD6fgru+83kqT15mq2OCcbe8KnjRZl5vF3ks69AKz3kh1jrhg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-slot": "1.2.4"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-slider": {
-			"version": "1.3.6",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slider/-/react-slider-1.3.6.tgz",
-			"integrity": "sha512-JPYb1GuM1bxfjMRlNLE+BcmBC8onfCi60Blk7OBqi2MLTFdS+8401U4uFjnwkOr49BLmXxLC6JHkvAsx5OJvHw==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/number": "1.1.1",
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-collection": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-use-layout-effect": "1.1.1",
-				"@radix-ui/react-use-previous": "1.1.1",
-				"@radix-ui/react-use-size": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-slot": {
-			"version": "1.2.4",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.4.tgz",
-			"integrity": "sha512-Jl+bCv8HxKnlTLVrcDE8zTMJ09R9/ukw4qBs/oZClOfoQk/cOTbDn+NceXfV7j09YPVQUryJPHurafcSg6EVKA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-switch": {
-			"version": "1.2.6",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-switch/-/react-switch-1.2.6.tgz",
-			"integrity": "sha512-bByzr1+ep1zk4VubeEVViV592vu2lHE2BZY5OnzehZqOOgogN80+mNtCqPkhn2gklJqOpxWgPoYTSnhBCqpOXQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-use-previous": "1.1.1",
-				"@radix-ui/react-use-size": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-tabs": {
-			"version": "1.1.13",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-tabs/-/react-tabs-1.1.13.tgz",
-			"integrity": "sha512-7xdcatg7/U+7+Udyoj2zodtI9H/IIopqo+YOIcZOq1nJwXWBZ9p8xiu5llXlekDbZkca79a/fozEYQXIA4sW6A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-roving-focus": "1.1.11",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-toast": {
-			"version": "1.2.15",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-toast/-/react-toast-1.2.15.tgz",
-			"integrity": "sha512-3OSz3TacUWy4WtOXV38DggwxoqJK4+eDkNMl5Z/MJZaoUPaP4/9lf81xXMe1I2ReTAptverZUpbPY4wWwWyL5g==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-collection": "1.1.7",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-dismissable-layer": "1.1.11",
-				"@radix-ui/react-portal": "1.1.9",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-callback-ref": "1.1.1",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-use-layout-effect": "1.1.1",
-				"@radix-ui/react-visually-hidden": "1.2.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-toggle": {
-			"version": "1.1.10",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-toggle/-/react-toggle-1.1.10.tgz",
-			"integrity": "sha512-lS1odchhFTeZv3xwHH31YPObmJn8gOg7Lq12inrr0+BH/l3Tsq32VfjqH1oh80ARM3mlkfMic15n0kg4sD1poQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-toggle-group": {
-			"version": "1.1.11",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-toggle-group/-/react-toggle-group-1.1.11.tgz",
-			"integrity": "sha512-5umnS0T8JQzQT6HbPyO7Hh9dgd82NmS36DQr+X/YJ9ctFNCiiQd6IJAYYZ33LUwm8M+taCz5t2ui29fHZc4Y6Q==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-direction": "1.1.1",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-roving-focus": "1.1.11",
-				"@radix-ui/react-toggle": "1.1.10",
-				"@radix-ui/react-use-controllable-state": "1.2.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-tooltip": {
-			"version": "1.2.8",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-tooltip/-/react-tooltip-1.2.8.tgz",
-			"integrity": "sha512-tY7sVt1yL9ozIxvmbtN5qtmH2krXcBCfjEiCgKGLqunJHvgvZG2Pcl2oQ3kbcZARb1BGEHdkLzcYGO8ynVlieg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/primitive": "1.1.3",
-				"@radix-ui/react-compose-refs": "1.1.2",
-				"@radix-ui/react-context": "1.1.2",
-				"@radix-ui/react-dismissable-layer": "1.1.11",
-				"@radix-ui/react-id": "1.1.1",
-				"@radix-ui/react-popper": "1.2.8",
-				"@radix-ui/react-portal": "1.1.9",
-				"@radix-ui/react-presence": "1.1.5",
-				"@radix-ui/react-primitive": "2.1.3",
-				"@radix-ui/react-slot": "1.2.3",
-				"@radix-ui/react-use-controllable-state": "1.2.2",
-				"@radix-ui/react-visually-hidden": "1.2.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-tooltip/node_modules/@radix-ui/react-slot": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-slot/-/react-slot-1.2.3.tgz",
-			"integrity": "sha512-aeNmHnBxbi2St0au6VBVC7JXFlhLlOnvIIlePNniyUNAClzmtAUEY8/pBiK3iHjufOlwA+c20/8jngo7xcrg8A==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "1.1.2"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-callback-ref": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-callback-ref/-/react-use-callback-ref-1.1.1.tgz",
-			"integrity": "sha512-FkBMwD+qbGQeMu1cOHnuGB6x4yzPjho8ap5WtbEJ26umhgqVXbhekKUQO+hZEL1vU92a3wHwdp0HAcqAUF5iDg==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-controllable-state": {
-			"version": "1.2.2",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-controllable-state/-/react-use-controllable-state-1.2.2.tgz",
-			"integrity": "sha512-BjasUjixPFdS+NKkypcyyN5Pmg83Olst0+c6vGov0diwTEo6mgdqVR6hxcEgFuh4QrAs7Rc+9KuGJ9TVCj0Zzg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-use-effect-event": "0.0.2",
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-effect-event": {
-			"version": "0.0.2",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-effect-event/-/react-use-effect-event-0.0.2.tgz",
-			"integrity": "sha512-Qp8WbZOBe+blgpuUT+lw2xheLP8q0oatc9UpmiemEICxGvFLYmHm9QowVZGHtJlGbS6A6yJ3iViad/2cVjnOiA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-escape-keydown": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-escape-keydown/-/react-use-escape-keydown-1.1.1.tgz",
-			"integrity": "sha512-Il0+boE7w/XebUHyBjroE+DbByORGR9KKmITzbR7MyQ4akpORYP/ZmbhAr0DG7RmmBqoOnZdy2QlvajJ2QA59g==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-use-callback-ref": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-is-hydrated": {
-			"version": "0.1.0",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-is-hydrated/-/react-use-is-hydrated-0.1.0.tgz",
-			"integrity": "sha512-U+UORVEq+cTnRIaostJv9AGdV3G6Y+zbVd+12e18jQ5A3c0xL03IhnHuiU4UV69wolOQp5GfR58NW/EgdQhwOA==",
-			"license": "MIT",
-			"dependencies": {
-				"use-sync-external-store": "^1.5.0"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-layout-effect": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-layout-effect/-/react-use-layout-effect-1.1.1.tgz",
-			"integrity": "sha512-RbJRS4UWQFkzHTTwVymMTUv8EqYhOp8dOOviLj2ugtTiXRaRQS7GLGxZTLL1jWhMeoSCf5zmcZkqTl9IiYfXcQ==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-previous": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-previous/-/react-use-previous-1.1.1.tgz",
-			"integrity": "sha512-2dHfToCj/pzca2Ck724OZ5L0EVrr3eHRNsG/b3xQJLA2hZpVCS99bLAX+hm1IHXDEnzU6by5z/5MIY794/a8NQ==",
-			"license": "MIT",
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-rect": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-rect/-/react-use-rect-1.1.1.tgz",
-			"integrity": "sha512-QTYuDesS0VtuHNNvMh+CjlKJ4LJickCMUAqjlE3+j8w+RlRpwyX3apEQKGFzbZGdo7XNG1tXa+bQqIE7HIXT2w==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/rect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-use-size": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-use-size/-/react-use-size-1.1.1.tgz",
-			"integrity": "sha512-ewrXRDTAqAXlkl6t/fkXWNAhFX9I+CkKlw6zjEwk86RSPKwZr3xpBRso655aqYafwtnbpHLj6toFzmd6xdVptQ==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-use-layout-effect": "1.1.1"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/react-visually-hidden": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/@radix-ui/react-visually-hidden/-/react-visually-hidden-1.2.3.tgz",
-			"integrity": "sha512-pzJq12tEaaIhqjbzpCuv/OypJY/BPavOofm+dbab+MHLajy277+1lLm6JFcGgF5eskJ6mquGirhXY2GD/8u8Ug==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-primitive": "2.1.3"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"@types/react-dom": "*",
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				},
-				"@types/react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/@radix-ui/rect": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/@radix-ui/rect/-/rect-1.1.1.tgz",
-			"integrity": "sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==",
-			"license": "MIT"
-		},
-		"node_modules/@rolldown/pluginutils": {
-			"version": "1.0.0-rc.3",
-			"resolved": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-rc.3.tgz",
-			"integrity": "sha512-eybk3TjzzzV97Dlj5c+XrBFW57eTNhzod66y9HrBlzJ6NsCrWCp/2kaPS3K9wJmurBC0Tdw4yPjXKZqlznim3Q==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/@rollup/rollup-android-arm-eabi": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.60.1.tgz",
-			"integrity": "sha512-d6FinEBLdIiK+1uACUttJKfgZREXrF0Qc2SmLII7W2AD8FfiZ9Wjd+rD/iRuf5s5dWrr1GgwXCvPqOuDquOowA==",
-			"cpu": [
-				"arm"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"android"
-			]
-		},
-		"node_modules/@rollup/rollup-android-arm64": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.60.1.tgz",
-			"integrity": "sha512-YjG/EwIDvvYI1YvYbHvDz/BYHtkY4ygUIXHnTdLhG+hKIQFBiosfWiACWortsKPKU/+dUwQQCKQM3qrDe8c9BA==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"android"
-			]
-		},
-		"node_modules/@rollup/rollup-darwin-arm64": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.60.1.tgz",
-			"integrity": "sha512-mjCpF7GmkRtSJwon+Rq1N8+pI+8l7w5g9Z3vWj4T7abguC4Czwi3Yu/pFaLvA3TTeMVjnu3ctigusqWUfjZzvw==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"darwin"
-			]
-		},
-		"node_modules/@rollup/rollup-darwin-x64": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.60.1.tgz",
-			"integrity": "sha512-haZ7hJ1JT4e9hqkoT9R/19XW2QKqjfJVv+i5AGg57S+nLk9lQnJ1F/eZloRO3o9Scy9CM3wQ9l+dkXtcBgN5Ew==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"darwin"
-			]
-		},
-		"node_modules/@rollup/rollup-freebsd-arm64": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-freebsd-arm64/-/rollup-freebsd-arm64-4.60.1.tgz",
-			"integrity": "sha512-czw90wpQq3ZsAVBlinZjAYTKduOjTywlG7fEeWKUA7oCmpA8xdTkxZZlwNJKWqILlq0wehoZcJYfBvOyhPTQ6w==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"freebsd"
-			]
-		},
-		"node_modules/@rollup/rollup-freebsd-x64": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-freebsd-x64/-/rollup-freebsd-x64-4.60.1.tgz",
-			"integrity": "sha512-KVB2rqsxTHuBtfOeySEyzEOB7ltlB/ux38iu2rBQzkjbwRVlkhAGIEDiiYnO2kFOkJp+Z7pUXKyrRRFuFUKt+g==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"freebsd"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-arm-gnueabihf": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm-gnueabihf/-/rollup-linux-arm-gnueabihf-4.60.1.tgz",
-			"integrity": "sha512-L+34Qqil+v5uC0zEubW7uByo78WOCIrBvci69E7sFASRl0X7b/MB6Cqd1lky/CtcSVTydWa2WZwFuWexjS5o6g==",
-			"cpu": [
-				"arm"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-arm-musleabihf": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.60.1.tgz",
-			"integrity": "sha512-n83O8rt4v34hgFzlkb1ycniJh7IR5RCIqt6mz1VRJD6pmhRi0CXdmfnLu9dIUS6buzh60IvACM842Ffb3xd6Gg==",
-			"cpu": [
-				"arm"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-arm64-gnu": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.60.1.tgz",
-			"integrity": "sha512-Nql7sTeAzhTAja3QXeAI48+/+GjBJ+QmAH13snn0AJSNL50JsDqotyudHyMbO2RbJkskbMbFJfIJKWA6R1LCJQ==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-arm64-musl": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.60.1.tgz",
-			"integrity": "sha512-+pUymDhd0ys9GcKZPPWlFiZ67sTWV5UU6zOJat02M1+PiuSGDziyRuI/pPue3hoUwm2uGfxdL+trT6Z9rxnlMA==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-loong64-gnu": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-loong64-gnu/-/rollup-linux-loong64-gnu-4.60.1.tgz",
-			"integrity": "sha512-VSvgvQeIcsEvY4bKDHEDWcpW4Yw7BtlKG1GUT4FzBUlEKQK0rWHYBqQt6Fm2taXS+1bXvJT6kICu5ZwqKCnvlQ==",
-			"cpu": [
-				"loong64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-loong64-musl": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-loong64-musl/-/rollup-linux-loong64-musl-4.60.1.tgz",
-			"integrity": "sha512-4LqhUomJqwe641gsPp6xLfhqWMbQV04KtPp7/dIp0nzPxAkNY1AbwL5W0MQpcalLYk07vaW9Kp1PBhdpZYYcEw==",
-			"cpu": [
-				"loong64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-ppc64-gnu": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-ppc64-gnu/-/rollup-linux-ppc64-gnu-4.60.1.tgz",
-			"integrity": "sha512-tLQQ9aPvkBxOc/EUT6j3pyeMD6Hb8QF2BTBnCQWP/uu1lhc9AIrIjKnLYMEroIz/JvtGYgI9dF3AxHZNaEH0rw==",
-			"cpu": [
-				"ppc64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-ppc64-musl": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-ppc64-musl/-/rollup-linux-ppc64-musl-4.60.1.tgz",
-			"integrity": "sha512-RMxFhJwc9fSXP6PqmAz4cbv3kAyvD1etJFjTx4ONqFP9DkTkXsAMU4v3Vyc5BgzC+anz7nS/9tp4obsKfqkDHg==",
-			"cpu": [
-				"ppc64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-riscv64-gnu": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-riscv64-gnu/-/rollup-linux-riscv64-gnu-4.60.1.tgz",
-			"integrity": "sha512-QKgFl+Yc1eEk6MmOBfRHYF6lTxiiiV3/z/BRrbSiW2I7AFTXoBFvdMEyglohPj//2mZS4hDOqeB0H1ACh3sBbg==",
-			"cpu": [
-				"riscv64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-riscv64-musl": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-riscv64-musl/-/rollup-linux-riscv64-musl-4.60.1.tgz",
-			"integrity": "sha512-RAjXjP/8c6ZtzatZcA1RaQr6O1TRhzC+adn8YZDnChliZHviqIjmvFwHcxi4JKPSDAt6Uhf/7vqcBzQJy0PDJg==",
-			"cpu": [
-				"riscv64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-s390x-gnu": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-s390x-gnu/-/rollup-linux-s390x-gnu-4.60.1.tgz",
-			"integrity": "sha512-wcuocpaOlaL1COBYiA89O6yfjlp3RwKDeTIA0hM7OpmhR1Bjo9j31G1uQVpDlTvwxGn2nQs65fBFL5UFd76FcQ==",
-			"cpu": [
-				"s390x"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-x64-gnu": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.60.1.tgz",
-			"integrity": "sha512-77PpsFQUCOiZR9+LQEFg9GClyfkNXj1MP6wRnzYs0EeWbPcHs02AXu4xuUbM1zhwn3wqaizle3AEYg5aeoohhg==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-linux-x64-musl": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.60.1.tgz",
-			"integrity": "sha512-5cIATbk5vynAjqqmyBjlciMJl1+R/CwX9oLk/EyiFXDWd95KpHdrOJT//rnUl4cUcskrd0jCCw3wpZnhIHdD9w==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"linux"
-			]
-		},
-		"node_modules/@rollup/rollup-openbsd-x64": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-openbsd-x64/-/rollup-openbsd-x64-4.60.1.tgz",
-			"integrity": "sha512-cl0w09WsCi17mcmWqqglez9Gk8isgeWvoUZ3WiJFYSR3zjBQc2J5/ihSjpl+VLjPqjQ/1hJRcqBfLjssREQILw==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"openbsd"
-			]
-		},
-		"node_modules/@rollup/rollup-openharmony-arm64": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-openharmony-arm64/-/rollup-openharmony-arm64-4.60.1.tgz",
-			"integrity": "sha512-4Cv23ZrONRbNtbZa37mLSueXUCtN7MXccChtKpUnQNgF010rjrjfHx3QxkS2PI7LqGT5xXyYs1a7LbzAwT0iCA==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"openharmony"
-			]
-		},
-		"node_modules/@rollup/rollup-win32-arm64-msvc": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.60.1.tgz",
-			"integrity": "sha512-i1okWYkA4FJICtr7KpYzFpRTHgy5jdDbZiWfvny21iIKky5YExiDXP+zbXzm3dUcFpkEeYNHgQ5fuG236JPq0g==",
-			"cpu": [
-				"arm64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"win32"
-			]
-		},
-		"node_modules/@rollup/rollup-win32-ia32-msvc": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-win32-ia32-msvc/-/rollup-win32-ia32-msvc-4.60.1.tgz",
-			"integrity": "sha512-u09m3CuwLzShA0EYKMNiFgcjjzwqtUMLmuCJLeZWjjOYA3IT2Di09KaxGBTP9xVztWyIWjVdsB2E9goMjZvTQg==",
-			"cpu": [
-				"ia32"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"win32"
-			]
-		},
-		"node_modules/@rollup/rollup-win32-x64-gnu": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-win32-x64-gnu/-/rollup-win32-x64-gnu-4.60.1.tgz",
-			"integrity": "sha512-k+600V9Zl1CM7eZxJgMyTUzmrmhB/0XZnF4pRypKAlAgxmedUA+1v9R+XOFv56W4SlHEzfeMtzujLJD22Uz5zg==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"win32"
-			]
-		},
-		"node_modules/@rollup/rollup-win32-x64-msvc": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.60.1.tgz",
-			"integrity": "sha512-lWMnixq/QzxyhTV6NjQJ4SFo1J6PvOX8vUx5Wb4bBPsEb+8xZ89Bz6kOXpfXj9ak9AHTQVQzlgzBEc1SyM27xQ==",
-			"cpu": [
-				"x64"
-			],
-			"dev": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"win32"
-			]
-		},
-		"node_modules/@rtsao/scc": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/@rtsao/scc/-/scc-1.1.0.tgz",
-			"integrity": "sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/@standard-schema/utils": {
-			"version": "0.3.0",
-			"resolved": "https://registry.npmjs.org/@standard-schema/utils/-/utils-0.3.0.tgz",
-			"integrity": "sha512-e7Mew686owMaPJVNNLs55PUvgz371nKgwsc4vxE49zsODpJEnxgxRo2y/OKrqueavXgZNMDVj3DdHFlaSAeU8g==",
-			"license": "MIT"
-		},
-		"node_modules/@tabby_ai/hijri-converter": {
-			"version": "1.0.5",
-			"resolved": "https://registry.npmjs.org/@tabby_ai/hijri-converter/-/hijri-converter-1.0.5.tgz",
-			"integrity": "sha512-r5bClKrcIusDoo049dSL8CawnHR6mRdDwhlQuIgZRNty68q0x8k3Lf1BtPAMxRf/GgnHBnIO4ujd3+GQdLWzxQ==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=16.0.0"
-			}
-		},
-		"node_modules/@types/babel__core": {
-			"version": "7.20.5",
-			"resolved": "https://registry.npmjs.org/@types/babel__core/-/babel__core-7.20.5.tgz",
-			"integrity": "sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/parser": "^7.20.7",
-				"@babel/types": "^7.20.7",
-				"@types/babel__generator": "*",
-				"@types/babel__template": "*",
-				"@types/babel__traverse": "*"
-			}
-		},
-		"node_modules/@types/babel__generator": {
-			"version": "7.27.0",
-			"resolved": "https://registry.npmjs.org/@types/babel__generator/-/babel__generator-7.27.0.tgz",
-			"integrity": "sha512-ufFd2Xi92OAVPYsy+P4n7/U7e68fex0+Ee8gSG9KX7eo084CWiQ4sdxktvdl0bOPupXtVJPY19zk6EwWqUQ8lg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/types": "^7.0.0"
-			}
-		},
-		"node_modules/@types/babel__template": {
-			"version": "7.4.4",
-			"resolved": "https://registry.npmjs.org/@types/babel__template/-/babel__template-7.4.4.tgz",
-			"integrity": "sha512-h/NUaSyG5EyxBIp8YRxo4RMe2/qQgvyowRwVMzhYhBCONbW8PUsg4lkFMrhgZhUe5z3L3MiLDuvyJ/CaPa2A8A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/parser": "^7.1.0",
-				"@babel/types": "^7.0.0"
-			}
-		},
-		"node_modules/@types/babel__traverse": {
-			"version": "7.28.0",
-			"resolved": "https://registry.npmjs.org/@types/babel__traverse/-/babel__traverse-7.28.0.tgz",
-			"integrity": "sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/types": "^7.28.2"
-			}
-		},
-		"node_modules/@types/d3-array": {
-			"version": "3.2.2",
-			"resolved": "https://registry.npmjs.org/@types/d3-array/-/d3-array-3.2.2.tgz",
-			"integrity": "sha512-hOLWVbm7uRza0BYXpIIW5pxfrKe0W+D5lrFiAEYR+pb6w3N2SwSMaJbXdUfSEv+dT4MfHBLtn5js0LAWaO6otw==",
-			"license": "MIT"
-		},
-		"node_modules/@types/d3-color": {
-			"version": "3.1.3",
-			"resolved": "https://registry.npmjs.org/@types/d3-color/-/d3-color-3.1.3.tgz",
-			"integrity": "sha512-iO90scth9WAbmgv7ogoq57O9YpKmFBbmoEoCHDB2xMBY0+/KVrqAaCDyCE16dUspeOvIxFFRI+0sEtqDqy2b4A==",
-			"license": "MIT"
-		},
-		"node_modules/@types/d3-ease": {
-			"version": "3.0.2",
-			"resolved": "https://registry.npmjs.org/@types/d3-ease/-/d3-ease-3.0.2.tgz",
-			"integrity": "sha512-NcV1JjO5oDzoK26oMzbILE6HW7uVXOHLQvHshBUW4UMdZGfiY6v5BeQwh9a9tCzv+CeefZQHJt5SRgK154RtiA==",
-			"license": "MIT"
-		},
-		"node_modules/@types/d3-interpolate": {
-			"version": "3.0.4",
-			"resolved": "https://registry.npmjs.org/@types/d3-interpolate/-/d3-interpolate-3.0.4.tgz",
-			"integrity": "sha512-mgLPETlrpVV1YRJIglr4Ez47g7Yxjl1lj7YKsiMCb27VJH9W8NVM6Bb9d8kkpG/uAQS5AmbA48q2IAolKKo1MA==",
-			"license": "MIT",
-			"dependencies": {
-				"@types/d3-color": "*"
-			}
-		},
-		"node_modules/@types/d3-path": {
-			"version": "3.1.1",
-			"resolved": "https://registry.npmjs.org/@types/d3-path/-/d3-path-3.1.1.tgz",
-			"integrity": "sha512-VMZBYyQvbGmWyWVea0EHs/BwLgxc+MKi1zLDCONksozI4YJMcTt8ZEuIR4Sb1MMTE8MMW49v0IwI5+b7RmfWlg==",
-			"license": "MIT"
-		},
-		"node_modules/@types/d3-scale": {
-			"version": "4.0.9",
-			"resolved": "https://registry.npmjs.org/@types/d3-scale/-/d3-scale-4.0.9.tgz",
-			"integrity": "sha512-dLmtwB8zkAeO/juAMfnV+sItKjlsw2lKdZVVy6LRr0cBmegxSABiLEpGVmSJJ8O08i4+sGR6qQtb6WtuwJdvVw==",
-			"license": "MIT",
-			"dependencies": {
-				"@types/d3-time": "*"
-			}
-		},
-		"node_modules/@types/d3-shape": {
-			"version": "3.1.8",
-			"resolved": "https://registry.npmjs.org/@types/d3-shape/-/d3-shape-3.1.8.tgz",
-			"integrity": "sha512-lae0iWfcDeR7qt7rA88BNiqdvPS5pFVPpo5OfjElwNaT2yyekbM0C9vK+yqBqEmHr6lDkRnYNoTBYlAgJa7a4w==",
-			"license": "MIT",
-			"dependencies": {
-				"@types/d3-path": "*"
-			}
-		},
-		"node_modules/@types/d3-time": {
-			"version": "3.0.4",
-			"resolved": "https://registry.npmjs.org/@types/d3-time/-/d3-time-3.0.4.tgz",
-			"integrity": "sha512-yuzZug1nkAAaBlBBikKZTgzCeA+k1uy4ZFwWANOfKw5z5LRhV0gNA7gNkKm7HoK+HRN0wX3EkxGk0fpbWhmB7g==",
-			"license": "MIT"
-		},
-		"node_modules/@types/d3-timer": {
-			"version": "3.0.2",
-			"resolved": "https://registry.npmjs.org/@types/d3-timer/-/d3-timer-3.0.2.tgz",
-			"integrity": "sha512-Ps3T8E8dZDam6fUyNiMkekK3XUsaUEik+idO9/YjPtfj2qruF8tFBXS7XhtE4iIXBLxhmLjP3SXpLhVf21I9Lw==",
-			"license": "MIT"
-		},
-		"node_modules/@types/estree": {
-			"version": "1.0.8",
-			"resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.8.tgz",
-			"integrity": "sha512-dWHzHa2WqEXI/O1E9OjrocMTKJl2mSrEolh1Iomrv6U+JuNwaHXsXx9bLu5gG7BUWFIN0skIQJQ/L1rIex4X6w==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/@types/json-schema": {
-			"version": "7.0.15",
-			"resolved": "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz",
-			"integrity": "sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/@types/json5": {
-			"version": "0.0.29",
-			"resolved": "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz",
-			"integrity": "sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/@types/node": {
-			"version": "20.19.37",
-			"resolved": "https://registry.npmjs.org/@types/node/-/node-20.19.37.tgz",
-			"integrity": "sha512-8kzdPJ3FsNsVIurqBs7oodNnCEVbni9yUEkaHbgptDACOPW04jimGagZ51E6+lXUwJjgnBw+hyko/lkFWCldqw==",
-			"dev": true,
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"undici-types": "~6.21.0"
-			}
-		},
-		"node_modules/@types/prop-types": {
-			"version": "15.7.15",
-			"resolved": "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.15.tgz",
-			"integrity": "sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==",
-			"devOptional": true,
-			"license": "MIT"
-		},
-		"node_modules/@types/react": {
-			"version": "18.3.28",
-			"resolved": "https://registry.npmjs.org/@types/react/-/react-18.3.28.tgz",
-			"integrity": "sha512-z9VXpC7MWrhfWipitjNdgCauoMLRdIILQsAEV+ZesIzBq/oUlxk0m3ApZuMFCXdnS4U7KrI+l3WRUEGQ8K1QKw==",
-			"devOptional": true,
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"@types/prop-types": "*",
-				"csstype": "^3.2.2"
-			}
-		},
-		"node_modules/@types/react-dom": {
-			"version": "18.3.7",
-			"resolved": "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.3.7.tgz",
-			"integrity": "sha512-MEe3UeoENYVFXzoXEWsvcpg6ZvlrFNlOQ7EOsvhI3CfAXwzPfO8Qwuxd40nepsYKqyyVQnTdEfv68q91yLcKrQ==",
-			"devOptional": true,
-			"license": "MIT",
-			"peer": true,
-			"peerDependencies": {
-				"@types/react": "^18.0.0"
-			}
-		},
-		"node_modules/@vitejs/plugin-react": {
-			"version": "5.2.0",
-			"resolved": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-5.2.0.tgz",
-			"integrity": "sha512-YmKkfhOAi3wsB1PhJq5Scj3GXMn3WvtQ/JC0xoopuHoXSdmtdStOpFrYaT1kie2YgFBcIe64ROzMYRjCrYOdYw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@babel/core": "^7.29.0",
-				"@babel/plugin-transform-react-jsx-self": "^7.27.1",
-				"@babel/plugin-transform-react-jsx-source": "^7.27.1",
-				"@rolldown/pluginutils": "1.0.0-rc.3",
-				"@types/babel__core": "^7.20.5",
-				"react-refresh": "^0.18.0"
-			},
-			"engines": {
-				"node": "^20.19.0 || >=22.12.0"
-			},
-			"peerDependencies": {
-				"vite": "^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
-			}
-		},
-		"node_modules/acorn": {
-			"version": "8.16.0",
-			"resolved": "https://registry.npmjs.org/acorn/-/acorn-8.16.0.tgz",
-			"integrity": "sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==",
-			"dev": true,
-			"license": "MIT",
-			"peer": true,
-			"bin": {
-				"acorn": "bin/acorn"
-			},
-			"engines": {
-				"node": ">=0.4.0"
-			}
-		},
-		"node_modules/acorn-jsx": {
-			"version": "5.3.2",
-			"resolved": "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz",
-			"integrity": "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==",
-			"dev": true,
-			"license": "MIT",
-			"peerDependencies": {
-				"acorn": "^6.0.0 || ^7.0.0 || ^8.0.0"
-			}
-		},
-		"node_modules/ajv": {
-			"version": "6.14.0",
-			"resolved": "https://registry.npmjs.org/ajv/-/ajv-6.14.0.tgz",
-			"integrity": "sha512-IWrosm/yrn43eiKqkfkHis7QioDleaXQHdDVPKg0FSwwd/DuvyX79TZnFOnYpB7dcsFAMmtFztZuXPDvSePkFw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"fast-deep-equal": "^3.1.1",
-				"fast-json-stable-stringify": "^2.0.0",
-				"json-schema-traverse": "^0.4.1",
-				"uri-js": "^4.2.2"
-			},
-			"funding": {
-				"type": "github",
-				"url": "https://github.com/sponsors/epoberezkin"
-			}
-		},
-		"node_modules/ansi-regex": {
-			"version": "5.0.1",
-			"resolved": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
-			"integrity": "sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/ansi-styles": {
-			"version": "4.3.0",
-			"resolved": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz",
-			"integrity": "sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"color-convert": "^2.0.1"
-			},
-			"engines": {
-				"node": ">=8"
-			},
-			"funding": {
-				"url": "https://github.com/chalk/ansi-styles?sponsor=1"
-			}
-		},
-		"node_modules/any-promise": {
-			"version": "1.3.0",
-			"resolved": "https://registry.npmjs.org/any-promise/-/any-promise-1.3.0.tgz",
-			"integrity": "sha512-7UvmKalWRt1wgjL1RrGxoSJW/0QZFIegpeGvZG9kjp8vrRu55XTHbwnqq2GpXm9uLbcuhxm3IqX9OB4MZR1b2A==",
-			"license": "MIT"
-		},
-		"node_modules/anymatch": {
-			"version": "3.1.3",
-			"resolved": "https://registry.npmjs.org/anymatch/-/anymatch-3.1.3.tgz",
-			"integrity": "sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==",
-			"license": "ISC",
-			"dependencies": {
-				"normalize-path": "^3.0.0",
-				"picomatch": "^2.0.4"
-			},
-			"engines": {
-				"node": ">= 8"
-			}
-		},
-		"node_modules/arg": {
-			"version": "5.0.2",
-			"resolved": "https://registry.npmjs.org/arg/-/arg-5.0.2.tgz",
-			"integrity": "sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==",
-			"license": "MIT"
-		},
-		"node_modules/argparse": {
-			"version": "2.0.1",
-			"resolved": "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz",
-			"integrity": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==",
-			"dev": true,
-			"license": "Python-2.0"
-		},
-		"node_modules/aria-hidden": {
-			"version": "1.2.6",
-			"resolved": "https://registry.npmjs.org/aria-hidden/-/aria-hidden-1.2.6.tgz",
-			"integrity": "sha512-ik3ZgC9dY/lYVVM++OISsaYDeg1tb0VtP5uL3ouh1koGOaUMDPpbFIei4JkFimWUFPn90sbMNMXQAIVOlnYKJA==",
-			"license": "MIT",
-			"dependencies": {
-				"tslib": "^2.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			}
-		},
-		"node_modules/array-buffer-byte-length": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/array-buffer-byte-length/-/array-buffer-byte-length-1.0.2.tgz",
-			"integrity": "sha512-LHE+8BuR7RYGDKvnrmcuSq3tDcKv9OFEXQt/HpbZhY7V6h0zlUXutnAD82GiFx9rdieCMjkvtcsPqBwgUl1Iiw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"is-array-buffer": "^3.0.5"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/array-includes": {
-			"version": "3.1.9",
-			"resolved": "https://registry.npmjs.org/array-includes/-/array-includes-3.1.9.tgz",
-			"integrity": "sha512-FmeCCAenzH0KH381SPT5FZmiA/TmpndpcaShhfgEN9eCVjnFBqq3l1xrI42y8+PPLI6hypzou4GXw00WHmPBLQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.4",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.24.0",
-				"es-object-atoms": "^1.1.1",
-				"get-intrinsic": "^1.3.0",
-				"is-string": "^1.1.1",
-				"math-intrinsics": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/array.prototype.findlast": {
-			"version": "1.2.5",
-			"resolved": "https://registry.npmjs.org/array.prototype.findlast/-/array.prototype.findlast-1.2.5.tgz",
-			"integrity": "sha512-CVvd6FHg1Z3POpBLxO6E6zr+rSKEQ9L6rZHAaY7lLfhKsWYUBBOuMs0e9o24oopj6H+geRCX0YJ+TJLBK2eHyQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.7",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.2",
-				"es-errors": "^1.3.0",
-				"es-object-atoms": "^1.0.0",
-				"es-shim-unscopables": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/array.prototype.findlastindex": {
-			"version": "1.2.6",
-			"resolved": "https://registry.npmjs.org/array.prototype.findlastindex/-/array.prototype.findlastindex-1.2.6.tgz",
-			"integrity": "sha512-F/TKATkzseUExPlfvmwQKGITM3DGTK+vkAsCZoDc5daVygbJBnjEUCbgkAvVFsgfXfX4YIqZ/27G3k3tdXrTxQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.4",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.9",
-				"es-errors": "^1.3.0",
-				"es-object-atoms": "^1.1.1",
-				"es-shim-unscopables": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/array.prototype.flat": {
-			"version": "1.3.3",
-			"resolved": "https://registry.npmjs.org/array.prototype.flat/-/array.prototype.flat-1.3.3.tgz",
-			"integrity": "sha512-rwG/ja1neyLqCuGZ5YYrznA62D4mZXg0i1cIskIUKSiqF3Cje9/wXAls9B9s1Wa2fomMsIv8czB8jZcPmxCXFg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.5",
-				"es-shim-unscopables": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/array.prototype.flatmap": {
-			"version": "1.3.3",
-			"resolved": "https://registry.npmjs.org/array.prototype.flatmap/-/array.prototype.flatmap-1.3.3.tgz",
-			"integrity": "sha512-Y7Wt51eKJSyi80hFrJCePGGNo5ktJCslFuboqJsbf57CCPcm5zztluPlc4/aD8sWsKvlwatezpV4U1efk8kpjg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.5",
-				"es-shim-unscopables": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/array.prototype.tosorted": {
-			"version": "1.1.4",
-			"resolved": "https://registry.npmjs.org/array.prototype.tosorted/-/array.prototype.tosorted-1.1.4.tgz",
-			"integrity": "sha512-p6Fx8B7b7ZhL/gmUsAy0D15WhvDccw3mnGNbZpi3pmeJdxtWsj2jEaI4Y6oo3XiHfzuSgPwKc04MYt6KgvC/wA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.7",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.3",
-				"es-errors": "^1.3.0",
-				"es-shim-unscopables": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/arraybuffer.prototype.slice": {
-			"version": "1.0.4",
-			"resolved": "https://registry.npmjs.org/arraybuffer.prototype.slice/-/arraybuffer.prototype.slice-1.0.4.tgz",
-			"integrity": "sha512-BNoCY6SXXPQ7gF2opIP4GBE+Xw7U+pHMYKuzjgCN3GwiaIR09UUeKfheyIry77QtrCBlC0KK0q5/TER/tYh3PQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"array-buffer-byte-length": "^1.0.1",
-				"call-bind": "^1.0.8",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.5",
-				"es-errors": "^1.3.0",
-				"get-intrinsic": "^1.2.6",
-				"is-array-buffer": "^3.0.4"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/async-function": {
-			"version": "1.0.0",
-			"resolved": "https://registry.npmjs.org/async-function/-/async-function-1.0.0.tgz",
-			"integrity": "sha512-hsU18Ae8CDTR6Kgu9DYf0EbCr/a5iGL0rytQDobUcdpYOKokk8LEjVphnXkDkgpi0wYVsqrXuP0bZxJaTqdgoA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/autoprefixer": {
-			"version": "10.4.27",
-			"resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.27.tgz",
-			"integrity": "sha512-NP9APE+tO+LuJGn7/9+cohklunJsXWiaWEfV3si4Gi/XHDwVNgkwr1J3RQYFIvPy76GmJ9/bW8vyoU1LcxwKHA==",
-			"dev": true,
-			"funding": [
-				{
-					"type": "opencollective",
-					"url": "https://opencollective.com/postcss/"
-				},
-				{
-					"type": "tidelift",
-					"url": "https://tidelift.com/funding/github/npm/autoprefixer"
-				},
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "MIT",
-			"dependencies": {
-				"browserslist": "^4.28.1",
-				"caniuse-lite": "^1.0.30001774",
-				"fraction.js": "^5.3.4",
-				"picocolors": "^1.1.1",
-				"postcss-value-parser": "^4.2.0"
-			},
-			"bin": {
-				"autoprefixer": "bin/autoprefixer"
-			},
-			"engines": {
-				"node": "^10 || ^12 || >=14"
-			},
-			"peerDependencies": {
-				"postcss": "^8.1.0"
-			}
-		},
-		"node_modules/available-typed-arrays": {
-			"version": "1.0.7",
-			"resolved": "https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.7.tgz",
-			"integrity": "sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"possible-typed-array-names": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/balanced-match": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz",
-			"integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/baseline-browser-mapping": {
-			"version": "2.10.12",
-			"resolved": "https://registry.npmjs.org/baseline-browser-mapping/-/baseline-browser-mapping-2.10.12.tgz",
-			"integrity": "sha512-qyq26DxfY4awP2gIRXhhLWfwzwI+N5Nxk6iQi8EFizIaWIjqicQTE4sLnZZVdeKPRcVNoJOkkpfzoIYuvCKaIQ==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"bin": {
-				"baseline-browser-mapping": "dist/cli.cjs"
-			},
-			"engines": {
-				"node": ">=6.0.0"
-			}
-		},
-		"node_modules/binary-extensions": {
-			"version": "2.3.0",
-			"resolved": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.3.0.tgz",
-			"integrity": "sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=8"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/brace-expansion": {
-			"version": "1.1.13",
-			"resolved": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.13.tgz",
-			"integrity": "sha512-9ZLprWS6EENmhEOpjCYW2c8VkmOvckIJZfkr7rBW6dObmfgJ/L1GpSYW5Hpo9lDz4D1+n0Ckz8rU7FwHDQiG/w==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"balanced-match": "^1.0.0",
-				"concat-map": "0.0.1"
-			}
-		},
-		"node_modules/braces": {
-			"version": "3.0.3",
-			"resolved": "https://registry.npmjs.org/braces/-/braces-3.0.3.tgz",
-			"integrity": "sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==",
-			"license": "MIT",
-			"dependencies": {
-				"fill-range": "^7.1.1"
-			},
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/browserslist": {
-			"version": "4.28.1",
-			"resolved": "https://registry.npmjs.org/browserslist/-/browserslist-4.28.1.tgz",
-			"integrity": "sha512-ZC5Bd0LgJXgwGqUknZY/vkUQ04r8NXnJZ3yYi4vDmSiZmC/pdSN0NbNRPxZpbtO4uAfDUAFffO8IZoM3Gj8IkA==",
-			"dev": true,
-			"funding": [
-				{
-					"type": "opencollective",
-					"url": "https://opencollective.com/browserslist"
-				},
-				{
-					"type": "tidelift",
-					"url": "https://tidelift.com/funding/github/npm/browserslist"
-				},
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"baseline-browser-mapping": "^2.9.0",
-				"caniuse-lite": "^1.0.30001759",
-				"electron-to-chromium": "^1.5.263",
-				"node-releases": "^2.0.27",
-				"update-browserslist-db": "^1.2.0"
-			},
-			"bin": {
-				"browserslist": "cli.js"
-			},
-			"engines": {
-				"node": "^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7"
-			}
-		},
-		"node_modules/buffer-from": {
-			"version": "1.1.2",
-			"resolved": "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz",
-			"integrity": "sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/call-bind": {
-			"version": "1.0.8",
-			"resolved": "https://registry.npmjs.org/call-bind/-/call-bind-1.0.8.tgz",
-			"integrity": "sha512-oKlSFMcMwpUg2ednkhQ454wfWiU/ul3CkJe/PEHcTKuiX6RpbehUiFMXu13HalGZxfUwCQzZG747YXBn1im9ww==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind-apply-helpers": "^1.0.0",
-				"es-define-property": "^1.0.0",
-				"get-intrinsic": "^1.2.4",
-				"set-function-length": "^1.2.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/call-bind-apply-helpers": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/call-bind-apply-helpers/-/call-bind-apply-helpers-1.0.2.tgz",
-			"integrity": "sha512-Sp1ablJ0ivDkSzjcaJdxEunN5/XvksFJ2sMBFfq6x0ryhQV/2b/KwFe21cMpmHtPOSij8K99/wSfoEuTObmuMQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0",
-				"function-bind": "^1.1.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/call-bound": {
-			"version": "1.0.4",
-			"resolved": "https://registry.npmjs.org/call-bound/-/call-bound-1.0.4.tgz",
-			"integrity": "sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind-apply-helpers": "^1.0.2",
-				"get-intrinsic": "^1.3.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/callsites": {
-			"version": "3.1.0",
-			"resolved": "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz",
-			"integrity": "sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6"
-			}
-		},
-		"node_modules/camelcase-css": {
-			"version": "2.0.1",
-			"resolved": "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz",
-			"integrity": "sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==",
-			"license": "MIT",
-			"engines": {
-				"node": ">= 6"
-			}
-		},
-		"node_modules/caniuse-lite": {
-			"version": "1.0.30001782",
-			"resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001782.tgz",
-			"integrity": "sha512-dZcaJLJeDMh4rELYFw1tvSn1bhZWYFOt468FcbHHxx/Z/dFidd1I6ciyFdi3iwfQCyOjqo9upF6lGQYtMiJWxw==",
-			"dev": true,
-			"funding": [
-				{
-					"type": "opencollective",
-					"url": "https://opencollective.com/browserslist"
-				},
-				{
-					"type": "tidelift",
-					"url": "https://tidelift.com/funding/github/npm/caniuse-lite"
-				},
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "CC-BY-4.0"
-		},
-		"node_modules/chalk": {
-			"version": "4.1.2",
-			"resolved": "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz",
-			"integrity": "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"ansi-styles": "^4.1.0",
-				"supports-color": "^7.1.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/chalk/chalk?sponsor=1"
-			}
-		},
-		"node_modules/chalk/node_modules/supports-color": {
-			"version": "7.2.0",
-			"resolved": "https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz",
-			"integrity": "sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"has-flag": "^4.0.0"
-			},
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/chokidar": {
-			"version": "3.6.0",
-			"resolved": "https://registry.npmjs.org/chokidar/-/chokidar-3.6.0.tgz",
-			"integrity": "sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==",
-			"license": "MIT",
-			"dependencies": {
-				"anymatch": "~3.1.2",
-				"braces": "~3.0.2",
-				"glob-parent": "~5.1.2",
-				"is-binary-path": "~2.1.0",
-				"is-glob": "~4.0.1",
-				"normalize-path": "~3.0.0",
-				"readdirp": "~3.6.0"
-			},
-			"engines": {
-				"node": ">= 8.10.0"
-			},
-			"funding": {
-				"url": "https://paulmillr.com/funding/"
-			},
-			"optionalDependencies": {
-				"fsevents": "~2.3.2"
-			}
-		},
-		"node_modules/chokidar/node_modules/glob-parent": {
-			"version": "5.1.2",
-			"resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz",
-			"integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==",
-			"license": "ISC",
-			"dependencies": {
-				"is-glob": "^4.0.1"
-			},
-			"engines": {
-				"node": ">= 6"
-			}
-		},
-		"node_modules/class-variance-authority": {
-			"version": "0.7.1",
-			"resolved": "https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.1.tgz",
-			"integrity": "sha512-Ka+9Trutv7G8M6WT6SeiRWz792K5qEqIGEGzXKhAE6xOWAY6pPH8U+9IY3oCMv6kqTmLsv7Xh/2w2RigkePMsg==",
-			"license": "Apache-2.0",
-			"dependencies": {
-				"clsx": "^2.1.1"
-			},
-			"funding": {
-				"url": "https://polar.sh/cva"
-			}
-		},
-		"node_modules/cliui": {
-			"version": "8.0.1",
-			"resolved": "https://registry.npmjs.org/cliui/-/cliui-8.0.1.tgz",
-			"integrity": "sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==",
-			"dev": true,
-			"license": "ISC",
-			"dependencies": {
-				"string-width": "^4.2.0",
-				"strip-ansi": "^6.0.1",
-				"wrap-ansi": "^7.0.0"
-			},
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/clsx": {
-			"version": "2.1.1",
-			"resolved": "https://registry.npmjs.org/clsx/-/clsx-2.1.1.tgz",
-			"integrity": "sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=6"
-			}
-		},
-		"node_modules/cmdk": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/cmdk/-/cmdk-1.1.1.tgz",
-			"integrity": "sha512-Vsv7kFaXm+ptHDMZ7izaRsP70GgrW9NBNGswt9OZaVBLlE0SNpDq8eu/VGXyF9r7M0azK3Wy7OlYXsuyYLFzHg==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-compose-refs": "^1.1.1",
-				"@radix-ui/react-dialog": "^1.1.6",
-				"@radix-ui/react-id": "^1.1.0",
-				"@radix-ui/react-primitive": "^2.0.2"
-			},
-			"peerDependencies": {
-				"react": "^18 || ^19 || ^19.0.0-rc",
-				"react-dom": "^18 || ^19 || ^19.0.0-rc"
-			}
-		},
-		"node_modules/color-convert": {
-			"version": "2.0.1",
-			"resolved": "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz",
-			"integrity": "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"color-name": "~1.1.4"
-			},
-			"engines": {
-				"node": ">=7.0.0"
-			}
-		},
-		"node_modules/color-name": {
-			"version": "1.1.4",
-			"resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz",
-			"integrity": "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/commander": {
-			"version": "4.1.1",
-			"resolved": "https://registry.npmjs.org/commander/-/commander-4.1.1.tgz",
-			"integrity": "sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==",
-			"license": "MIT",
-			"engines": {
-				"node": ">= 6"
-			}
-		},
-		"node_modules/concat-map": {
-			"version": "0.0.1",
-			"resolved": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz",
-			"integrity": "sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/concurrently": {
-			"version": "9.2.1",
-			"resolved": "https://registry.npmjs.org/concurrently/-/concurrently-9.2.1.tgz",
-			"integrity": "sha512-fsfrO0MxV64Znoy8/l1vVIjjHa29SZyyqPgQBwhiDcaW8wJc2W3XWVOGx4M3oJBnv/zdUZIIp1gDeS98GzP8Ng==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"chalk": "4.1.2",
-				"rxjs": "7.8.2",
-				"shell-quote": "1.8.3",
-				"supports-color": "8.1.1",
-				"tree-kill": "1.2.2",
-				"yargs": "17.7.2"
-			},
-			"bin": {
-				"conc": "dist/bin/concurrently.js",
-				"concurrently": "dist/bin/concurrently.js"
-			},
-			"engines": {
-				"node": ">=18"
-			},
-			"funding": {
-				"url": "https://github.com/open-cli-tools/concurrently?sponsor=1"
-			}
-		},
-		"node_modules/convert-source-map": {
-			"version": "2.0.0",
-			"resolved": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz",
-			"integrity": "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/cookie": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/cookie/-/cookie-1.1.1.tgz",
-			"integrity": "sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=18"
-			},
-			"funding": {
-				"type": "opencollective",
-				"url": "https://opencollective.com/express"
-			}
-		},
-		"node_modules/cross-spawn": {
-			"version": "7.0.6",
-			"resolved": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz",
-			"integrity": "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"path-key": "^3.1.0",
-				"shebang-command": "^2.0.0",
-				"which": "^2.0.1"
-			},
-			"engines": {
-				"node": ">= 8"
-			}
-		},
-		"node_modules/cssesc": {
-			"version": "3.0.0",
-			"resolved": "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz",
-			"integrity": "sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==",
-			"license": "MIT",
-			"bin": {
-				"cssesc": "bin/cssesc"
-			},
-			"engines": {
-				"node": ">=4"
-			}
-		},
-		"node_modules/csstype": {
-			"version": "3.2.3",
-			"resolved": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
-			"integrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
-			"license": "MIT"
-		},
-		"node_modules/d3-array": {
-			"version": "3.2.4",
-			"resolved": "https://registry.npmjs.org/d3-array/-/d3-array-3.2.4.tgz",
-			"integrity": "sha512-tdQAmyA18i4J7wprpYq8ClcxZy3SC31QMeByyCFyRt7BVHdREQZ5lpzoe5mFEYZUWe+oq8HBvk9JjpibyEV4Jg==",
-			"license": "ISC",
-			"dependencies": {
-				"internmap": "1 - 2"
-			},
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-color": {
-			"version": "3.1.0",
-			"resolved": "https://registry.npmjs.org/d3-color/-/d3-color-3.1.0.tgz",
-			"integrity": "sha512-zg/chbXyeBtMQ1LbD/WSoW2DpC3I0mpmPdW+ynRTj/x2DAWYrIY7qeZIHidozwV24m4iavr15lNwIwLxRmOxhA==",
-			"license": "ISC",
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-ease": {
-			"version": "3.0.1",
-			"resolved": "https://registry.npmjs.org/d3-ease/-/d3-ease-3.0.1.tgz",
-			"integrity": "sha512-wR/XK3D3XcLIZwpbvQwQ5fK+8Ykds1ip7A2Txe0yxncXSdq1L9skcG7blcedkOX+ZcgxGAmLX1FrRGbADwzi0w==",
-			"license": "BSD-3-Clause",
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-format": {
-			"version": "3.1.2",
-			"resolved": "https://registry.npmjs.org/d3-format/-/d3-format-3.1.2.tgz",
-			"integrity": "sha512-AJDdYOdnyRDV5b6ArilzCPPwc1ejkHcoyFarqlPqT7zRYjhavcT3uSrqcMvsgh2CgoPbK3RCwyHaVyxYcP2Arg==",
-			"license": "ISC",
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-interpolate": {
-			"version": "3.0.1",
-			"resolved": "https://registry.npmjs.org/d3-interpolate/-/d3-interpolate-3.0.1.tgz",
-			"integrity": "sha512-3bYs1rOD33uo8aqJfKP3JWPAibgw8Zm2+L9vBKEHJ2Rg+viTR7o5Mmv5mZcieN+FRYaAOWX5SJATX6k1PWz72g==",
-			"license": "ISC",
-			"dependencies": {
-				"d3-color": "1 - 3"
-			},
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-path": {
-			"version": "3.1.0",
-			"resolved": "https://registry.npmjs.org/d3-path/-/d3-path-3.1.0.tgz",
-			"integrity": "sha512-p3KP5HCf/bvjBSSKuXid6Zqijx7wIfNW+J/maPs+iwR35at5JCbLUT0LzF1cnjbCHWhqzQTIN2Jpe8pRebIEFQ==",
-			"license": "ISC",
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-scale": {
-			"version": "4.0.2",
-			"resolved": "https://registry.npmjs.org/d3-scale/-/d3-scale-4.0.2.tgz",
-			"integrity": "sha512-GZW464g1SH7ag3Y7hXjf8RoUuAFIqklOAq3MRl4OaWabTFJY9PN/E1YklhXLh+OQ3fM9yS2nOkCoS+WLZ6kvxQ==",
-			"license": "ISC",
-			"dependencies": {
-				"d3-array": "2.10.0 - 3",
-				"d3-format": "1 - 3",
-				"d3-interpolate": "1.2.0 - 3",
-				"d3-time": "2.1.1 - 3",
-				"d3-time-format": "2 - 4"
-			},
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-shape": {
-			"version": "3.2.0",
-			"resolved": "https://registry.npmjs.org/d3-shape/-/d3-shape-3.2.0.tgz",
-			"integrity": "sha512-SaLBuwGm3MOViRq2ABk3eLoxwZELpH6zhl3FbAoJ7Vm1gofKx6El1Ib5z23NUEhF9AsGl7y+dzLe5Cw2AArGTA==",
-			"license": "ISC",
-			"dependencies": {
-				"d3-path": "^3.1.0"
-			},
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-time": {
-			"version": "3.1.0",
-			"resolved": "https://registry.npmjs.org/d3-time/-/d3-time-3.1.0.tgz",
-			"integrity": "sha512-VqKjzBLejbSMT4IgbmVgDjpkYrNWUYJnbCGo874u7MMKIWsILRX+OpX/gTk8MqjpT1A/c6HY2dCA77ZN0lkQ2Q==",
-			"license": "ISC",
-			"dependencies": {
-				"d3-array": "2 - 3"
-			},
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-time-format": {
-			"version": "4.1.0",
-			"resolved": "https://registry.npmjs.org/d3-time-format/-/d3-time-format-4.1.0.tgz",
-			"integrity": "sha512-dJxPBlzC7NugB2PDLwo9Q8JiTR3M3e4/XANkreKSUxF8vvXKqm1Yfq4Q5dl8budlunRVlUUaDUgFt7eA8D6NLg==",
-			"license": "ISC",
-			"dependencies": {
-				"d3-time": "1 - 3"
-			},
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/d3-timer": {
-			"version": "3.0.1",
-			"resolved": "https://registry.npmjs.org/d3-timer/-/d3-timer-3.0.1.tgz",
-			"integrity": "sha512-ndfJ/JxxMd3nw31uyKoY2naivF+r29V+Lc0svZxe1JvvIRmi8hUsrMvdOwgS1o6uBHmiz91geQ0ylPP0aj1VUA==",
-			"license": "ISC",
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/data-view-buffer": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/data-view-buffer/-/data-view-buffer-1.0.2.tgz",
-			"integrity": "sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"es-errors": "^1.3.0",
-				"is-data-view": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/data-view-byte-length": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/data-view-byte-length/-/data-view-byte-length-1.0.2.tgz",
-			"integrity": "sha512-tuhGbE6CfTM9+5ANGf+oQb72Ky/0+s3xKUpHvShfiz2RxMFgFPjsXuRLBVMtvMs15awe45SRb83D6wH4ew6wlQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"es-errors": "^1.3.0",
-				"is-data-view": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/inspect-js"
-			}
-		},
-		"node_modules/data-view-byte-offset": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/data-view-byte-offset/-/data-view-byte-offset-1.0.1.tgz",
-			"integrity": "sha512-BS8PfmtDGnrgYdOonGZQdLZslWIeCGFP9tpan0hi1Co2Zr2NKADsvGYA8XxuG/4UWgJ6Cjtv+YJnB6MM69QGlQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"es-errors": "^1.3.0",
-				"is-data-view": "^1.0.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/date-fns": {
-			"version": "4.1.0",
-			"resolved": "https://registry.npmjs.org/date-fns/-/date-fns-4.1.0.tgz",
-			"integrity": "sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==",
-			"license": "MIT",
-			"funding": {
-				"type": "github",
-				"url": "https://github.com/sponsors/kossnocorp"
-			}
-		},
-		"node_modules/date-fns-jalali": {
-			"version": "4.1.0-0",
-			"resolved": "https://registry.npmjs.org/date-fns-jalali/-/date-fns-jalali-4.1.0-0.tgz",
-			"integrity": "sha512-hTIP/z+t+qKwBDcmmsnmjWTduxCg+5KfdqWQvb2X/8C9+knYY6epN/pfxdDuyVlSVeFz0sM5eEfwIUQ70U4ckg==",
-			"license": "MIT"
-		},
-		"node_modules/debug": {
-			"version": "4.4.3",
-			"resolved": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
-			"integrity": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"ms": "^2.1.3"
-			},
-			"engines": {
-				"node": ">=6.0"
-			},
-			"peerDependenciesMeta": {
-				"supports-color": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/decimal.js-light": {
-			"version": "2.5.1",
-			"resolved": "https://registry.npmjs.org/decimal.js-light/-/decimal.js-light-2.5.1.tgz",
-			"integrity": "sha512-qIMFpTMZmny+MMIitAB6D7iVPEorVw6YQRWkvarTkT4tBeSLLiHzcwj6q0MmYSFCiVpiqPJTJEYIrpcPzVEIvg==",
-			"license": "MIT"
-		},
-		"node_modules/deep-is": {
-			"version": "0.1.4",
-			"resolved": "https://registry.npmjs.org/deep-is/-/deep-is-0.1.4.tgz",
-			"integrity": "sha512-oIPzksmTg4/MriiaYGO+okXDT7ztn/w3Eptv/+gSIdMdKsJo0u4CfYNFJPy+4SKMuCqGw2wxnA+URMg3t8a/bQ==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/define-data-property": {
-			"version": "1.1.4",
-			"resolved": "https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.4.tgz",
-			"integrity": "sha512-rBMvIzlpA8v6E+SJZoo++HAYqsLrkg7MSfIinMPFhmkorw7X+dOXVJQs+QT69zGkzMyfDnIMN2Wid1+NbL3T+A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-define-property": "^1.0.0",
-				"es-errors": "^1.3.0",
-				"gopd": "^1.0.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/define-properties": {
-			"version": "1.2.1",
-			"resolved": "https://registry.npmjs.org/define-properties/-/define-properties-1.2.1.tgz",
-			"integrity": "sha512-8QmQKqEASLd5nx0U1B1okLElbUuuttJ/AnYmRXbbbGDWh6uS208EjD4Xqq/I9wK7u0v6O08XhTWnt5XtEbR6Dg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"define-data-property": "^1.0.1",
-				"has-property-descriptors": "^1.0.0",
-				"object-keys": "^1.1.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/detect-node-es": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/detect-node-es/-/detect-node-es-1.1.0.tgz",
-			"integrity": "sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ==",
-			"license": "MIT"
-		},
-		"node_modules/didyoumean": {
-			"version": "1.2.2",
-			"resolved": "https://registry.npmjs.org/didyoumean/-/didyoumean-1.2.2.tgz",
-			"integrity": "sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==",
-			"license": "Apache-2.0"
-		},
-		"node_modules/dlv": {
-			"version": "1.1.3",
-			"resolved": "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz",
-			"integrity": "sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==",
-			"license": "MIT"
-		},
-		"node_modules/doctrine": {
-			"version": "2.1.0",
-			"resolved": "https://registry.npmjs.org/doctrine/-/doctrine-2.1.0.tgz",
-			"integrity": "sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"dependencies": {
-				"esutils": "^2.0.2"
-			},
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/dom-helpers": {
-			"version": "5.2.1",
-			"resolved": "https://registry.npmjs.org/dom-helpers/-/dom-helpers-5.2.1.tgz",
-			"integrity": "sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==",
-			"license": "MIT",
-			"dependencies": {
-				"@babel/runtime": "^7.8.7",
-				"csstype": "^3.0.2"
-			}
-		},
-		"node_modules/dunder-proto": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz",
-			"integrity": "sha512-KIN/nDJBQRcXw0MLVhZE9iQHmG68qAVIBg9CqmUYjmQIhgij9U5MFvrqkUL5FbtyyzZuOeOt0zdeRe4UY7ct+A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind-apply-helpers": "^1.0.1",
-				"es-errors": "^1.3.0",
-				"gopd": "^1.2.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/electron-to-chromium": {
-			"version": "1.5.328",
-			"resolved": "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.5.328.tgz",
-			"integrity": "sha512-QNQ5l45DzYytThO21403XN3FvK0hOkWDG8viNf6jqS42msJ8I4tGDSpBCgvDRRPnkffafiwAym2X2eHeGD2V0w==",
-			"dev": true,
-			"license": "ISC"
-		},
-		"node_modules/embla-carousel": {
-			"version": "8.6.0",
-			"resolved": "https://registry.npmjs.org/embla-carousel/-/embla-carousel-8.6.0.tgz",
-			"integrity": "sha512-SjWyZBHJPbqxHOzckOfo8lHisEaJWmwd23XppYFYVh10bU66/Pn5tkVkbkCMZVdbUE5eTCI2nD8OyIP4Z+uwkA==",
-			"license": "MIT",
-			"peer": true
-		},
-		"node_modules/embla-carousel-react": {
-			"version": "8.6.0",
-			"resolved": "https://registry.npmjs.org/embla-carousel-react/-/embla-carousel-react-8.6.0.tgz",
-			"integrity": "sha512-0/PjqU7geVmo6F734pmPqpyHqiM99olvyecY7zdweCw+6tKEXnrE90pBiBbMMU8s5tICemzpQ3hi5EpxzGW+JA==",
-			"license": "MIT",
-			"dependencies": {
-				"embla-carousel": "8.6.0",
-				"embla-carousel-reactive-utils": "8.6.0"
-			},
-			"peerDependencies": {
-				"react": "^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc"
-			}
-		},
-		"node_modules/embla-carousel-reactive-utils": {
-			"version": "8.6.0",
-			"resolved": "https://registry.npmjs.org/embla-carousel-reactive-utils/-/embla-carousel-reactive-utils-8.6.0.tgz",
-			"integrity": "sha512-fMVUDUEx0/uIEDM0Mz3dHznDhfX+znCCDCeIophYb1QGVM7YThSWX+wz11zlYwWFOr74b4QLGg0hrGPJeG2s4A==",
-			"license": "MIT",
-			"peerDependencies": {
-				"embla-carousel": "8.6.0"
-			}
-		},
-		"node_modules/emoji-regex": {
-			"version": "8.0.0",
-			"resolved": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz",
-			"integrity": "sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/es-abstract": {
-			"version": "1.24.1",
-			"resolved": "https://registry.npmjs.org/es-abstract/-/es-abstract-1.24.1.tgz",
-			"integrity": "sha512-zHXBLhP+QehSSbsS9Pt23Gg964240DPd6QCf8WpkqEXxQ7fhdZzYsocOr5u7apWonsS5EjZDmTF+/slGMyasvw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"array-buffer-byte-length": "^1.0.2",
-				"arraybuffer.prototype.slice": "^1.0.4",
-				"available-typed-arrays": "^1.0.7",
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.4",
-				"data-view-buffer": "^1.0.2",
-				"data-view-byte-length": "^1.0.2",
-				"data-view-byte-offset": "^1.0.1",
-				"es-define-property": "^1.0.1",
-				"es-errors": "^1.3.0",
-				"es-object-atoms": "^1.1.1",
-				"es-set-tostringtag": "^2.1.0",
-				"es-to-primitive": "^1.3.0",
-				"function.prototype.name": "^1.1.8",
-				"get-intrinsic": "^1.3.0",
-				"get-proto": "^1.0.1",
-				"get-symbol-description": "^1.1.0",
-				"globalthis": "^1.0.4",
-				"gopd": "^1.2.0",
-				"has-property-descriptors": "^1.0.2",
-				"has-proto": "^1.2.0",
-				"has-symbols": "^1.1.0",
-				"hasown": "^2.0.2",
-				"internal-slot": "^1.1.0",
-				"is-array-buffer": "^3.0.5",
-				"is-callable": "^1.2.7",
-				"is-data-view": "^1.0.2",
-				"is-negative-zero": "^2.0.3",
-				"is-regex": "^1.2.1",
-				"is-set": "^2.0.3",
-				"is-shared-array-buffer": "^1.0.4",
-				"is-string": "^1.1.1",
-				"is-typed-array": "^1.1.15",
-				"is-weakref": "^1.1.1",
-				"math-intrinsics": "^1.1.0",
-				"object-inspect": "^1.13.4",
-				"object-keys": "^1.1.1",
-				"object.assign": "^4.1.7",
-				"own-keys": "^1.0.1",
-				"regexp.prototype.flags": "^1.5.4",
-				"safe-array-concat": "^1.1.3",
-				"safe-push-apply": "^1.0.0",
-				"safe-regex-test": "^1.1.0",
-				"set-proto": "^1.0.0",
-				"stop-iteration-iterator": "^1.1.0",
-				"string.prototype.trim": "^1.2.10",
-				"string.prototype.trimend": "^1.0.9",
-				"string.prototype.trimstart": "^1.0.8",
-				"typed-array-buffer": "^1.0.3",
-				"typed-array-byte-length": "^1.0.3",
-				"typed-array-byte-offset": "^1.0.4",
-				"typed-array-length": "^1.0.7",
-				"unbox-primitive": "^1.1.0",
-				"which-typed-array": "^1.1.19"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/es-define-property": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/es-define-property/-/es-define-property-1.0.1.tgz",
-			"integrity": "sha512-e3nRfgfUZ4rNGL232gUgX06QNyyez04KdjFrF+LTRoOXmrOgFKDg4BCdsjW8EnT69eqdYGmRpJwiPVYNrCaW3g==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/es-errors": {
-			"version": "1.3.0",
-			"resolved": "https://registry.npmjs.org/es-errors/-/es-errors-1.3.0.tgz",
-			"integrity": "sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/es-iterator-helpers": {
-			"version": "1.3.1",
-			"resolved": "https://registry.npmjs.org/es-iterator-helpers/-/es-iterator-helpers-1.3.1.tgz",
-			"integrity": "sha512-zWwRvqWiuBPr0muUG/78cW3aHROFCNIQ3zpmYDpwdbnt2m+xlNyRWpHBpa2lJjSBit7BQ+RXA1iwbSmu5yJ/EQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.4",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.24.1",
-				"es-errors": "^1.3.0",
-				"es-set-tostringtag": "^2.1.0",
-				"function-bind": "^1.1.2",
-				"get-intrinsic": "^1.3.0",
-				"globalthis": "^1.0.4",
-				"gopd": "^1.2.0",
-				"has-property-descriptors": "^1.0.2",
-				"has-proto": "^1.2.0",
-				"has-symbols": "^1.1.0",
-				"internal-slot": "^1.1.0",
-				"iterator.prototype": "^1.1.5",
-				"math-intrinsics": "^1.1.0",
-				"safe-array-concat": "^1.1.3"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/es-object-atoms": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/es-object-atoms/-/es-object-atoms-1.1.1.tgz",
-			"integrity": "sha512-FGgH2h8zKNim9ljj7dankFPcICIK9Cp5bm+c2gQSYePhpaG5+esrLODihIorn+Pe6FGJzWhXQotPv73jTaldXA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/es-set-tostringtag": {
-			"version": "2.1.0",
-			"resolved": "https://registry.npmjs.org/es-set-tostringtag/-/es-set-tostringtag-2.1.0.tgz",
-			"integrity": "sha512-j6vWzfrGVfyXxge+O0x5sh6cvxAog0a/4Rdd2K36zCMV5eJ+/+tOAngRO8cODMNWbVRdVlmGZQL2YS3yR8bIUA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0",
-				"get-intrinsic": "^1.2.6",
-				"has-tostringtag": "^1.0.2",
-				"hasown": "^2.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/es-shim-unscopables": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/es-shim-unscopables/-/es-shim-unscopables-1.1.0.tgz",
-			"integrity": "sha512-d9T8ucsEhh8Bi1woXCf+TIKDIROLG5WCkxg8geBCbvk22kzwC5G2OnXVMO6FUsvQlgUUXQ2itephWDLqDzbeCw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"hasown": "^2.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/es-to-primitive": {
-			"version": "1.3.0",
-			"resolved": "https://registry.npmjs.org/es-to-primitive/-/es-to-primitive-1.3.0.tgz",
-			"integrity": "sha512-w+5mJ3GuFL+NjVtJlvydShqE1eN3h3PbI7/5LAsYJP/2qtuMXjfL2LpHSRqo4b4eSF5K/DH1JXKUAHSB2UW50g==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"is-callable": "^1.2.7",
-				"is-date-object": "^1.0.5",
-				"is-symbol": "^1.0.4"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/esbuild": {
-			"version": "0.27.4",
-			"resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.27.4.tgz",
-			"integrity": "sha512-Rq4vbHnYkK5fws5NF7MYTU68FPRE1ajX7heQ/8QXXWqNgqqJ/GkmmyxIzUnf2Sr/bakf8l54716CcMGHYhMrrQ==",
-			"dev": true,
-			"hasInstallScript": true,
-			"license": "MIT",
-			"bin": {
-				"esbuild": "bin/esbuild"
-			},
-			"engines": {
-				"node": ">=18"
-			},
-			"optionalDependencies": {
-				"@esbuild/aix-ppc64": "0.27.4",
-				"@esbuild/android-arm": "0.27.4",
-				"@esbuild/android-arm64": "0.27.4",
-				"@esbuild/android-x64": "0.27.4",
-				"@esbuild/darwin-arm64": "0.27.4",
-				"@esbuild/darwin-x64": "0.27.4",
-				"@esbuild/freebsd-arm64": "0.27.4",
-				"@esbuild/freebsd-x64": "0.27.4",
-				"@esbuild/linux-arm": "0.27.4",
-				"@esbuild/linux-arm64": "0.27.4",
-				"@esbuild/linux-ia32": "0.27.4",
-				"@esbuild/linux-loong64": "0.27.4",
-				"@esbuild/linux-mips64el": "0.27.4",
-				"@esbuild/linux-ppc64": "0.27.4",
-				"@esbuild/linux-riscv64": "0.27.4",
-				"@esbuild/linux-s390x": "0.27.4",
-				"@esbuild/linux-x64": "0.27.4",
-				"@esbuild/netbsd-arm64": "0.27.4",
-				"@esbuild/netbsd-x64": "0.27.4",
-				"@esbuild/openbsd-arm64": "0.27.4",
-				"@esbuild/openbsd-x64": "0.27.4",
-				"@esbuild/openharmony-arm64": "0.27.4",
-				"@esbuild/sunos-x64": "0.27.4",
-				"@esbuild/win32-arm64": "0.27.4",
-				"@esbuild/win32-ia32": "0.27.4",
-				"@esbuild/win32-x64": "0.27.4"
-			}
-		},
-		"node_modules/escalade": {
-			"version": "3.2.0",
-			"resolved": "https://registry.npmjs.org/escalade/-/escalade-3.2.0.tgz",
-			"integrity": "sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6"
-			}
-		},
-		"node_modules/escape-string-regexp": {
-			"version": "4.0.0",
-			"resolved": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz",
-			"integrity": "sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/eslint": {
-			"version": "9.39.4",
-			"resolved": "https://registry.npmjs.org/eslint/-/eslint-9.39.4.tgz",
-			"integrity": "sha512-XoMjdBOwe/esVgEvLmNsD3IRHkm7fbKIUGvrleloJXUZgDHig2IPWNniv+GwjyJXzuNqVjlr5+4yVUZjycJwfQ==",
-			"dev": true,
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"@eslint-community/eslint-utils": "^4.8.0",
-				"@eslint-community/regexpp": "^4.12.1",
-				"@eslint/config-array": "^0.21.2",
-				"@eslint/config-helpers": "^0.4.2",
-				"@eslint/core": "^0.17.0",
-				"@eslint/eslintrc": "^3.3.5",
-				"@eslint/js": "9.39.4",
-				"@eslint/plugin-kit": "^0.4.1",
-				"@humanfs/node": "^0.16.6",
-				"@humanwhocodes/module-importer": "^1.0.1",
-				"@humanwhocodes/retry": "^0.4.2",
-				"@types/estree": "^1.0.6",
-				"ajv": "^6.14.0",
-				"chalk": "^4.0.0",
-				"cross-spawn": "^7.0.6",
-				"debug": "^4.3.2",
-				"escape-string-regexp": "^4.0.0",
-				"eslint-scope": "^8.4.0",
-				"eslint-visitor-keys": "^4.2.1",
-				"espree": "^10.4.0",
-				"esquery": "^1.5.0",
-				"esutils": "^2.0.2",
-				"fast-deep-equal": "^3.1.3",
-				"file-entry-cache": "^8.0.0",
-				"find-up": "^5.0.0",
-				"glob-parent": "^6.0.2",
-				"ignore": "^5.2.0",
-				"imurmurhash": "^0.1.4",
-				"is-glob": "^4.0.0",
-				"json-stable-stringify-without-jsonify": "^1.0.1",
-				"lodash.merge": "^4.6.2",
-				"minimatch": "^3.1.5",
-				"natural-compare": "^1.4.0",
-				"optionator": "^0.9.3"
-			},
-			"bin": {
-				"eslint": "bin/eslint.js"
-			},
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			},
-			"funding": {
-				"url": "https://eslint.org/donate"
-			},
-			"peerDependencies": {
-				"jiti": "*"
-			},
-			"peerDependenciesMeta": {
-				"jiti": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/eslint-import-resolver-alias": {
-			"version": "1.1.2",
-			"resolved": "https://registry.npmjs.org/eslint-import-resolver-alias/-/eslint-import-resolver-alias-1.1.2.tgz",
-			"integrity": "sha512-WdviM1Eu834zsfjHtcGHtGfcu+F30Od3V7I9Fi57uhBEwPkjDcii7/yW8jAT+gOhn4P/vOxxNAXbFAKsrrc15w==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 4"
-			},
-			"peerDependencies": {
-				"eslint-plugin-import": ">=1.4.0"
-			}
-		},
-		"node_modules/eslint-import-resolver-node": {
-			"version": "0.3.9",
-			"resolved": "https://registry.npmjs.org/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.9.tgz",
-			"integrity": "sha512-WFj2isz22JahUv+B788TlO3N6zL3nNJGU8CcZbPZvVEkBPaJdCV4vy5wyghty5ROFbCRnm132v8BScu5/1BQ8g==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"debug": "^3.2.7",
-				"is-core-module": "^2.13.0",
-				"resolve": "^1.22.4"
-			}
-		},
-		"node_modules/eslint-import-resolver-node/node_modules/debug": {
-			"version": "3.2.7",
-			"resolved": "https://registry.npmjs.org/debug/-/debug-3.2.7.tgz",
-			"integrity": "sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"ms": "^2.1.1"
-			}
-		},
-		"node_modules/eslint-module-utils": {
-			"version": "2.12.1",
-			"resolved": "https://registry.npmjs.org/eslint-module-utils/-/eslint-module-utils-2.12.1.tgz",
-			"integrity": "sha512-L8jSWTze7K2mTg0vos/RuLRS5soomksDPoJLXIslC7c8Wmut3bx7CPpJijDcBZtxQ5lrbUdM+s0OlNbz0DCDNw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"debug": "^3.2.7"
-			},
-			"engines": {
-				"node": ">=4"
-			},
-			"peerDependenciesMeta": {
-				"eslint": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/eslint-module-utils/node_modules/debug": {
-			"version": "3.2.7",
-			"resolved": "https://registry.npmjs.org/debug/-/debug-3.2.7.tgz",
-			"integrity": "sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"ms": "^2.1.1"
-			}
-		},
-		"node_modules/eslint-plugin-import": {
-			"version": "2.32.0",
-			"resolved": "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.32.0.tgz",
-			"integrity": "sha512-whOE1HFo/qJDyX4SnXzP4N6zOWn79WhnCUY/iDR0mPfQZO8wcYE4JClzI2oZrhBnnMUCBCHZhO6VQyoBU95mZA==",
-			"dev": true,
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"@rtsao/scc": "^1.1.0",
-				"array-includes": "^3.1.9",
-				"array.prototype.findlastindex": "^1.2.6",
-				"array.prototype.flat": "^1.3.3",
-				"array.prototype.flatmap": "^1.3.3",
-				"debug": "^3.2.7",
-				"doctrine": "^2.1.0",
-				"eslint-import-resolver-node": "^0.3.9",
-				"eslint-module-utils": "^2.12.1",
-				"hasown": "^2.0.2",
-				"is-core-module": "^2.16.1",
-				"is-glob": "^4.0.3",
-				"minimatch": "^3.1.2",
-				"object.fromentries": "^2.0.8",
-				"object.groupby": "^1.0.3",
-				"object.values": "^1.2.1",
-				"semver": "^6.3.1",
-				"string.prototype.trimend": "^1.0.9",
-				"tsconfig-paths": "^3.15.0"
-			},
-			"engines": {
-				"node": ">=4"
-			},
-			"peerDependencies": {
-				"eslint": "^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9"
-			}
-		},
-		"node_modules/eslint-plugin-import/node_modules/debug": {
-			"version": "3.2.7",
-			"resolved": "https://registry.npmjs.org/debug/-/debug-3.2.7.tgz",
-			"integrity": "sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"ms": "^2.1.1"
-			}
-		},
-		"node_modules/eslint-plugin-react": {
-			"version": "7.37.5",
-			"resolved": "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.37.5.tgz",
-			"integrity": "sha512-Qteup0SqU15kdocexFNAJMvCJEfa2xUKNV4CC1xsVMrIIqEy3SQ/rqyxCWNzfrd3/ldy6HMlD2e0JDVpDg2qIA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"array-includes": "^3.1.8",
-				"array.prototype.findlast": "^1.2.5",
-				"array.prototype.flatmap": "^1.3.3",
-				"array.prototype.tosorted": "^1.1.4",
-				"doctrine": "^2.1.0",
-				"es-iterator-helpers": "^1.2.1",
-				"estraverse": "^5.3.0",
-				"hasown": "^2.0.2",
-				"jsx-ast-utils": "^2.4.1 || ^3.0.0",
-				"minimatch": "^3.1.2",
-				"object.entries": "^1.1.9",
-				"object.fromentries": "^2.0.8",
-				"object.values": "^1.2.1",
-				"prop-types": "^15.8.1",
-				"resolve": "^2.0.0-next.5",
-				"semver": "^6.3.1",
-				"string.prototype.matchall": "^4.0.12",
-				"string.prototype.repeat": "^1.0.0"
-			},
-			"engines": {
-				"node": ">=4"
-			},
-			"peerDependencies": {
-				"eslint": "^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9.7"
-			}
-		},
-		"node_modules/eslint-plugin-react-hooks": {
-			"version": "5.2.0",
-			"resolved": "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-5.2.0.tgz",
-			"integrity": "sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=10"
-			},
-			"peerDependencies": {
-				"eslint": "^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0"
-			}
-		},
-		"node_modules/eslint-plugin-react/node_modules/resolve": {
-			"version": "2.0.0-next.6",
-			"resolved": "https://registry.npmjs.org/resolve/-/resolve-2.0.0-next.6.tgz",
-			"integrity": "sha512-3JmVl5hMGtJ3kMmB3zi3DL25KfkCEyy3Tw7Gmw7z5w8M9WlwoPFnIvwChzu1+cF3iaK3sp18hhPz8ANeimdJfA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0",
-				"is-core-module": "^2.16.1",
-				"node-exports-info": "^1.6.0",
-				"object-keys": "^1.1.1",
-				"path-parse": "^1.0.7",
-				"supports-preserve-symlinks-flag": "^1.0.0"
-			},
-			"bin": {
-				"resolve": "bin/resolve"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/eslint-scope": {
-			"version": "8.4.0",
-			"resolved": "https://registry.npmjs.org/eslint-scope/-/eslint-scope-8.4.0.tgz",
-			"integrity": "sha512-sNXOfKCn74rt8RICKMvJS7XKV/Xk9kA7DyJr8mJik3S7Cwgy3qlkkmyS2uQB3jiJg6VNdZd/pDBJu0nvG2NlTg==",
-			"dev": true,
-			"license": "BSD-2-Clause",
-			"dependencies": {
-				"esrecurse": "^4.3.0",
-				"estraverse": "^5.2.0"
-			},
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			},
-			"funding": {
-				"url": "https://opencollective.com/eslint"
-			}
-		},
-		"node_modules/eslint-visitor-keys": {
-			"version": "4.2.1",
-			"resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-4.2.1.tgz",
-			"integrity": "sha512-Uhdk5sfqcee/9H/rCOJikYz67o0a2Tw2hGRPOG2Y1R2dg7brRe1uG0yaNQDHu+TO/uQPF/5eCapvYSmHUjt7JQ==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			},
-			"funding": {
-				"url": "https://opencollective.com/eslint"
-			}
-		},
-		"node_modules/espree": {
-			"version": "10.4.0",
-			"resolved": "https://registry.npmjs.org/espree/-/espree-10.4.0.tgz",
-			"integrity": "sha512-j6PAQ2uUr79PZhBjP5C5fhl8e39FmRnOjsD5lGnWrFU8i2G776tBK7+nP8KuQUTTyAZUwfQqXAgrVH5MbH9CYQ==",
-			"dev": true,
-			"license": "BSD-2-Clause",
-			"dependencies": {
-				"acorn": "^8.15.0",
-				"acorn-jsx": "^5.3.2",
-				"eslint-visitor-keys": "^4.2.1"
-			},
-			"engines": {
-				"node": "^18.18.0 || ^20.9.0 || >=21.1.0"
-			},
-			"funding": {
-				"url": "https://opencollective.com/eslint"
-			}
-		},
-		"node_modules/esquery": {
-			"version": "1.7.0",
-			"resolved": "https://registry.npmjs.org/esquery/-/esquery-1.7.0.tgz",
-			"integrity": "sha512-Ap6G0WQwcU/LHsvLwON1fAQX9Zp0A2Y6Y/cJBl9r/JbW90Zyg4/zbG6zzKa2OTALELarYHmKu0GhpM5EO+7T0g==",
-			"dev": true,
-			"license": "BSD-3-Clause",
-			"dependencies": {
-				"estraverse": "^5.1.0"
-			},
-			"engines": {
-				"node": ">=0.10"
-			}
-		},
-		"node_modules/esrecurse": {
-			"version": "4.3.0",
-			"resolved": "https://registry.npmjs.org/esrecurse/-/esrecurse-4.3.0.tgz",
-			"integrity": "sha512-KmfKL3b6G+RXvP8N1vr3Tq1kL/oCFgn2NYXEtqP8/L3pKapUA4G8cFVaoF3SU323CD4XypR/ffioHmkti6/Tag==",
-			"dev": true,
-			"license": "BSD-2-Clause",
-			"dependencies": {
-				"estraverse": "^5.2.0"
-			},
-			"engines": {
-				"node": ">=4.0"
-			}
-		},
-		"node_modules/estraverse": {
-			"version": "5.3.0",
-			"resolved": "https://registry.npmjs.org/estraverse/-/estraverse-5.3.0.tgz",
-			"integrity": "sha512-MMdARuVEQziNTeJD8DgMqmhwR11BRQ/cBP+pLtYdSTnf3MIO8fFeiINEbX36ZdNlfU/7A9f3gUw49B3oQsvwBA==",
-			"dev": true,
-			"license": "BSD-2-Clause",
-			"engines": {
-				"node": ">=4.0"
-			}
-		},
-		"node_modules/esutils": {
-			"version": "2.0.3",
-			"resolved": "https://registry.npmjs.org/esutils/-/esutils-2.0.3.tgz",
-			"integrity": "sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==",
-			"dev": true,
-			"license": "BSD-2-Clause",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/eventemitter3": {
-			"version": "4.0.7",
-			"resolved": "https://registry.npmjs.org/eventemitter3/-/eventemitter3-4.0.7.tgz",
-			"integrity": "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==",
-			"license": "MIT"
-		},
-		"node_modules/fast-deep-equal": {
-			"version": "3.1.3",
-			"resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
-			"integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/fast-equals": {
-			"version": "5.4.0",
-			"resolved": "https://registry.npmjs.org/fast-equals/-/fast-equals-5.4.0.tgz",
-			"integrity": "sha512-jt2DW/aNFNwke7AUd+Z+e6pz39KO5rzdbbFCg2sGafS4mk13MI7Z8O5z9cADNn5lhGODIgLwug6TZO2ctf7kcw==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.0.0"
-			}
-		},
-		"node_modules/fast-glob": {
-			"version": "3.3.3",
-			"resolved": "https://registry.npmjs.org/fast-glob/-/fast-glob-3.3.3.tgz",
-			"integrity": "sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==",
-			"license": "MIT",
-			"dependencies": {
-				"@nodelib/fs.stat": "^2.0.2",
-				"@nodelib/fs.walk": "^1.2.3",
-				"glob-parent": "^5.1.2",
-				"merge2": "^1.3.0",
-				"micromatch": "^4.0.8"
-			},
-			"engines": {
-				"node": ">=8.6.0"
-			}
-		},
-		"node_modules/fast-glob/node_modules/glob-parent": {
-			"version": "5.1.2",
-			"resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz",
-			"integrity": "sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==",
-			"license": "ISC",
-			"dependencies": {
-				"is-glob": "^4.0.1"
-			},
-			"engines": {
-				"node": ">= 6"
-			}
-		},
-		"node_modules/fast-json-stable-stringify": {
-			"version": "2.1.0",
-			"resolved": "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz",
-			"integrity": "sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/fast-levenshtein": {
-			"version": "2.0.6",
-			"resolved": "https://registry.npmjs.org/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz",
-			"integrity": "sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/fastq": {
-			"version": "1.20.1",
-			"resolved": "https://registry.npmjs.org/fastq/-/fastq-1.20.1.tgz",
-			"integrity": "sha512-GGToxJ/w1x32s/D2EKND7kTil4n8OVk/9mycTc4VDza13lOvpUZTGX3mFSCtV9ksdGBVzvsyAVLM6mHFThxXxw==",
-			"license": "ISC",
-			"dependencies": {
-				"reusify": "^1.0.4"
-			}
-		},
-		"node_modules/file-entry-cache": {
-			"version": "8.0.0",
-			"resolved": "https://registry.npmjs.org/file-entry-cache/-/file-entry-cache-8.0.0.tgz",
-			"integrity": "sha512-XXTUwCvisa5oacNGRP9SfNtYBNAMi+RPwBFmblZEF7N7swHYQS6/Zfk7SRwx4D5j3CH211YNRco1DEMNVfZCnQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"flat-cache": "^4.0.0"
-			},
-			"engines": {
-				"node": ">=16.0.0"
-			}
-		},
-		"node_modules/fill-range": {
-			"version": "7.1.1",
-			"resolved": "https://registry.npmjs.org/fill-range/-/fill-range-7.1.1.tgz",
-			"integrity": "sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==",
-			"license": "MIT",
-			"dependencies": {
-				"to-regex-range": "^5.0.1"
-			},
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/find-up": {
-			"version": "5.0.0",
-			"resolved": "https://registry.npmjs.org/find-up/-/find-up-5.0.0.tgz",
-			"integrity": "sha512-78/PXT1wlLLDgTzDs7sjq9hzz0vXD+zn+7wypEe4fXQxCmdmqfGsEPQxmiCSQI3ajFV91bVSsvNtrJRiW6nGng==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"locate-path": "^6.0.0",
-				"path-exists": "^4.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/flat-cache": {
-			"version": "4.0.1",
-			"resolved": "https://registry.npmjs.org/flat-cache/-/flat-cache-4.0.1.tgz",
-			"integrity": "sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"flatted": "^3.2.9",
-				"keyv": "^4.5.4"
-			},
-			"engines": {
-				"node": ">=16"
-			}
-		},
-		"node_modules/flatted": {
-			"version": "3.4.2",
-			"resolved": "https://registry.npmjs.org/flatted/-/flatted-3.4.2.tgz",
-			"integrity": "sha512-PjDse7RzhcPkIJwy5t7KPWQSZ9cAbzQXcafsetQoD7sOJRQlGikNbx7yZp2OotDnJyrDcbyRq3Ttb18iYOqkxA==",
-			"dev": true,
-			"license": "ISC"
-		},
-		"node_modules/for-each": {
-			"version": "0.3.5",
-			"resolved": "https://registry.npmjs.org/for-each/-/for-each-0.3.5.tgz",
-			"integrity": "sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"is-callable": "^1.2.7"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/fraction.js": {
-			"version": "5.3.4",
-			"resolved": "https://registry.npmjs.org/fraction.js/-/fraction.js-5.3.4.tgz",
-			"integrity": "sha512-1X1NTtiJphryn/uLQz3whtY6jK3fTqoE3ohKs0tT+Ujr1W59oopxmoEh7Lu5p6vBaPbgoM0bzveAW4Qi5RyWDQ==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": "*"
-			},
-			"funding": {
-				"type": "github",
-				"url": "https://github.com/sponsors/rawify"
-			}
-		},
-		"node_modules/framer-motion": {
-			"version": "11.18.2",
-			"resolved": "https://registry.npmjs.org/framer-motion/-/framer-motion-11.18.2.tgz",
-			"integrity": "sha512-5F5Och7wrvtLVElIpclDT0CBzMVg3dL22B64aZwHtsIY8RB4mXICLrkajK4G9R+ieSAGcgrLeae2SeUTg2pr6w==",
-			"license": "MIT",
-			"dependencies": {
-				"motion-dom": "^11.18.1",
-				"motion-utils": "^11.18.1",
-				"tslib": "^2.4.0"
-			},
-			"peerDependencies": {
-				"@emotion/is-prop-valid": "*",
-				"react": "^18.0.0 || ^19.0.0",
-				"react-dom": "^18.0.0 || ^19.0.0"
-			},
-			"peerDependenciesMeta": {
-				"@emotion/is-prop-valid": {
-					"optional": true
-				},
-				"react": {
-					"optional": true
-				},
-				"react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/fsevents": {
-			"version": "2.3.3",
-			"resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
-			"integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
-			"hasInstallScript": true,
-			"license": "MIT",
-			"optional": true,
-			"os": [
-				"darwin"
-			],
-			"engines": {
-				"node": "^8.16.0 || ^10.6.0 || >=11.0.0"
-			}
-		},
-		"node_modules/function-bind": {
-			"version": "1.1.2",
-			"resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz",
-			"integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==",
-			"license": "MIT",
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/function.prototype.name": {
-			"version": "1.1.8",
-			"resolved": "https://registry.npmjs.org/function.prototype.name/-/function.prototype.name-1.1.8.tgz",
-			"integrity": "sha512-e5iwyodOHhbMr/yNrc7fDYG4qlbIvI5gajyzPnb5TCwyhjApznQh1BMFou9b30SevY43gCJKXycoCBjMbsuW0Q==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.3",
-				"define-properties": "^1.2.1",
-				"functions-have-names": "^1.2.3",
-				"hasown": "^2.0.2",
-				"is-callable": "^1.2.7"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/functions-have-names": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz",
-			"integrity": "sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==",
-			"dev": true,
-			"license": "MIT",
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/generator-function": {
-			"version": "2.0.1",
-			"resolved": "https://registry.npmjs.org/generator-function/-/generator-function-2.0.1.tgz",
-			"integrity": "sha512-SFdFmIJi+ybC0vjlHN0ZGVGHc3lgE0DxPAT0djjVg+kjOnSqclqmj0KQ7ykTOLP6YxoqOvuAODGdcHJn+43q3g==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/gensync": {
-			"version": "1.0.0-beta.2",
-			"resolved": "https://registry.npmjs.org/gensync/-/gensync-1.0.0-beta.2.tgz",
-			"integrity": "sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6.9.0"
-			}
-		},
-		"node_modules/get-caller-file": {
-			"version": "2.0.5",
-			"resolved": "https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz",
-			"integrity": "sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==",
-			"dev": true,
-			"license": "ISC",
-			"engines": {
-				"node": "6.* || 8.* || >= 10.*"
-			}
-		},
-		"node_modules/get-intrinsic": {
-			"version": "1.3.0",
-			"resolved": "https://registry.npmjs.org/get-intrinsic/-/get-intrinsic-1.3.0.tgz",
-			"integrity": "sha512-9fSjSaos/fRIVIp+xSJlE6lfwhES7LNtKaCBIamHsjr2na1BiABJPo0mOjjz8GJDURarmCPGqaiVg5mfjb98CQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind-apply-helpers": "^1.0.2",
-				"es-define-property": "^1.0.1",
-				"es-errors": "^1.3.0",
-				"es-object-atoms": "^1.1.1",
-				"function-bind": "^1.1.2",
-				"get-proto": "^1.0.1",
-				"gopd": "^1.2.0",
-				"has-symbols": "^1.1.0",
-				"hasown": "^2.0.2",
-				"math-intrinsics": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/get-nonce": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/get-nonce/-/get-nonce-1.0.1.tgz",
-			"integrity": "sha512-FJhYRoDaiatfEkUK8HKlicmu/3SGFD51q3itKDGoSTysQJBnfOcxU5GxnhE1E6soB76MbT0MBtnKJuXyAx+96Q==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=6"
-			}
-		},
-		"node_modules/get-proto": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/get-proto/-/get-proto-1.0.1.tgz",
-			"integrity": "sha512-sTSfBjoXBp89JvIKIefqw7U2CCebsc74kiY6awiGogKtoSGbgjYE/G/+l9sF3MWFPNc9IcoOC4ODfKHfxFmp0g==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"dunder-proto": "^1.0.1",
-				"es-object-atoms": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/get-symbol-description": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/get-symbol-description/-/get-symbol-description-1.1.0.tgz",
-			"integrity": "sha512-w9UMqWwJxHNOvoNzSJ2oPF5wvYcvP7jUvYzhp67yEhTi17ZDBBC1z9pTdGuzjD+EFIqLSYRweZjqfiPzQ06Ebg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"es-errors": "^1.3.0",
-				"get-intrinsic": "^1.2.6"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/glob-parent": {
-			"version": "6.0.2",
-			"resolved": "https://registry.npmjs.org/glob-parent/-/glob-parent-6.0.2.tgz",
-			"integrity": "sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==",
-			"license": "ISC",
-			"dependencies": {
-				"is-glob": "^4.0.3"
-			},
-			"engines": {
-				"node": ">=10.13.0"
-			}
-		},
-		"node_modules/globals": {
-			"version": "15.15.0",
-			"resolved": "https://registry.npmjs.org/globals/-/globals-15.15.0.tgz",
-			"integrity": "sha512-7ACyT3wmyp3I61S4fG682L0VA2RGD9otkqGJIwNUMF1SWUombIIk+af1unuDYgMm082aHYwD+mzJvv9Iu8dsgg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=18"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/globalthis": {
-			"version": "1.0.4",
-			"resolved": "https://registry.npmjs.org/globalthis/-/globalthis-1.0.4.tgz",
-			"integrity": "sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"define-properties": "^1.2.1",
-				"gopd": "^1.0.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/gopd": {
-			"version": "1.2.0",
-			"resolved": "https://registry.npmjs.org/gopd/-/gopd-1.2.0.tgz",
-			"integrity": "sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/has-bigints": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/has-bigints/-/has-bigints-1.1.0.tgz",
-			"integrity": "sha512-R3pbpkcIqv2Pm3dUwgjclDRVmWpTJW2DcMzcIhEXEx1oh/CEMObMm3KLmRJOdvhM7o4uQBnwr8pzRK2sJWIqfg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/has-flag": {
-			"version": "4.0.0",
-			"resolved": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
-			"integrity": "sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/has-property-descriptors": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/has-property-descriptors/-/has-property-descriptors-1.0.2.tgz",
-			"integrity": "sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-define-property": "^1.0.0"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/has-proto": {
-			"version": "1.2.0",
-			"resolved": "https://registry.npmjs.org/has-proto/-/has-proto-1.2.0.tgz",
-			"integrity": "sha512-KIL7eQPfHQRC8+XluaIw7BHUwwqL19bQn4hzNgdr+1wXoU0KKj6rufu47lhY7KbJR2C6T6+PfyN0Ea7wkSS+qQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"dunder-proto": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/has-symbols": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.1.0.tgz",
-			"integrity": "sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/has-tostringtag": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/has-tostringtag/-/has-tostringtag-1.0.2.tgz",
-			"integrity": "sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"has-symbols": "^1.0.3"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/hasown": {
-			"version": "2.0.2",
-			"resolved": "https://registry.npmjs.org/hasown/-/hasown-2.0.2.tgz",
-			"integrity": "sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==",
-			"license": "MIT",
-			"dependencies": {
-				"function-bind": "^1.1.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/ignore": {
-			"version": "5.3.2",
-			"resolved": "https://registry.npmjs.org/ignore/-/ignore-5.3.2.tgz",
-			"integrity": "sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 4"
-			}
-		},
-		"node_modules/import-fresh": {
-			"version": "3.3.1",
-			"resolved": "https://registry.npmjs.org/import-fresh/-/import-fresh-3.3.1.tgz",
-			"integrity": "sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"parent-module": "^1.0.0",
-				"resolve-from": "^4.0.0"
-			},
-			"engines": {
-				"node": ">=6"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/imurmurhash": {
-			"version": "0.1.4",
-			"resolved": "https://registry.npmjs.org/imurmurhash/-/imurmurhash-0.1.4.tgz",
-			"integrity": "sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.8.19"
-			}
-		},
-		"node_modules/input-otp": {
-			"version": "1.4.2",
-			"resolved": "https://registry.npmjs.org/input-otp/-/input-otp-1.4.2.tgz",
-			"integrity": "sha512-l3jWwYNvrEa6NTCt7BECfCm48GvwuZzkoeG3gBL2w4CHeOXW3eKFmf9UNYkNfYc3mxMrthMnxjIE07MT0zLBQA==",
-			"license": "MIT",
-			"peerDependencies": {
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc"
-			}
-		},
-		"node_modules/internal-slot": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/internal-slot/-/internal-slot-1.1.0.tgz",
-			"integrity": "sha512-4gd7VpWNQNB4UKKCFFVcp1AVv+FMOgs9NKzjHKusc8jTMhd5eL1NqQqOpE0KzMds804/yHlglp3uxgluOqAPLw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0",
-				"hasown": "^2.0.2",
-				"side-channel": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/internmap": {
-			"version": "2.0.3",
-			"resolved": "https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz",
-			"integrity": "sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==",
-			"license": "ISC",
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/is-array-buffer": {
-			"version": "3.0.5",
-			"resolved": "https://registry.npmjs.org/is-array-buffer/-/is-array-buffer-3.0.5.tgz",
-			"integrity": "sha512-DDfANUiiG2wC1qawP66qlTugJeL5HyzMpfr8lLK+jMQirGzNod0B12cFB/9q838Ru27sBwfw78/rdoU7RERz6A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.3",
-				"get-intrinsic": "^1.2.6"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-async-function": {
-			"version": "2.1.1",
-			"resolved": "https://registry.npmjs.org/is-async-function/-/is-async-function-2.1.1.tgz",
-			"integrity": "sha512-9dgM/cZBnNvjzaMYHVoxxfPj2QXt22Ev7SuuPrs+xav0ukGB0S6d4ydZdEiM48kLx5kDV+QBPrpVnFyefL8kkQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"async-function": "^1.0.0",
-				"call-bound": "^1.0.3",
-				"get-proto": "^1.0.1",
-				"has-tostringtag": "^1.0.2",
-				"safe-regex-test": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-bigint": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/is-bigint/-/is-bigint-1.1.0.tgz",
-			"integrity": "sha512-n4ZT37wG78iz03xPRKJrHTdZbe3IicyucEtdRsV5yglwc3GyUfbAfpSeD0FJ41NbUNSt5wbhqfp1fS+BgnvDFQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"has-bigints": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-binary-path": {
-			"version": "2.1.0",
-			"resolved": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz",
-			"integrity": "sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==",
-			"license": "MIT",
-			"dependencies": {
-				"binary-extensions": "^2.0.0"
-			},
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/is-boolean-object": {
-			"version": "1.2.2",
-			"resolved": "https://registry.npmjs.org/is-boolean-object/-/is-boolean-object-1.2.2.tgz",
-			"integrity": "sha512-wa56o2/ElJMYqjCjGkXri7it5FbebW5usLw/nPmCMs5DeZ7eziSYZhSmPRn0txqeW4LnAmQQU7FgqLpsEFKM4A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"has-tostringtag": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-callable": {
-			"version": "1.2.7",
-			"resolved": "https://registry.npmjs.org/is-callable/-/is-callable-1.2.7.tgz",
-			"integrity": "sha512-1BC0BVFhS/p0qtw6enp8e+8OD0UrK0oFLztSjNzhcKA3WDuJxxAPXzPuPtKkjEY9UUoEWlX/8fgKeu2S8i9JTA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-core-module": {
-			"version": "2.16.1",
-			"resolved": "https://registry.npmjs.org/is-core-module/-/is-core-module-2.16.1.tgz",
-			"integrity": "sha512-UfoeMA6fIJ8wTYFEUjelnaGI67v6+N7qXJEvQuIGa99l4xsCruSYOVSQ0uPANn4dAzm8lkYPaKLrrijLq7x23w==",
-			"license": "MIT",
-			"dependencies": {
-				"hasown": "^2.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-data-view": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/is-data-view/-/is-data-view-1.0.2.tgz",
-			"integrity": "sha512-RKtWF8pGmS87i2D6gqQu/l7EYRlVdfzemCJN/P3UOs//x1QE7mfhvzHIApBTRf7axvT6DMGwSwBXYCT0nfB9xw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"get-intrinsic": "^1.2.6",
-				"is-typed-array": "^1.1.13"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-date-object": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/is-date-object/-/is-date-object-1.1.0.tgz",
-			"integrity": "sha512-PwwhEakHVKTdRNVOw+/Gyh0+MzlCl4R6qKvkhuvLtPMggI1WAHt9sOwZxQLSGpUaDnrdyDsomoRgNnCfKNSXXg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"has-tostringtag": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-extglob": {
-			"version": "2.1.1",
-			"resolved": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz",
-			"integrity": "sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/is-finalizationregistry": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/is-finalizationregistry/-/is-finalizationregistry-1.1.1.tgz",
-			"integrity": "sha512-1pC6N8qWJbWoPtEjgcL2xyhQOP491EQjeUo3qTKcmV8YSDDJrOepfG8pcC7h/QgnQHYSv0mJ3Z/ZWxmatVrysg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-fullwidth-code-point": {
-			"version": "3.0.0",
-			"resolved": "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz",
-			"integrity": "sha512-zymm5+u+sCsSWyD9qNaejV3DFvhCKclKdizYaJUuHA83RLjb7nSuGnddCHGv0hk+KY7BMAlsWeK4Ueg6EV6XQg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/is-generator-function": {
-			"version": "1.1.2",
-			"resolved": "https://registry.npmjs.org/is-generator-function/-/is-generator-function-1.1.2.tgz",
-			"integrity": "sha512-upqt1SkGkODW9tsGNG5mtXTXtECizwtS2kA161M+gJPc1xdb/Ax629af6YrTwcOeQHbewrPNlE5Dx7kzvXTizA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.4",
-				"generator-function": "^2.0.0",
-				"get-proto": "^1.0.1",
-				"has-tostringtag": "^1.0.2",
-				"safe-regex-test": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-glob": {
-			"version": "4.0.3",
-			"resolved": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
-			"integrity": "sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==",
-			"license": "MIT",
-			"dependencies": {
-				"is-extglob": "^2.1.1"
-			},
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/is-map": {
-			"version": "2.0.3",
-			"resolved": "https://registry.npmjs.org/is-map/-/is-map-2.0.3.tgz",
-			"integrity": "sha512-1Qed0/Hr2m+YqxnM09CjA2d/i6YZNfF6R2oRAOj36eUdS6qIV/huPJNSEpKbupewFs+ZsJlxsjjPbc0/afW6Lw==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-negative-zero": {
-			"version": "2.0.3",
-			"resolved": "https://registry.npmjs.org/is-negative-zero/-/is-negative-zero-2.0.3.tgz",
-			"integrity": "sha512-5KoIu2Ngpyek75jXodFvnafB6DJgr3u8uuK0LEZJjrU19DrMD3EVERaR8sjz8CCGgpZvxPl9SuE1GMVPFHx1mw==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-number": {
-			"version": "7.0.0",
-			"resolved": "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz",
-			"integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.12.0"
-			}
-		},
-		"node_modules/is-number-object": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/is-number-object/-/is-number-object-1.1.1.tgz",
-			"integrity": "sha512-lZhclumE1G6VYD8VHe35wFaIif+CTy5SJIi5+3y4psDgWu4wPDoBhF8NxUOinEc7pHgiTsT6MaBb92rKhhD+Xw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"has-tostringtag": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-regex": {
-			"version": "1.2.1",
-			"resolved": "https://registry.npmjs.org/is-regex/-/is-regex-1.2.1.tgz",
-			"integrity": "sha512-MjYsKHO5O7mCsmRGxWcLWheFqN9DJ/2TmngvjKXihe6efViPqc274+Fx/4fYj/r03+ESvBdTXK0V6tA3rgez1g==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"gopd": "^1.2.0",
-				"has-tostringtag": "^1.0.2",
-				"hasown": "^2.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-set": {
-			"version": "2.0.3",
-			"resolved": "https://registry.npmjs.org/is-set/-/is-set-2.0.3.tgz",
-			"integrity": "sha512-iPAjerrse27/ygGLxw+EBR9agv9Y6uLeYVJMu+QNCoouJ1/1ri0mGrcWpfCqFZuzzx3WjtwxG098X+n4OuRkPg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-shared-array-buffer": {
-			"version": "1.0.4",
-			"resolved": "https://registry.npmjs.org/is-shared-array-buffer/-/is-shared-array-buffer-1.0.4.tgz",
-			"integrity": "sha512-ISWac8drv4ZGfwKl5slpHG9OwPNty4jOWPRIhBpxOoD+hqITiwuipOQ2bNthAzwA3B4fIjO4Nln74N0S9byq8A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-string": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/is-string/-/is-string-1.1.1.tgz",
-			"integrity": "sha512-BtEeSsoaQjlSPBemMQIrY1MY0uM6vnS1g5fmufYOtnxLGUZM2178PKbhsk7Ffv58IX+ZtcvoGwccYsh0PglkAA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"has-tostringtag": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-symbol": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/is-symbol/-/is-symbol-1.1.1.tgz",
-			"integrity": "sha512-9gGx6GTtCQM73BgmHQXfDmLtfjjTUDSyoxTCbp5WtoixAhfgsDirWIcVQ/IHpvI5Vgd5i/J5F7B9cN/WlVbC/w==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"has-symbols": "^1.1.0",
-				"safe-regex-test": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-typed-array": {
-			"version": "1.1.15",
-			"resolved": "https://registry.npmjs.org/is-typed-array/-/is-typed-array-1.1.15.tgz",
-			"integrity": "sha512-p3EcsicXjit7SaskXHs1hA91QxgTw46Fv6EFKKGS5DRFLD8yKnohjF3hxoju94b/OcMZoQukzpPpBE9uLVKzgQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"which-typed-array": "^1.1.16"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-weakmap": {
-			"version": "2.0.2",
-			"resolved": "https://registry.npmjs.org/is-weakmap/-/is-weakmap-2.0.2.tgz",
-			"integrity": "sha512-K5pXYOm9wqY1RgjpL3YTkF39tni1XajUIkawTLUo9EZEVUFga5gSQJF8nNS7ZwJQ02y+1YCNYcMh+HIf1ZqE+w==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-weakref": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/is-weakref/-/is-weakref-1.1.1.tgz",
-			"integrity": "sha512-6i9mGWSlqzNMEqpCp93KwRS1uUOodk2OJ6b+sq7ZPDSy2WuI5NFIxp/254TytR8ftefexkWn5xNiHUNpPOfSew==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/is-weakset": {
-			"version": "2.0.4",
-			"resolved": "https://registry.npmjs.org/is-weakset/-/is-weakset-2.0.4.tgz",
-			"integrity": "sha512-mfcwb6IzQyOKTs84CQMrOwW4gQcaTOAWJ0zzJCl2WSPDrWk/OzDaImWFH3djXhb24g4eudZfLRozAvPGw4d9hQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"get-intrinsic": "^1.2.6"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/isarray": {
-			"version": "2.0.5",
-			"resolved": "https://registry.npmjs.org/isarray/-/isarray-2.0.5.tgz",
-			"integrity": "sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/isexe": {
-			"version": "2.0.0",
-			"resolved": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
-			"integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==",
-			"dev": true,
-			"license": "ISC"
-		},
-		"node_modules/iterator.prototype": {
-			"version": "1.1.5",
-			"resolved": "https://registry.npmjs.org/iterator.prototype/-/iterator.prototype-1.1.5.tgz",
-			"integrity": "sha512-H0dkQoCa3b2VEeKQBOxFph+JAbcrQdE7KC0UkqwpLmv2EC4P41QXP+rqo9wYodACiG5/WM5s9oDApTU8utwj9g==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"define-data-property": "^1.1.4",
-				"es-object-atoms": "^1.0.0",
-				"get-intrinsic": "^1.2.6",
-				"get-proto": "^1.0.0",
-				"has-symbols": "^1.1.0",
-				"set-function-name": "^2.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/jiti": {
-			"version": "1.21.7",
-			"resolved": "https://registry.npmjs.org/jiti/-/jiti-1.21.7.tgz",
-			"integrity": "sha512-/imKNG4EbWNrVjoNC/1H5/9GFy+tqjGBHCaSsN+P2RnPqjsLmv6UD3Ej+Kj8nBWaRAwyk7kK5ZUc+OEatnTR3A==",
-			"license": "MIT",
-			"peer": true,
-			"bin": {
-				"jiti": "bin/jiti.js"
-			}
-		},
-		"node_modules/js-tokens": {
-			"version": "4.0.0",
-			"resolved": "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz",
-			"integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
-			"license": "MIT"
-		},
-		"node_modules/js-yaml": {
-			"version": "4.1.1",
-			"resolved": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.1.tgz",
-			"integrity": "sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"argparse": "^2.0.1"
-			},
-			"bin": {
-				"js-yaml": "bin/js-yaml.js"
-			}
-		},
-		"node_modules/jsesc": {
-			"version": "3.1.0",
-			"resolved": "https://registry.npmjs.org/jsesc/-/jsesc-3.1.0.tgz",
-			"integrity": "sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA==",
-			"dev": true,
-			"license": "MIT",
-			"bin": {
-				"jsesc": "bin/jsesc"
-			},
-			"engines": {
-				"node": ">=6"
-			}
-		},
-		"node_modules/json-buffer": {
-			"version": "3.0.1",
-			"resolved": "https://registry.npmjs.org/json-buffer/-/json-buffer-3.0.1.tgz",
-			"integrity": "sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/json-schema-traverse": {
-			"version": "0.4.1",
-			"resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
-			"integrity": "sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/json-stable-stringify-without-jsonify": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz",
-			"integrity": "sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/json5": {
-			"version": "2.2.3",
-			"resolved": "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz",
-			"integrity": "sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==",
-			"dev": true,
-			"license": "MIT",
-			"bin": {
-				"json5": "lib/cli.js"
-			},
-			"engines": {
-				"node": ">=6"
-			}
-		},
-		"node_modules/jsx-ast-utils": {
-			"version": "3.3.5",
-			"resolved": "https://registry.npmjs.org/jsx-ast-utils/-/jsx-ast-utils-3.3.5.tgz",
-			"integrity": "sha512-ZZow9HBI5O6EPgSJLUb8n2NKgmVWTwCvHGwFuJlMjvLFqlGG6pjirPhtdsseaLZjSibD8eegzmYpUZwoIlj2cQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"array-includes": "^3.1.6",
-				"array.prototype.flat": "^1.3.1",
-				"object.assign": "^4.1.4",
-				"object.values": "^1.1.6"
-			},
-			"engines": {
-				"node": ">=4.0"
-			}
-		},
-		"node_modules/keyv": {
-			"version": "4.5.4",
-			"resolved": "https://registry.npmjs.org/keyv/-/keyv-4.5.4.tgz",
-			"integrity": "sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"json-buffer": "3.0.1"
-			}
-		},
-		"node_modules/levn": {
-			"version": "0.4.1",
-			"resolved": "https://registry.npmjs.org/levn/-/levn-0.4.1.tgz",
-			"integrity": "sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"prelude-ls": "^1.2.1",
-				"type-check": "~0.4.0"
-			},
-			"engines": {
-				"node": ">= 0.8.0"
-			}
-		},
-		"node_modules/lilconfig": {
-			"version": "3.1.3",
-			"resolved": "https://registry.npmjs.org/lilconfig/-/lilconfig-3.1.3.tgz",
-			"integrity": "sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=14"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/antonk52"
-			}
-		},
-		"node_modules/lines-and-columns": {
-			"version": "1.2.4",
-			"resolved": "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz",
-			"integrity": "sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==",
-			"license": "MIT"
-		},
-		"node_modules/locate-path": {
-			"version": "6.0.0",
-			"resolved": "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz",
-			"integrity": "sha512-iPZK6eYjbxRu3uB4/WZ3EsEIMJFMqAoopl3R+zuq0UjcAm/MO6KCweDgPfP3elTztoKP3KtnVHxTn2NHBSDVUw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"p-locate": "^5.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/lodash": {
-			"version": "4.17.23",
-			"resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.23.tgz",
-			"integrity": "sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==",
-			"license": "MIT"
-		},
-		"node_modules/lodash.merge": {
-			"version": "4.6.2",
-			"resolved": "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz",
-			"integrity": "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/loose-envify": {
-			"version": "1.4.0",
-			"resolved": "https://registry.npmjs.org/loose-envify/-/loose-envify-1.4.0.tgz",
-			"integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",
-			"license": "MIT",
-			"dependencies": {
-				"js-tokens": "^3.0.0 || ^4.0.0"
-			},
-			"bin": {
-				"loose-envify": "cli.js"
-			}
-		},
-		"node_modules/lru-cache": {
-			"version": "5.1.1",
-			"resolved": "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz",
-			"integrity": "sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==",
-			"dev": true,
-			"license": "ISC",
-			"dependencies": {
-				"yallist": "^3.0.2"
-			}
-		},
-		"node_modules/lucide-react": {
-			"version": "0.469.0",
-			"resolved": "https://registry.npmjs.org/lucide-react/-/lucide-react-0.469.0.tgz",
-			"integrity": "sha512-28vvUnnKQ/dBwiCQtwJw7QauYnE7yd2Cyp4tTTJpvglX4EMpbflcdBgrgToX2j71B3YvugK/NH3BGUk+E/p/Fw==",
-			"license": "ISC",
-			"peerDependencies": {
-				"react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0"
-			}
-		},
-		"node_modules/math-intrinsics": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz",
-			"integrity": "sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/merge2": {
-			"version": "1.4.1",
-			"resolved": "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz",
-			"integrity": "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==",
-			"license": "MIT",
-			"engines": {
-				"node": ">= 8"
-			}
-		},
-		"node_modules/micromatch": {
-			"version": "4.0.8",
-			"resolved": "https://registry.npmjs.org/micromatch/-/micromatch-4.0.8.tgz",
-			"integrity": "sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==",
-			"license": "MIT",
-			"dependencies": {
-				"braces": "^3.0.3",
-				"picomatch": "^2.3.1"
-			},
-			"engines": {
-				"node": ">=8.6"
-			}
-		},
-		"node_modules/minimatch": {
-			"version": "3.1.5",
-			"resolved": "https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz",
-			"integrity": "sha512-VgjWUsnnT6n+NUk6eZq77zeFdpW2LWDzP6zFGrCbHXiYNul5Dzqk2HHQ5uFH2DNW5Xbp8+jVzaeNt94ssEEl4w==",
-			"dev": true,
-			"license": "ISC",
-			"dependencies": {
-				"brace-expansion": "^1.1.7"
-			},
-			"engines": {
-				"node": "*"
-			}
-		},
-		"node_modules/minimist": {
-			"version": "1.2.8",
-			"resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz",
-			"integrity": "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==",
-			"dev": true,
-			"license": "MIT",
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/motion-dom": {
-			"version": "11.18.1",
-			"resolved": "https://registry.npmjs.org/motion-dom/-/motion-dom-11.18.1.tgz",
-			"integrity": "sha512-g76KvA001z+atjfxczdRtw/RXOM3OMSdd1f4DL77qCTF/+avrRJiawSG4yDibEQ215sr9kpinSlX2pCTJ9zbhw==",
-			"license": "MIT",
-			"dependencies": {
-				"motion-utils": "^11.18.1"
-			}
-		},
-		"node_modules/motion-utils": {
-			"version": "11.18.1",
-			"resolved": "https://registry.npmjs.org/motion-utils/-/motion-utils-11.18.1.tgz",
-			"integrity": "sha512-49Kt+HKjtbJKLtgO/LKj9Ld+6vw9BjH5d9sc40R/kVyH8GLAXgT42M2NnuPcJNuA3s9ZfZBUcwIgpmZWGEE+hA==",
-			"license": "MIT"
-		},
-		"node_modules/ms": {
-			"version": "2.1.3",
-			"resolved": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
-			"integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/mz": {
-			"version": "2.7.0",
-			"resolved": "https://registry.npmjs.org/mz/-/mz-2.7.0.tgz",
-			"integrity": "sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==",
-			"license": "MIT",
-			"dependencies": {
-				"any-promise": "^1.0.0",
-				"object-assign": "^4.0.1",
-				"thenify-all": "^1.0.0"
-			}
-		},
-		"node_modules/nanoid": {
-			"version": "3.3.11",
-			"resolved": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz",
-			"integrity": "sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==",
-			"funding": [
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "MIT",
-			"bin": {
-				"nanoid": "bin/nanoid.cjs"
-			},
-			"engines": {
-				"node": "^10 || ^12 || ^13.7 || ^14 || >=15.0.1"
-			}
-		},
-		"node_modules/natural-compare": {
-			"version": "1.4.0",
-			"resolved": "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz",
-			"integrity": "sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/next-themes": {
-			"version": "0.4.6",
-			"resolved": "https://registry.npmjs.org/next-themes/-/next-themes-0.4.6.tgz",
-			"integrity": "sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==",
-			"license": "MIT",
-			"peerDependencies": {
-				"react": "^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc"
-			}
-		},
-		"node_modules/node-exports-info": {
-			"version": "1.6.0",
-			"resolved": "https://registry.npmjs.org/node-exports-info/-/node-exports-info-1.6.0.tgz",
-			"integrity": "sha512-pyFS63ptit/P5WqUkt+UUfe+4oevH+bFeIiPPdfb0pFeYEu/1ELnJu5l+5EcTKYL5M7zaAa7S8ddywgXypqKCw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"array.prototype.flatmap": "^1.3.3",
-				"es-errors": "^1.3.0",
-				"object.entries": "^1.1.9",
-				"semver": "^6.3.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/node-releases": {
-			"version": "2.0.36",
-			"resolved": "https://registry.npmjs.org/node-releases/-/node-releases-2.0.36.tgz",
-			"integrity": "sha512-TdC8FSgHz8Mwtw9g5L4gR/Sh9XhSP/0DEkQxfEFXOpiul5IiHgHan2VhYYb6agDSfp4KuvltmGApc8HMgUrIkA==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/normalize-path": {
-			"version": "3.0.0",
-			"resolved": "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz",
-			"integrity": "sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/object-assign": {
-			"version": "4.1.1",
-			"resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz",
-			"integrity": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/object-hash": {
-			"version": "3.0.0",
-			"resolved": "https://registry.npmjs.org/object-hash/-/object-hash-3.0.0.tgz",
-			"integrity": "sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==",
-			"license": "MIT",
-			"engines": {
-				"node": ">= 6"
-			}
-		},
-		"node_modules/object-inspect": {
-			"version": "1.13.4",
-			"resolved": "https://registry.npmjs.org/object-inspect/-/object-inspect-1.13.4.tgz",
-			"integrity": "sha512-W67iLl4J2EXEGTbfeHCffrjDfitvLANg0UlX3wFUUSTx92KXRFegMHUVgSqE+wvhAbi4WqjGg9czysTV2Epbew==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/object-keys": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/object-keys/-/object-keys-1.1.1.tgz",
-			"integrity": "sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/object.assign": {
-			"version": "4.1.7",
-			"resolved": "https://registry.npmjs.org/object.assign/-/object.assign-4.1.7.tgz",
-			"integrity": "sha512-nK28WOo+QIjBkDduTINE4JkF/UJJKyf2EJxvJKfblDpyg0Q+pkOHNTL0Qwy6NP6FhE/EnzV73BxxqcJaXY9anw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.3",
-				"define-properties": "^1.2.1",
-				"es-object-atoms": "^1.0.0",
-				"has-symbols": "^1.1.0",
-				"object-keys": "^1.1.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/object.entries": {
-			"version": "1.1.9",
-			"resolved": "https://registry.npmjs.org/object.entries/-/object.entries-1.1.9.tgz",
-			"integrity": "sha512-8u/hfXFRBD1O0hPUjioLhoWFHRmt6tKA4/vZPyckBr18l1KE9uHrFaFaUi8MDRTpi4uak2goyPTSNJLXX2k2Hw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.4",
-				"define-properties": "^1.2.1",
-				"es-object-atoms": "^1.1.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/object.fromentries": {
-			"version": "2.0.8",
-			"resolved": "https://registry.npmjs.org/object.fromentries/-/object.fromentries-2.0.8.tgz",
-			"integrity": "sha512-k6E21FzySsSK5a21KRADBd/NGneRegFO5pLHfdQLpRDETUNJueLXs3WCzyQ3tFRDYgbq3KHGXfTbi2bs8WQ6rQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.7",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.2",
-				"es-object-atoms": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/object.groupby": {
-			"version": "1.0.3",
-			"resolved": "https://registry.npmjs.org/object.groupby/-/object.groupby-1.0.3.tgz",
-			"integrity": "sha512-+Lhy3TQTuzXI5hevh8sBGqbmurHbbIjAi0Z4S63nthVLmLxfbj4T54a4CfZrXIrt9iP4mVAPYMo/v99taj3wjQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.7",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/object.values": {
-			"version": "1.2.1",
-			"resolved": "https://registry.npmjs.org/object.values/-/object.values-1.2.1.tgz",
-			"integrity": "sha512-gXah6aZrcUxjWg2zR2MwouP2eHlCBzdV4pygudehaKXSGW4v2AsRQUK+lwwXhii6KFZcunEnmSUoYp5CXibxtA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.3",
-				"define-properties": "^1.2.1",
-				"es-object-atoms": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/optionator": {
-			"version": "0.9.4",
-			"resolved": "https://registry.npmjs.org/optionator/-/optionator-0.9.4.tgz",
-			"integrity": "sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"deep-is": "^0.1.3",
-				"fast-levenshtein": "^2.0.6",
-				"levn": "^0.4.1",
-				"prelude-ls": "^1.2.1",
-				"type-check": "^0.4.0",
-				"word-wrap": "^1.2.5"
-			},
-			"engines": {
-				"node": ">= 0.8.0"
-			}
-		},
-		"node_modules/own-keys": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/own-keys/-/own-keys-1.0.1.tgz",
-			"integrity": "sha512-qFOyK5PjiWZd+QQIh+1jhdb9LpxTF0qs7Pm8o5QHYZ0M3vKqSqzsZaEB6oWlxZ+q2sJBMI/Ktgd2N5ZwQoRHfg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"get-intrinsic": "^1.2.6",
-				"object-keys": "^1.1.1",
-				"safe-push-apply": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/p-limit": {
-			"version": "3.1.0",
-			"resolved": "https://registry.npmjs.org/p-limit/-/p-limit-3.1.0.tgz",
-			"integrity": "sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"yocto-queue": "^0.1.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/p-locate": {
-			"version": "5.0.0",
-			"resolved": "https://registry.npmjs.org/p-locate/-/p-locate-5.0.0.tgz",
-			"integrity": "sha512-LaNjtRWUBY++zB5nE/NwcaoMylSPk+S+ZHNB1TzdbMJMny6dynpAGt7X/tl/QYq3TIeE6nxHppbo2LGymrG5Pw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"p-limit": "^3.0.2"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/parent-module": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz",
-			"integrity": "sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"callsites": "^3.0.0"
-			},
-			"engines": {
-				"node": ">=6"
-			}
-		},
-		"node_modules/path-exists": {
-			"version": "4.0.0",
-			"resolved": "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz",
-			"integrity": "sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/path-key": {
-			"version": "3.1.1",
-			"resolved": "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz",
-			"integrity": "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/path-parse": {
-			"version": "1.0.7",
-			"resolved": "https://registry.npmjs.org/path-parse/-/path-parse-1.0.7.tgz",
-			"integrity": "sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==",
-			"license": "MIT"
-		},
-		"node_modules/picocolors": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
-			"integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
-			"license": "ISC"
-		},
-		"node_modules/picomatch": {
-			"version": "2.3.2",
-			"resolved": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.2.tgz",
-			"integrity": "sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=8.6"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/jonschlinkert"
-			}
-		},
-		"node_modules/pify": {
-			"version": "2.3.0",
-			"resolved": "https://registry.npmjs.org/pify/-/pify-2.3.0.tgz",
-			"integrity": "sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/pirates": {
-			"version": "4.0.7",
-			"resolved": "https://registry.npmjs.org/pirates/-/pirates-4.0.7.tgz",
-			"integrity": "sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==",
-			"license": "MIT",
-			"engines": {
-				"node": ">= 6"
-			}
-		},
-		"node_modules/possible-typed-array-names": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz",
-			"integrity": "sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/postcss": {
-			"version": "8.5.8",
-			"resolved": "https://registry.npmjs.org/postcss/-/postcss-8.5.8.tgz",
-			"integrity": "sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==",
-			"funding": [
-				{
-					"type": "opencollective",
-					"url": "https://opencollective.com/postcss/"
-				},
-				{
-					"type": "tidelift",
-					"url": "https://tidelift.com/funding/github/npm/postcss"
-				},
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"nanoid": "^3.3.11",
-				"picocolors": "^1.1.1",
-				"source-map-js": "^1.2.1"
-			},
-			"engines": {
-				"node": "^10 || ^12 || >=14"
-			}
-		},
-		"node_modules/postcss-import": {
-			"version": "15.1.0",
-			"resolved": "https://registry.npmjs.org/postcss-import/-/postcss-import-15.1.0.tgz",
-			"integrity": "sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==",
-			"license": "MIT",
-			"dependencies": {
-				"postcss-value-parser": "^4.0.0",
-				"read-cache": "^1.0.0",
-				"resolve": "^1.1.7"
-			},
-			"engines": {
-				"node": ">=14.0.0"
-			},
-			"peerDependencies": {
-				"postcss": "^8.0.0"
-			}
-		},
-		"node_modules/postcss-js": {
-			"version": "4.1.0",
-			"resolved": "https://registry.npmjs.org/postcss-js/-/postcss-js-4.1.0.tgz",
-			"integrity": "sha512-oIAOTqgIo7q2EOwbhb8UalYePMvYoIeRY2YKntdpFQXNosSu3vLrniGgmH9OKs/qAkfoj5oB3le/7mINW1LCfw==",
-			"funding": [
-				{
-					"type": "opencollective",
-					"url": "https://opencollective.com/postcss/"
-				},
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "MIT",
-			"dependencies": {
-				"camelcase-css": "^2.0.1"
-			},
-			"engines": {
-				"node": "^12 || ^14 || >= 16"
-			},
-			"peerDependencies": {
-				"postcss": "^8.4.21"
-			}
-		},
-		"node_modules/postcss-load-config": {
-			"version": "6.0.1",
-			"resolved": "https://registry.npmjs.org/postcss-load-config/-/postcss-load-config-6.0.1.tgz",
-			"integrity": "sha512-oPtTM4oerL+UXmx+93ytZVN82RrlY/wPUV8IeDxFrzIjXOLF1pN+EmKPLbubvKHT2HC20xXsCAH2Z+CKV6Oz/g==",
-			"funding": [
-				{
-					"type": "opencollective",
-					"url": "https://opencollective.com/postcss/"
-				},
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "MIT",
-			"dependencies": {
-				"lilconfig": "^3.1.1"
-			},
-			"engines": {
-				"node": ">= 18"
-			},
-			"peerDependencies": {
-				"jiti": ">=1.21.0",
-				"postcss": ">=8.0.9",
-				"tsx": "^4.8.1",
-				"yaml": "^2.4.2"
-			},
-			"peerDependenciesMeta": {
-				"jiti": {
-					"optional": true
-				},
-				"postcss": {
-					"optional": true
-				},
-				"tsx": {
-					"optional": true
-				},
-				"yaml": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/postcss-nested": {
-			"version": "6.2.0",
-			"resolved": "https://registry.npmjs.org/postcss-nested/-/postcss-nested-6.2.0.tgz",
-			"integrity": "sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==",
-			"funding": [
-				{
-					"type": "opencollective",
-					"url": "https://opencollective.com/postcss/"
-				},
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "MIT",
-			"dependencies": {
-				"postcss-selector-parser": "^6.1.1"
-			},
-			"engines": {
-				"node": ">=12.0"
-			},
-			"peerDependencies": {
-				"postcss": "^8.2.14"
-			}
-		},
-		"node_modules/postcss-selector-parser": {
-			"version": "6.1.2",
-			"resolved": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.1.2.tgz",
-			"integrity": "sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==",
-			"license": "MIT",
-			"dependencies": {
-				"cssesc": "^3.0.0",
-				"util-deprecate": "^1.0.2"
-			},
-			"engines": {
-				"node": ">=4"
-			}
-		},
-		"node_modules/postcss-value-parser": {
-			"version": "4.2.0",
-			"resolved": "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz",
-			"integrity": "sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==",
-			"license": "MIT"
-		},
-		"node_modules/prelude-ls": {
-			"version": "1.2.1",
-			"resolved": "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz",
-			"integrity": "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.8.0"
-			}
-		},
-		"node_modules/prop-types": {
-			"version": "15.8.1",
-			"resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz",
-			"integrity": "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==",
-			"license": "MIT",
-			"dependencies": {
-				"loose-envify": "^1.4.0",
-				"object-assign": "^4.1.1",
-				"react-is": "^16.13.1"
-			}
-		},
-		"node_modules/punycode": {
-			"version": "2.3.1",
-			"resolved": "https://registry.npmjs.org/punycode/-/punycode-2.3.1.tgz",
-			"integrity": "sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=6"
-			}
-		},
-		"node_modules/queue-microtask": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz",
-			"integrity": "sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==",
-			"funding": [
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/feross"
-				},
-				{
-					"type": "patreon",
-					"url": "https://www.patreon.com/feross"
-				},
-				{
-					"type": "consulting",
-					"url": "https://feross.org/support"
-				}
-			],
-			"license": "MIT"
-		},
-		"node_modules/react": {
-			"version": "18.3.1",
-			"resolved": "https://registry.npmjs.org/react/-/react-18.3.1.tgz",
-			"integrity": "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==",
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"loose-envify": "^1.1.0"
-			},
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/react-day-picker": {
-			"version": "9.14.0",
-			"resolved": "https://registry.npmjs.org/react-day-picker/-/react-day-picker-9.14.0.tgz",
-			"integrity": "sha512-tBaoDWjPwe0M5pGrum4H0SR6Lyk+BO9oHnp9JbKpGKW2mlraNPgP9BMfsg5pWpwrssARmeqk7YBl2oXutZTaHA==",
-			"license": "MIT",
-			"dependencies": {
-				"@date-fns/tz": "^1.4.1",
-				"@tabby_ai/hijri-converter": "1.0.5",
-				"date-fns": "^4.1.0",
-				"date-fns-jalali": "4.1.0-0"
-			},
-			"engines": {
-				"node": ">=18"
-			},
-			"funding": {
-				"type": "individual",
-				"url": "https://github.com/sponsors/gpbl"
-			},
-			"peerDependencies": {
-				"react": ">=16.8.0"
-			}
-		},
-		"node_modules/react-dom": {
-			"version": "18.3.1",
-			"resolved": "https://registry.npmjs.org/react-dom/-/react-dom-18.3.1.tgz",
-			"integrity": "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==",
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"loose-envify": "^1.1.0",
-				"scheduler": "^0.23.2"
-			},
-			"peerDependencies": {
-				"react": "^18.3.1"
-			}
-		},
-		"node_modules/react-fast-compare": {
-			"version": "3.2.2",
-			"resolved": "https://registry.npmjs.org/react-fast-compare/-/react-fast-compare-3.2.2.tgz",
-			"integrity": "sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==",
-			"license": "MIT"
-		},
-		"node_modules/react-helmet": {
-			"version": "6.1.0",
-			"resolved": "https://registry.npmjs.org/react-helmet/-/react-helmet-6.1.0.tgz",
-			"integrity": "sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==",
-			"license": "MIT",
-			"dependencies": {
-				"object-assign": "^4.1.1",
-				"prop-types": "^15.7.2",
-				"react-fast-compare": "^3.1.1",
-				"react-side-effect": "^2.1.0"
-			},
-			"peerDependencies": {
-				"react": ">=16.3.0"
-			}
-		},
-		"node_modules/react-hook-form": {
-			"version": "7.72.0",
-			"resolved": "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.72.0.tgz",
-			"integrity": "sha512-V4v6jubaf6JAurEaVnT9aUPKFbNtDgohj5CIgVGyPHvT9wRx5OZHVjz31GsxnPNI278XMu+ruFz+wGOscHaLKw==",
-			"license": "MIT",
-			"peer": true,
-			"engines": {
-				"node": ">=18.0.0"
-			},
-			"funding": {
-				"type": "opencollective",
-				"url": "https://opencollective.com/react-hook-form"
-			},
-			"peerDependencies": {
-				"react": "^16.8.0 || ^17 || ^18 || ^19"
-			}
-		},
-		"node_modules/react-is": {
-			"version": "16.13.1",
-			"resolved": "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz",
-			"integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==",
-			"license": "MIT"
-		},
-		"node_modules/react-refresh": {
-			"version": "0.18.0",
-			"resolved": "https://registry.npmjs.org/react-refresh/-/react-refresh-0.18.0.tgz",
-			"integrity": "sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/react-remove-scroll": {
-			"version": "2.7.2",
-			"resolved": "https://registry.npmjs.org/react-remove-scroll/-/react-remove-scroll-2.7.2.tgz",
-			"integrity": "sha512-Iqb9NjCCTt6Hf+vOdNIZGdTiH1QSqr27H/Ek9sv/a97gfueI/5h1s3yRi1nngzMUaOOToin5dI1dXKdXiF+u0Q==",
-			"license": "MIT",
-			"dependencies": {
-				"react-remove-scroll-bar": "^2.3.7",
-				"react-style-singleton": "^2.2.3",
-				"tslib": "^2.1.0",
-				"use-callback-ref": "^1.3.3",
-				"use-sidecar": "^1.1.3"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/react-remove-scroll-bar": {
-			"version": "2.3.8",
-			"resolved": "https://registry.npmjs.org/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.8.tgz",
-			"integrity": "sha512-9r+yi9+mgU33AKcj6IbT9oRCO78WriSj6t/cF8DWBZJ9aOGPOTEDvdUDz1FwKim7QXWwmHqtdHnRJfhAxEG46Q==",
-			"license": "MIT",
-			"dependencies": {
-				"react-style-singleton": "^2.2.2",
-				"tslib": "^2.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/react-resizable-panels": {
-			"version": "4.8.0",
-			"resolved": "https://registry.npmjs.org/react-resizable-panels/-/react-resizable-panels-4.8.0.tgz",
-			"integrity": "sha512-2uEABkewb3ky/ZgIlAUxWa1W/LjsK494fdV1QsXxst7CDRHCzo7h22tWWu3NNaBjmiuriOCt3CvhipnaYcpoIw==",
-			"license": "MIT",
-			"peerDependencies": {
-				"react": "^18.0.0 || ^19.0.0",
-				"react-dom": "^18.0.0 || ^19.0.0"
-			}
-		},
-		"node_modules/react-router": {
-			"version": "7.13.2",
-			"resolved": "https://registry.npmjs.org/react-router/-/react-router-7.13.2.tgz",
-			"integrity": "sha512-tX1Aee+ArlKQP+NIUd7SE6Li+CiGKwQtbS+FfRxPX6Pe4vHOo6nr9d++u5cwg+Z8K/x8tP+7qLmujDtfrAoUJA==",
-			"license": "MIT",
-			"dependencies": {
-				"cookie": "^1.0.1",
-				"set-cookie-parser": "^2.6.0"
-			},
-			"engines": {
-				"node": ">=20.0.0"
-			},
-			"peerDependencies": {
-				"react": ">=18",
-				"react-dom": ">=18"
-			},
-			"peerDependenciesMeta": {
-				"react-dom": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/react-router-dom": {
-			"version": "7.13.2",
-			"resolved": "https://registry.npmjs.org/react-router-dom/-/react-router-dom-7.13.2.tgz",
-			"integrity": "sha512-aR7SUORwTqAW0JDeiWF07e9SBE9qGpByR9I8kJT5h/FrBKxPMS6TiC7rmVO+gC0q52Bx7JnjWe8Z1sR9faN4YA==",
-			"license": "MIT",
-			"dependencies": {
-				"react-router": "7.13.2"
-			},
-			"engines": {
-				"node": ">=20.0.0"
-			},
-			"peerDependencies": {
-				"react": ">=18",
-				"react-dom": ">=18"
-			}
-		},
-		"node_modules/react-side-effect": {
-			"version": "2.1.2",
-			"resolved": "https://registry.npmjs.org/react-side-effect/-/react-side-effect-2.1.2.tgz",
-			"integrity": "sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==",
-			"license": "MIT",
-			"peerDependencies": {
-				"react": "^16.3.0 || ^17.0.0 || ^18.0.0"
-			}
-		},
-		"node_modules/react-smooth": {
-			"version": "4.0.4",
-			"resolved": "https://registry.npmjs.org/react-smooth/-/react-smooth-4.0.4.tgz",
-			"integrity": "sha512-gnGKTpYwqL0Iii09gHobNolvX4Kiq4PKx6eWBCYYix+8cdw+cGo3do906l1NBPKkSWx1DghC1dlWG9L2uGd61Q==",
-			"license": "MIT",
-			"dependencies": {
-				"fast-equals": "^5.0.1",
-				"prop-types": "^15.8.1",
-				"react-transition-group": "^4.4.5"
-			},
-			"peerDependencies": {
-				"react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
-				"react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
-			}
-		},
-		"node_modules/react-style-singleton": {
-			"version": "2.2.3",
-			"resolved": "https://registry.npmjs.org/react-style-singleton/-/react-style-singleton-2.2.3.tgz",
-			"integrity": "sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==",
-			"license": "MIT",
-			"dependencies": {
-				"get-nonce": "^1.0.0",
-				"tslib": "^2.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/react-transition-group": {
-			"version": "4.4.5",
-			"resolved": "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz",
-			"integrity": "sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==",
-			"license": "BSD-3-Clause",
-			"dependencies": {
-				"@babel/runtime": "^7.5.5",
-				"dom-helpers": "^5.0.1",
-				"loose-envify": "^1.4.0",
-				"prop-types": "^15.6.2"
-			},
-			"peerDependencies": {
-				"react": ">=16.6.0",
-				"react-dom": ">=16.6.0"
-			}
-		},
-		"node_modules/read-cache": {
-			"version": "1.0.0",
-			"resolved": "https://registry.npmjs.org/read-cache/-/read-cache-1.0.0.tgz",
-			"integrity": "sha512-Owdv/Ft7IjOgm/i0xvNDZ1LrRANRfew4b2prF3OWMQLxLfu3bS8FVhCsrSCMK4lR56Y9ya+AThoTpDCTxCmpRA==",
-			"license": "MIT",
-			"dependencies": {
-				"pify": "^2.3.0"
-			}
-		},
-		"node_modules/readdirp": {
-			"version": "3.6.0",
-			"resolved": "https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz",
-			"integrity": "sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==",
-			"license": "MIT",
-			"dependencies": {
-				"picomatch": "^2.2.1"
-			},
-			"engines": {
-				"node": ">=8.10.0"
-			}
-		},
-		"node_modules/recharts": {
-			"version": "2.15.4",
-			"resolved": "https://registry.npmjs.org/recharts/-/recharts-2.15.4.tgz",
-			"integrity": "sha512-UT/q6fwS3c1dHbXv2uFgYJ9BMFHu3fwnd7AYZaEQhXuYQ4hgsxLvsUXzGdKeZrW5xopzDCvuA2N41WJ88I7zIw==",
-			"license": "MIT",
-			"dependencies": {
-				"clsx": "^2.0.0",
-				"eventemitter3": "^4.0.1",
-				"lodash": "^4.17.21",
-				"react-is": "^18.3.1",
-				"react-smooth": "^4.0.4",
-				"recharts-scale": "^0.4.4",
-				"tiny-invariant": "^1.3.1",
-				"victory-vendor": "^36.6.8"
-			},
-			"engines": {
-				"node": ">=14"
-			},
-			"peerDependencies": {
-				"react": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
-				"react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
-			}
-		},
-		"node_modules/recharts-scale": {
-			"version": "0.4.5",
-			"resolved": "https://registry.npmjs.org/recharts-scale/-/recharts-scale-0.4.5.tgz",
-			"integrity": "sha512-kivNFO+0OcUNu7jQquLXAxz1FIwZj8nrj+YkOKc5694NbjCvcT6aSZiIzNzd2Kul4o4rTto8QVR9lMNtxD4G1w==",
-			"license": "MIT",
-			"dependencies": {
-				"decimal.js-light": "^2.4.1"
-			}
-		},
-		"node_modules/recharts/node_modules/react-is": {
-			"version": "18.3.1",
-			"resolved": "https://registry.npmjs.org/react-is/-/react-is-18.3.1.tgz",
-			"integrity": "sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==",
-			"license": "MIT"
-		},
-		"node_modules/reflect.getprototypeof": {
-			"version": "1.0.10",
-			"resolved": "https://registry.npmjs.org/reflect.getprototypeof/-/reflect.getprototypeof-1.0.10.tgz",
-			"integrity": "sha512-00o4I+DVrefhv+nX0ulyi3biSHCPDe+yLv5o/p6d/UVlirijB8E16FtfwSAi4g3tcqrQ4lRAqQSoFEZJehYEcw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.9",
-				"es-errors": "^1.3.0",
-				"es-object-atoms": "^1.0.0",
-				"get-intrinsic": "^1.2.7",
-				"get-proto": "^1.0.1",
-				"which-builtin-type": "^1.2.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/regexp.prototype.flags": {
-			"version": "1.5.4",
-			"resolved": "https://registry.npmjs.org/regexp.prototype.flags/-/regexp.prototype.flags-1.5.4.tgz",
-			"integrity": "sha512-dYqgNSZbDwkaJ2ceRd9ojCGjBq+mOm9LmtXnAnEGyHhN/5R7iDW2TRw3h+o/jCFxus3P2LfWIIiwowAjANm7IA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"define-properties": "^1.2.1",
-				"es-errors": "^1.3.0",
-				"get-proto": "^1.0.1",
-				"gopd": "^1.2.0",
-				"set-function-name": "^2.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/require-directory": {
-			"version": "2.1.1",
-			"resolved": "https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz",
-			"integrity": "sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/resolve": {
-			"version": "1.22.11",
-			"resolved": "https://registry.npmjs.org/resolve/-/resolve-1.22.11.tgz",
-			"integrity": "sha512-RfqAvLnMl313r7c9oclB1HhUEAezcpLjz95wFH4LVuhk9JF/r22qmVP9AMmOU4vMX7Q8pN8jwNg/CSpdFnMjTQ==",
-			"license": "MIT",
-			"dependencies": {
-				"is-core-module": "^2.16.1",
-				"path-parse": "^1.0.7",
-				"supports-preserve-symlinks-flag": "^1.0.0"
-			},
-			"bin": {
-				"resolve": "bin/resolve"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/resolve-from": {
-			"version": "4.0.0",
-			"resolved": "https://registry.npmjs.org/resolve-from/-/resolve-from-4.0.0.tgz",
-			"integrity": "sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=4"
-			}
-		},
-		"node_modules/reusify": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/reusify/-/reusify-1.1.0.tgz",
-			"integrity": "sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==",
-			"license": "MIT",
-			"engines": {
-				"iojs": ">=1.0.0",
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/rollup": {
-			"version": "4.60.1",
-			"resolved": "https://registry.npmjs.org/rollup/-/rollup-4.60.1.tgz",
-			"integrity": "sha512-VmtB2rFU/GroZ4oL8+ZqXgSA38O6GR8KSIvWmEFv63pQ0G6KaBH9s07PO8XTXP4vI+3UJUEypOfjkGfmSBBR0w==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@types/estree": "1.0.8"
-			},
-			"bin": {
-				"rollup": "dist/bin/rollup"
-			},
-			"engines": {
-				"node": ">=18.0.0",
-				"npm": ">=8.0.0"
-			},
-			"optionalDependencies": {
-				"@rollup/rollup-android-arm-eabi": "4.60.1",
-				"@rollup/rollup-android-arm64": "4.60.1",
-				"@rollup/rollup-darwin-arm64": "4.60.1",
-				"@rollup/rollup-darwin-x64": "4.60.1",
-				"@rollup/rollup-freebsd-arm64": "4.60.1",
-				"@rollup/rollup-freebsd-x64": "4.60.1",
-				"@rollup/rollup-linux-arm-gnueabihf": "4.60.1",
-				"@rollup/rollup-linux-arm-musleabihf": "4.60.1",
-				"@rollup/rollup-linux-arm64-gnu": "4.60.1",
-				"@rollup/rollup-linux-arm64-musl": "4.60.1",
-				"@rollup/rollup-linux-loong64-gnu": "4.60.1",
-				"@rollup/rollup-linux-loong64-musl": "4.60.1",
-				"@rollup/rollup-linux-ppc64-gnu": "4.60.1",
-				"@rollup/rollup-linux-ppc64-musl": "4.60.1",
-				"@rollup/rollup-linux-riscv64-gnu": "4.60.1",
-				"@rollup/rollup-linux-riscv64-musl": "4.60.1",
-				"@rollup/rollup-linux-s390x-gnu": "4.60.1",
-				"@rollup/rollup-linux-x64-gnu": "4.60.1",
-				"@rollup/rollup-linux-x64-musl": "4.60.1",
-				"@rollup/rollup-openbsd-x64": "4.60.1",
-				"@rollup/rollup-openharmony-arm64": "4.60.1",
-				"@rollup/rollup-win32-arm64-msvc": "4.60.1",
-				"@rollup/rollup-win32-ia32-msvc": "4.60.1",
-				"@rollup/rollup-win32-x64-gnu": "4.60.1",
-				"@rollup/rollup-win32-x64-msvc": "4.60.1",
-				"fsevents": "~2.3.2"
-			}
-		},
-		"node_modules/run-parallel": {
-			"version": "1.2.0",
-			"resolved": "https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz",
-			"integrity": "sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==",
-			"funding": [
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/feross"
-				},
-				{
-					"type": "patreon",
-					"url": "https://www.patreon.com/feross"
-				},
-				{
-					"type": "consulting",
-					"url": "https://feross.org/support"
-				}
-			],
-			"license": "MIT",
-			"dependencies": {
-				"queue-microtask": "^1.2.2"
-			}
-		},
-		"node_modules/rxjs": {
-			"version": "7.8.2",
-			"resolved": "https://registry.npmjs.org/rxjs/-/rxjs-7.8.2.tgz",
-			"integrity": "sha512-dhKf903U/PQZY6boNNtAGdWbG85WAbjT/1xYoZIC7FAY0yWapOBQVsVrDl58W86//e1VpMNBtRV4MaXfdMySFA==",
-			"dev": true,
-			"license": "Apache-2.0",
-			"dependencies": {
-				"tslib": "^2.1.0"
-			}
-		},
-		"node_modules/safe-array-concat": {
-			"version": "1.1.3",
-			"resolved": "https://registry.npmjs.org/safe-array-concat/-/safe-array-concat-1.1.3.tgz",
-			"integrity": "sha512-AURm5f0jYEOydBj7VQlVvDrjeFgthDdEF5H1dP+6mNpoXOMo1quQqJ4wvJDyRZ9+pO3kGWoOdmV08cSv2aJV6Q==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.2",
-				"get-intrinsic": "^1.2.6",
-				"has-symbols": "^1.1.0",
-				"isarray": "^2.0.5"
-			},
-			"engines": {
-				"node": ">=0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/safe-push-apply": {
-			"version": "1.0.0",
-			"resolved": "https://registry.npmjs.org/safe-push-apply/-/safe-push-apply-1.0.0.tgz",
-			"integrity": "sha512-iKE9w/Z7xCzUMIZqdBsp6pEQvwuEebH4vdpjcDWnyzaI6yl6O9FHvVpmGelvEHNsoY6wGblkxR6Zty/h00WiSA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0",
-				"isarray": "^2.0.5"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/safe-regex-test": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/safe-regex-test/-/safe-regex-test-1.1.0.tgz",
-			"integrity": "sha512-x/+Cz4YrimQxQccJf5mKEbIa1NzeCRNI5Ecl/ekmlYaampdNLPalVyIcCZNNH3MvmqBugV5TMYZXv0ljslUlaw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"es-errors": "^1.3.0",
-				"is-regex": "^1.2.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/scheduler": {
-			"version": "0.23.2",
-			"resolved": "https://registry.npmjs.org/scheduler/-/scheduler-0.23.2.tgz",
-			"integrity": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==",
-			"license": "MIT",
-			"dependencies": {
-				"loose-envify": "^1.1.0"
-			}
-		},
-		"node_modules/semver": {
-			"version": "6.3.1",
-			"resolved": "https://registry.npmjs.org/semver/-/semver-6.3.1.tgz",
-			"integrity": "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==",
-			"dev": true,
-			"license": "ISC",
-			"bin": {
-				"semver": "bin/semver.js"
-			}
-		},
-		"node_modules/set-cookie-parser": {
-			"version": "2.7.2",
-			"resolved": "https://registry.npmjs.org/set-cookie-parser/-/set-cookie-parser-2.7.2.tgz",
-			"integrity": "sha512-oeM1lpU/UvhTxw+g3cIfxXHyJRc/uidd3yK1P242gzHds0udQBYzs3y8j4gCCW+ZJ7ad0yctld8RYO+bdurlvw==",
-			"license": "MIT"
-		},
-		"node_modules/set-function-length": {
-			"version": "1.2.2",
-			"resolved": "https://registry.npmjs.org/set-function-length/-/set-function-length-1.2.2.tgz",
-			"integrity": "sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"define-data-property": "^1.1.4",
-				"es-errors": "^1.3.0",
-				"function-bind": "^1.1.2",
-				"get-intrinsic": "^1.2.4",
-				"gopd": "^1.0.1",
-				"has-property-descriptors": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/set-function-name": {
-			"version": "2.0.2",
-			"resolved": "https://registry.npmjs.org/set-function-name/-/set-function-name-2.0.2.tgz",
-			"integrity": "sha512-7PGFlmtwsEADb0WYyvCMa1t+yke6daIG4Wirafur5kcf+MhUnPms1UeR0CKQdTZD81yESwMHbtn+TR+dMviakQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"define-data-property": "^1.1.4",
-				"es-errors": "^1.3.0",
-				"functions-have-names": "^1.2.3",
-				"has-property-descriptors": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/set-proto": {
-			"version": "1.0.0",
-			"resolved": "https://registry.npmjs.org/set-proto/-/set-proto-1.0.0.tgz",
-			"integrity": "sha512-RJRdvCo6IAnPdsvP/7m6bsQqNnn1FCBX5ZNtFL98MmFF/4xAIJTIg1YbHW5DC2W5SKZanrC6i4HsJqlajw/dZw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"dunder-proto": "^1.0.1",
-				"es-errors": "^1.3.0",
-				"es-object-atoms": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/shebang-command": {
-			"version": "2.0.0",
-			"resolved": "https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz",
-			"integrity": "sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"shebang-regex": "^3.0.0"
-			},
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/shebang-regex": {
-			"version": "3.0.0",
-			"resolved": "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz",
-			"integrity": "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/shell-quote": {
-			"version": "1.8.3",
-			"resolved": "https://registry.npmjs.org/shell-quote/-/shell-quote-1.8.3.tgz",
-			"integrity": "sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/side-channel": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/side-channel/-/side-channel-1.1.0.tgz",
-			"integrity": "sha512-ZX99e6tRweoUXqR+VBrslhda51Nh5MTQwou5tnUDgbtyM0dBgmhEDtWGP/xbKn6hqfPRHujUNwz5fy/wbbhnpw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0",
-				"object-inspect": "^1.13.3",
-				"side-channel-list": "^1.0.0",
-				"side-channel-map": "^1.0.1",
-				"side-channel-weakmap": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/side-channel-list": {
-			"version": "1.0.0",
-			"resolved": "https://registry.npmjs.org/side-channel-list/-/side-channel-list-1.0.0.tgz",
-			"integrity": "sha512-FCLHtRD/gnpCiCHEiJLOwdmFP+wzCmDEkc9y7NsYxeF4u7Btsn1ZuwgwJGxImImHicJArLP4R0yX4c2KCrMrTA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0",
-				"object-inspect": "^1.13.3"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/side-channel-map": {
-			"version": "1.0.1",
-			"resolved": "https://registry.npmjs.org/side-channel-map/-/side-channel-map-1.0.1.tgz",
-			"integrity": "sha512-VCjCNfgMsby3tTdo02nbjtM/ewra6jPHmpThenkTYh8pG9ucZ/1P8So4u4FGBek/BjpOVsDCMoLA/iuBKIFXRA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"es-errors": "^1.3.0",
-				"get-intrinsic": "^1.2.5",
-				"object-inspect": "^1.13.3"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/side-channel-weakmap": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/side-channel-weakmap/-/side-channel-weakmap-1.0.2.tgz",
-			"integrity": "sha512-WPS/HvHQTYnHisLo9McqBHOJk2FkHO/tlpvldyrnem4aeQp4hai3gythswg6p01oSoTl58rcpiFAjF2br2Ak2A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"es-errors": "^1.3.0",
-				"get-intrinsic": "^1.2.5",
-				"object-inspect": "^1.13.3",
-				"side-channel-map": "^1.0.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/sonner": {
-			"version": "2.0.7",
-			"resolved": "https://registry.npmjs.org/sonner/-/sonner-2.0.7.tgz",
-			"integrity": "sha512-W6ZN4p58k8aDKA4XPcx2hpIQXBRAgyiWVkYhT7CvK6D3iAu7xjvVyhQHg2/iaKJZ1XVJ4r7XuwGL+WGEK37i9w==",
-			"license": "MIT",
-			"peerDependencies": {
-				"react": "^18.0.0 || ^19.0.0 || ^19.0.0-rc",
-				"react-dom": "^18.0.0 || ^19.0.0 || ^19.0.0-rc"
-			}
-		},
-		"node_modules/source-map": {
-			"version": "0.6.1",
-			"resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz",
-			"integrity": "sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==",
-			"dev": true,
-			"license": "BSD-3-Clause",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/source-map-js": {
-			"version": "1.2.1",
-			"resolved": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz",
-			"integrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==",
-			"license": "BSD-3-Clause",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/source-map-support": {
-			"version": "0.5.21",
-			"resolved": "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.21.tgz",
-			"integrity": "sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"buffer-from": "^1.0.0",
-				"source-map": "^0.6.0"
-			}
-		},
-		"node_modules/stop-iteration-iterator": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/stop-iteration-iterator/-/stop-iteration-iterator-1.1.0.tgz",
-			"integrity": "sha512-eLoXW/DHyl62zxY4SCaIgnRhuMr6ri4juEYARS8E6sCEqzKpOiE521Ucofdx+KnDZl5xmvGYaaKCk5FEOxJCoQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"es-errors": "^1.3.0",
-				"internal-slot": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/string-width": {
-			"version": "4.2.3",
-			"resolved": "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz",
-			"integrity": "sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"emoji-regex": "^8.0.0",
-				"is-fullwidth-code-point": "^3.0.0",
-				"strip-ansi": "^6.0.1"
-			},
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/string.prototype.matchall": {
-			"version": "4.0.12",
-			"resolved": "https://registry.npmjs.org/string.prototype.matchall/-/string.prototype.matchall-4.0.12.tgz",
-			"integrity": "sha512-6CC9uyBL+/48dYizRf7H7VAYCMCNTBeM78x/VTUe9bFEaxBepPJDa1Ow99LqI/1yF7kuy7Q3cQsYMrcjGUcskA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.3",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.6",
-				"es-errors": "^1.3.0",
-				"es-object-atoms": "^1.0.0",
-				"get-intrinsic": "^1.2.6",
-				"gopd": "^1.2.0",
-				"has-symbols": "^1.1.0",
-				"internal-slot": "^1.1.0",
-				"regexp.prototype.flags": "^1.5.3",
-				"set-function-name": "^2.0.2",
-				"side-channel": "^1.1.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/string.prototype.repeat": {
-			"version": "1.0.0",
-			"resolved": "https://registry.npmjs.org/string.prototype.repeat/-/string.prototype.repeat-1.0.0.tgz",
-			"integrity": "sha512-0u/TldDbKD8bFCQ/4f5+mNRrXwZ8hg2w7ZR8wa16e8z9XpePWl3eGEcUD0OXpEH/VJH/2G3gjUtR3ZOiBe2S/w==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"define-properties": "^1.1.3",
-				"es-abstract": "^1.17.5"
-			}
-		},
-		"node_modules/string.prototype.trim": {
-			"version": "1.2.10",
-			"resolved": "https://registry.npmjs.org/string.prototype.trim/-/string.prototype.trim-1.2.10.tgz",
-			"integrity": "sha512-Rs66F0P/1kedk5lyYyH9uBzuiI/kNRmwJAR9quK6VOtIpZ2G+hMZd+HQbbv25MgCA6gEffoMZYxlTod4WcdrKA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.2",
-				"define-data-property": "^1.1.4",
-				"define-properties": "^1.2.1",
-				"es-abstract": "^1.23.5",
-				"es-object-atoms": "^1.0.0",
-				"has-property-descriptors": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/string.prototype.trimend": {
-			"version": "1.0.9",
-			"resolved": "https://registry.npmjs.org/string.prototype.trimend/-/string.prototype.trimend-1.0.9.tgz",
-			"integrity": "sha512-G7Ok5C6E/j4SGfyLCloXTrngQIQU3PWtXGst3yM7Bea9FRURf1S42ZHlZZtsNque2FN2PoUhfZXYLNWwEr4dLQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.2",
-				"define-properties": "^1.2.1",
-				"es-object-atoms": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/string.prototype.trimstart": {
-			"version": "1.0.8",
-			"resolved": "https://registry.npmjs.org/string.prototype.trimstart/-/string.prototype.trimstart-1.0.8.tgz",
-			"integrity": "sha512-UXSH262CSZY1tfu3G3Secr6uGLCFVPMhIqHjlgCUtCCcgihYc/xKs9djMTMUOb2j1mVSeU8EU6NWc/iQKU6Gfg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.7",
-				"define-properties": "^1.2.1",
-				"es-object-atoms": "^1.0.0"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/strip-ansi": {
-			"version": "6.0.1",
-			"resolved": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
-			"integrity": "sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"ansi-regex": "^5.0.1"
-			},
-			"engines": {
-				"node": ">=8"
-			}
-		},
-		"node_modules/strip-bom": {
-			"version": "3.0.0",
-			"resolved": "https://registry.npmjs.org/strip-bom/-/strip-bom-3.0.0.tgz",
-			"integrity": "sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=4"
-			}
-		},
-		"node_modules/strip-json-comments": {
-			"version": "3.1.1",
-			"resolved": "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz",
-			"integrity": "sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=8"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/sucrase": {
-			"version": "3.35.1",
-			"resolved": "https://registry.npmjs.org/sucrase/-/sucrase-3.35.1.tgz",
-			"integrity": "sha512-DhuTmvZWux4H1UOnWMB3sk0sbaCVOoQZjv8u1rDoTV0HTdGem9hkAZtl4JZy8P2z4Bg0nT+YMeOFyVr4zcG5Tw==",
-			"license": "MIT",
-			"dependencies": {
-				"@jridgewell/gen-mapping": "^0.3.2",
-				"commander": "^4.0.0",
-				"lines-and-columns": "^1.1.6",
-				"mz": "^2.7.0",
-				"pirates": "^4.0.1",
-				"tinyglobby": "^0.2.11",
-				"ts-interface-checker": "^0.1.9"
-			},
-			"bin": {
-				"sucrase": "bin/sucrase",
-				"sucrase-node": "bin/sucrase-node"
-			},
-			"engines": {
-				"node": ">=16 || 14 >=14.17"
-			}
-		},
-		"node_modules/supports-color": {
-			"version": "8.1.1",
-			"resolved": "https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz",
-			"integrity": "sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"has-flag": "^4.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/chalk/supports-color?sponsor=1"
-			}
-		},
-		"node_modules/supports-preserve-symlinks-flag": {
-			"version": "1.0.0",
-			"resolved": "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz",
-			"integrity": "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==",
-			"license": "MIT",
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/tailwind-merge": {
-			"version": "2.6.1",
-			"resolved": "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-2.6.1.tgz",
-			"integrity": "sha512-Oo6tHdpZsGpkKG88HJ8RR1rg/RdnEkQEfMoEk2x1XRI3F1AxeU+ijRXpiVUF4UbLfcxxRGw6TbUINKYdWVsQTQ==",
-			"license": "MIT",
-			"funding": {
-				"type": "github",
-				"url": "https://github.com/sponsors/dcastil"
-			}
-		},
-		"node_modules/tailwindcss": {
-			"version": "3.4.19",
-			"resolved": "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.19.tgz",
-			"integrity": "sha512-3ofp+LL8E+pK/JuPLPggVAIaEuhvIz4qNcf3nA1Xn2o/7fb7s/TYpHhwGDv1ZU3PkBluUVaF8PyCHcm48cKLWQ==",
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"@alloc/quick-lru": "^5.2.0",
-				"arg": "^5.0.2",
-				"chokidar": "^3.6.0",
-				"didyoumean": "^1.2.2",
-				"dlv": "^1.1.3",
-				"fast-glob": "^3.3.2",
-				"glob-parent": "^6.0.2",
-				"is-glob": "^4.0.3",
-				"jiti": "^1.21.7",
-				"lilconfig": "^3.1.3",
-				"micromatch": "^4.0.8",
-				"normalize-path": "^3.0.0",
-				"object-hash": "^3.0.0",
-				"picocolors": "^1.1.1",
-				"postcss": "^8.4.47",
-				"postcss-import": "^15.1.0",
-				"postcss-js": "^4.0.1",
-				"postcss-load-config": "^4.0.2 || ^5.0 || ^6.0",
-				"postcss-nested": "^6.2.0",
-				"postcss-selector-parser": "^6.1.2",
-				"resolve": "^1.22.8",
-				"sucrase": "^3.35.0"
-			},
-			"bin": {
-				"tailwind": "lib/cli.js",
-				"tailwindcss": "lib/cli.js"
-			},
-			"engines": {
-				"node": ">=14.0.0"
-			}
-		},
-		"node_modules/tailwindcss-animate": {
-			"version": "1.0.7",
-			"resolved": "https://registry.npmjs.org/tailwindcss-animate/-/tailwindcss-animate-1.0.7.tgz",
-			"integrity": "sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==",
-			"license": "MIT",
-			"peerDependencies": {
-				"tailwindcss": ">=3.0.0 || insiders"
-			}
-		},
-		"node_modules/terser": {
-			"version": "5.46.1",
-			"resolved": "https://registry.npmjs.org/terser/-/terser-5.46.1.tgz",
-			"integrity": "sha512-vzCjQO/rgUuK9sf8VJZvjqiqiHFaZLnOiimmUuOKODxWL8mm/xua7viT7aqX7dgPY60otQjUotzFMmCB4VdmqQ==",
-			"dev": true,
-			"license": "BSD-2-Clause",
-			"dependencies": {
-				"@jridgewell/source-map": "^0.3.3",
-				"acorn": "^8.15.0",
-				"commander": "^2.20.0",
-				"source-map-support": "~0.5.20"
-			},
-			"bin": {
-				"terser": "bin/terser"
-			},
-			"engines": {
-				"node": ">=10"
-			}
-		},
-		"node_modules/terser/node_modules/commander": {
-			"version": "2.20.3",
-			"resolved": "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz",
-			"integrity": "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/thenify": {
-			"version": "3.3.1",
-			"resolved": "https://registry.npmjs.org/thenify/-/thenify-3.3.1.tgz",
-			"integrity": "sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==",
-			"license": "MIT",
-			"dependencies": {
-				"any-promise": "^1.0.0"
-			}
-		},
-		"node_modules/thenify-all": {
-			"version": "1.6.0",
-			"resolved": "https://registry.npmjs.org/thenify-all/-/thenify-all-1.6.0.tgz",
-			"integrity": "sha512-RNxQH/qI8/t3thXJDwcstUO4zeqo64+Uy/+sNVRBx4Xn2OX+OZ9oP+iJnNFqplFra2ZUVeKCSa2oVWi3T4uVmA==",
-			"license": "MIT",
-			"dependencies": {
-				"thenify": ">= 3.1.0 < 4"
-			},
-			"engines": {
-				"node": ">=0.8"
-			}
-		},
-		"node_modules/tiny-invariant": {
-			"version": "1.3.3",
-			"resolved": "https://registry.npmjs.org/tiny-invariant/-/tiny-invariant-1.3.3.tgz",
-			"integrity": "sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg==",
-			"license": "MIT"
-		},
-		"node_modules/tinyglobby": {
-			"version": "0.2.15",
-			"resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.15.tgz",
-			"integrity": "sha512-j2Zq4NyQYG5XMST4cbs02Ak8iJUdxRM0XI5QyxXuZOzKOINmWurp3smXu3y5wDcJrptwpSjgXHzIQxR0omXljQ==",
-			"license": "MIT",
-			"dependencies": {
-				"fdir": "^6.5.0",
-				"picomatch": "^4.0.3"
-			},
-			"engines": {
-				"node": ">=12.0.0"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/SuperchupuDev"
-			}
-		},
-		"node_modules/tinyglobby/node_modules/fdir": {
-			"version": "6.5.0",
-			"resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
-			"integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
-			"license": "MIT",
-			"engines": {
-				"node": ">=12.0.0"
-			},
-			"peerDependencies": {
-				"picomatch": "^3 || ^4"
-			},
-			"peerDependenciesMeta": {
-				"picomatch": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/tinyglobby/node_modules/picomatch": {
-			"version": "4.0.4",
-			"resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.4.tgz",
-			"integrity": "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==",
-			"license": "MIT",
-			"peer": true,
-			"engines": {
-				"node": ">=12"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/jonschlinkert"
-			}
-		},
-		"node_modules/to-regex-range": {
-			"version": "5.0.1",
-			"resolved": "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz",
-			"integrity": "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==",
-			"license": "MIT",
-			"dependencies": {
-				"is-number": "^7.0.0"
-			},
-			"engines": {
-				"node": ">=8.0"
-			}
-		},
-		"node_modules/tree-kill": {
-			"version": "1.2.2",
-			"resolved": "https://registry.npmjs.org/tree-kill/-/tree-kill-1.2.2.tgz",
-			"integrity": "sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==",
-			"dev": true,
-			"license": "MIT",
-			"bin": {
-				"tree-kill": "cli.js"
-			}
-		},
-		"node_modules/ts-interface-checker": {
-			"version": "0.1.13",
-			"resolved": "https://registry.npmjs.org/ts-interface-checker/-/ts-interface-checker-0.1.13.tgz",
-			"integrity": "sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==",
-			"license": "Apache-2.0"
-		},
-		"node_modules/tsconfig-paths": {
-			"version": "3.15.0",
-			"resolved": "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.15.0.tgz",
-			"integrity": "sha512-2Ac2RgzDe/cn48GvOe3M+o82pEFewD3UPbyoUHHdKasHwJKjds4fLXWf/Ux5kATBKN20oaFGu+jbElp1pos0mg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"@types/json5": "^0.0.29",
-				"json5": "^1.0.2",
-				"minimist": "^1.2.6",
-				"strip-bom": "^3.0.0"
-			}
-		},
-		"node_modules/tsconfig-paths/node_modules/json5": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/json5/-/json5-1.0.2.tgz",
-			"integrity": "sha512-g1MWMLBiz8FKi1e4w0UyVL3w+iJceWAFBAaBnnGKOpNa5f8TLktkbre1+s6oICydWAm+HRUGTmI+//xv2hvXYA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"minimist": "^1.2.0"
-			},
-			"bin": {
-				"json5": "lib/cli.js"
-			}
-		},
-		"node_modules/tslib": {
-			"version": "2.8.1",
-			"resolved": "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz",
-			"integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==",
-			"license": "0BSD"
-		},
-		"node_modules/type-check": {
-			"version": "0.4.0",
-			"resolved": "https://registry.npmjs.org/type-check/-/type-check-0.4.0.tgz",
-			"integrity": "sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"prelude-ls": "^1.2.1"
-			},
-			"engines": {
-				"node": ">= 0.8.0"
-			}
-		},
-		"node_modules/typed-array-buffer": {
-			"version": "1.0.3",
-			"resolved": "https://registry.npmjs.org/typed-array-buffer/-/typed-array-buffer-1.0.3.tgz",
-			"integrity": "sha512-nAYYwfY3qnzX30IkA6AQZjVbtK6duGontcQm1WSG1MD94YLqK0515GNApXkoxKOWMusVssAHWLh9SeaoefYFGw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"es-errors": "^1.3.0",
-				"is-typed-array": "^1.1.14"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			}
-		},
-		"node_modules/typed-array-byte-length": {
-			"version": "1.0.3",
-			"resolved": "https://registry.npmjs.org/typed-array-byte-length/-/typed-array-byte-length-1.0.3.tgz",
-			"integrity": "sha512-BaXgOuIxz8n8pIq3e7Atg/7s+DpiYrxn4vdot3w9KbnBhcRQq6o3xemQdIfynqSeXeDrF32x+WvfzmOjPiY9lg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.8",
-				"for-each": "^0.3.3",
-				"gopd": "^1.2.0",
-				"has-proto": "^1.2.0",
-				"is-typed-array": "^1.1.14"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/typed-array-byte-offset": {
-			"version": "1.0.4",
-			"resolved": "https://registry.npmjs.org/typed-array-byte-offset/-/typed-array-byte-offset-1.0.4.tgz",
-			"integrity": "sha512-bTlAFB/FBYMcuX81gbL4OcpH5PmlFHqlCCpAl8AlEzMz5k53oNDvN8p1PNOWLEmI2x4orp3raOFB51tv9X+MFQ==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"available-typed-arrays": "^1.0.7",
-				"call-bind": "^1.0.8",
-				"for-each": "^0.3.3",
-				"gopd": "^1.2.0",
-				"has-proto": "^1.2.0",
-				"is-typed-array": "^1.1.15",
-				"reflect.getprototypeof": "^1.0.9"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/typed-array-length": {
-			"version": "1.0.7",
-			"resolved": "https://registry.npmjs.org/typed-array-length/-/typed-array-length-1.0.7.tgz",
-			"integrity": "sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bind": "^1.0.7",
-				"for-each": "^0.3.3",
-				"gopd": "^1.0.1",
-				"is-typed-array": "^1.1.13",
-				"possible-typed-array-names": "^1.0.0",
-				"reflect.getprototypeof": "^1.0.6"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/unbox-primitive": {
-			"version": "1.1.0",
-			"resolved": "https://registry.npmjs.org/unbox-primitive/-/unbox-primitive-1.1.0.tgz",
-			"integrity": "sha512-nWJ91DjeOkej/TA8pXQ3myruKpKEYgqvpw9lz4OPHj/NWFNluYrjbz9j01CJ8yKQd2g4jFoOkINCTW2I5LEEyw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.3",
-				"has-bigints": "^1.0.2",
-				"has-symbols": "^1.1.0",
-				"which-boxed-primitive": "^1.1.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/undici-types": {
-			"version": "6.21.0",
-			"resolved": "https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz",
-			"integrity": "sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==",
-			"dev": true,
-			"license": "MIT"
-		},
-		"node_modules/update-browserslist-db": {
-			"version": "1.2.3",
-			"resolved": "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.2.3.tgz",
-			"integrity": "sha512-Js0m9cx+qOgDxo0eMiFGEueWztz+d4+M3rGlmKPT+T4IS/jP4ylw3Nwpu6cpTTP8R1MAC1kF4VbdLt3ARf209w==",
-			"dev": true,
-			"funding": [
-				{
-					"type": "opencollective",
-					"url": "https://opencollective.com/browserslist"
-				},
-				{
-					"type": "tidelift",
-					"url": "https://tidelift.com/funding/github/npm/browserslist"
-				},
-				{
-					"type": "github",
-					"url": "https://github.com/sponsors/ai"
-				}
-			],
-			"license": "MIT",
-			"dependencies": {
-				"escalade": "^3.2.0",
-				"picocolors": "^1.1.1"
-			},
-			"bin": {
-				"update-browserslist-db": "cli.js"
-			},
-			"peerDependencies": {
-				"browserslist": ">= 4.21.0"
-			}
-		},
-		"node_modules/uri-js": {
-			"version": "4.4.1",
-			"resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.4.1.tgz",
-			"integrity": "sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==",
-			"dev": true,
-			"license": "BSD-2-Clause",
-			"dependencies": {
-				"punycode": "^2.1.0"
-			}
-		},
-		"node_modules/use-callback-ref": {
-			"version": "1.3.3",
-			"resolved": "https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.3.tgz",
-			"integrity": "sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg==",
-			"license": "MIT",
-			"dependencies": {
-				"tslib": "^2.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/use-sidecar": {
-			"version": "1.1.3",
-			"resolved": "https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.1.3.tgz",
-			"integrity": "sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==",
-			"license": "MIT",
-			"dependencies": {
-				"detect-node-es": "^1.1.0",
-				"tslib": "^2.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"peerDependencies": {
-				"@types/react": "*",
-				"react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc"
-			},
-			"peerDependenciesMeta": {
-				"@types/react": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/use-sync-external-store": {
-			"version": "1.6.0",
-			"resolved": "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.6.0.tgz",
-			"integrity": "sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==",
-			"license": "MIT",
-			"peerDependencies": {
-				"react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
-			}
-		},
-		"node_modules/util-deprecate": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz",
-			"integrity": "sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==",
-			"license": "MIT"
-		},
-		"node_modules/vaul": {
-			"version": "1.1.2",
-			"resolved": "https://registry.npmjs.org/vaul/-/vaul-1.1.2.tgz",
-			"integrity": "sha512-ZFkClGpWyI2WUQjdLJ/BaGuV6AVQiJ3uELGk3OYtP+B6yCO7Cmn9vPFXVJkRaGkOJu3m8bQMgtyzNHixULceQA==",
-			"license": "MIT",
-			"dependencies": {
-				"@radix-ui/react-dialog": "^1.1.1"
-			},
-			"peerDependencies": {
-				"react": "^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc",
-				"react-dom": "^16.8 || ^17.0 || ^18.0 || ^19.0.0 || ^19.0.0-rc"
-			}
-		},
-		"node_modules/victory-vendor": {
-			"version": "36.9.2",
-			"resolved": "https://registry.npmjs.org/victory-vendor/-/victory-vendor-36.9.2.tgz",
-			"integrity": "sha512-PnpQQMuxlwYdocC8fIJqVXvkeViHYzotI+NJrCuav0ZYFoq912ZHBk3mCeuj+5/VpodOjPe1z0Fk2ihgzlXqjQ==",
-			"license": "MIT AND ISC",
-			"dependencies": {
-				"@types/d3-array": "^3.0.3",
-				"@types/d3-ease": "^3.0.0",
-				"@types/d3-interpolate": "^3.0.1",
-				"@types/d3-scale": "^4.0.2",
-				"@types/d3-shape": "^3.1.0",
-				"@types/d3-time": "^3.0.0",
-				"@types/d3-timer": "^3.0.0",
-				"d3-array": "^3.1.6",
-				"d3-ease": "^3.0.1",
-				"d3-interpolate": "^3.0.1",
-				"d3-scale": "^4.0.2",
-				"d3-shape": "^3.1.0",
-				"d3-time": "^3.0.0",
-				"d3-timer": "^3.0.1"
-			}
-		},
-		"node_modules/vite": {
-			"version": "7.3.1",
-			"resolved": "https://registry.npmjs.org/vite/-/vite-7.3.1.tgz",
-			"integrity": "sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==",
-			"dev": true,
-			"license": "MIT",
-			"peer": true,
-			"dependencies": {
-				"esbuild": "^0.27.0",
-				"fdir": "^6.5.0",
-				"picomatch": "^4.0.3",
-				"postcss": "^8.5.6",
-				"rollup": "^4.43.0",
-				"tinyglobby": "^0.2.15"
-			},
-			"bin": {
-				"vite": "bin/vite.js"
-			},
-			"engines": {
-				"node": "^20.19.0 || >=22.12.0"
-			},
-			"funding": {
-				"url": "https://github.com/vitejs/vite?sponsor=1"
-			},
-			"optionalDependencies": {
-				"fsevents": "~2.3.3"
-			},
-			"peerDependencies": {
-				"@types/node": "^20.19.0 || >=22.12.0",
-				"jiti": ">=1.21.0",
-				"less": "^4.0.0",
-				"lightningcss": "^1.21.0",
-				"sass": "^1.70.0",
-				"sass-embedded": "^1.70.0",
-				"stylus": ">=0.54.8",
-				"sugarss": "^5.0.0",
-				"terser": "^5.16.0",
-				"tsx": "^4.8.1",
-				"yaml": "^2.4.2"
-			},
-			"peerDependenciesMeta": {
-				"@types/node": {
-					"optional": true
-				},
-				"jiti": {
-					"optional": true
-				},
-				"less": {
-					"optional": true
-				},
-				"lightningcss": {
-					"optional": true
-				},
-				"sass": {
-					"optional": true
-				},
-				"sass-embedded": {
-					"optional": true
-				},
-				"stylus": {
-					"optional": true
-				},
-				"sugarss": {
-					"optional": true
-				},
-				"terser": {
-					"optional": true
-				},
-				"tsx": {
-					"optional": true
-				},
-				"yaml": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/vite/node_modules/fdir": {
-			"version": "6.5.0",
-			"resolved": "https://registry.npmjs.org/fdir/-/fdir-6.5.0.tgz",
-			"integrity": "sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=12.0.0"
-			},
-			"peerDependencies": {
-				"picomatch": "^3 || ^4"
-			},
-			"peerDependenciesMeta": {
-				"picomatch": {
-					"optional": true
-				}
-			}
-		},
-		"node_modules/vite/node_modules/picomatch": {
-			"version": "4.0.4",
-			"resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.4.tgz",
-			"integrity": "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==",
-			"dev": true,
-			"license": "MIT",
-			"peer": true,
-			"engines": {
-				"node": ">=12"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/jonschlinkert"
-			}
-		},
-		"node_modules/web": {
-			"resolved": "apps/web",
-			"link": true
-		},
-		"node_modules/which": {
-			"version": "2.0.2",
-			"resolved": "https://registry.npmjs.org/which/-/which-2.0.2.tgz",
-			"integrity": "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==",
-			"dev": true,
-			"license": "ISC",
-			"dependencies": {
-				"isexe": "^2.0.0"
-			},
-			"bin": {
-				"node-which": "bin/node-which"
-			},
-			"engines": {
-				"node": ">= 8"
-			}
-		},
-		"node_modules/which-boxed-primitive": {
-			"version": "1.1.1",
-			"resolved": "https://registry.npmjs.org/which-boxed-primitive/-/which-boxed-primitive-1.1.1.tgz",
-			"integrity": "sha512-TbX3mj8n0odCBFVlY8AxkqcHASw3L60jIuF8jFP78az3C2YhmGvqbHBpAjTRH2/xqYunrJ9g1jSyjCjpoWzIAA==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"is-bigint": "^1.1.0",
-				"is-boolean-object": "^1.2.1",
-				"is-number-object": "^1.1.1",
-				"is-string": "^1.1.1",
-				"is-symbol": "^1.1.1"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/which-builtin-type": {
-			"version": "1.2.1",
-			"resolved": "https://registry.npmjs.org/which-builtin-type/-/which-builtin-type-1.2.1.tgz",
-			"integrity": "sha512-6iBczoX+kDQ7a3+YJBnh3T+KZRxM/iYNPXicqk66/Qfm1b93iu+yOImkg0zHbj5LNOcNv1TEADiZ0xa34B4q6Q==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"call-bound": "^1.0.2",
-				"function.prototype.name": "^1.1.6",
-				"has-tostringtag": "^1.0.2",
-				"is-async-function": "^2.0.0",
-				"is-date-object": "^1.1.0",
-				"is-finalizationregistry": "^1.1.0",
-				"is-generator-function": "^1.0.10",
-				"is-regex": "^1.2.1",
-				"is-weakref": "^1.0.2",
-				"isarray": "^2.0.5",
-				"which-boxed-primitive": "^1.1.0",
-				"which-collection": "^1.0.2",
-				"which-typed-array": "^1.1.16"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/which-collection": {
-			"version": "1.0.2",
-			"resolved": "https://registry.npmjs.org/which-collection/-/which-collection-1.0.2.tgz",
-			"integrity": "sha512-K4jVyjnBdgvc86Y6BkaLZEN933SwYOuBFkdmBu9ZfkcAbdVbpITnDmjvZ/aQjRXQrv5EPkTnD1s39GiiqbngCw==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"is-map": "^2.0.3",
-				"is-set": "^2.0.3",
-				"is-weakmap": "^2.0.2",
-				"is-weakset": "^2.0.3"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/which-typed-array": {
-			"version": "1.1.20",
-			"resolved": "https://registry.npmjs.org/which-typed-array/-/which-typed-array-1.1.20.tgz",
-			"integrity": "sha512-LYfpUkmqwl0h9A2HL09Mms427Q1RZWuOHsukfVcKRq9q95iQxdw0ix1JQrqbcDR9PH1QDwf5Qo8OZb5lksZ8Xg==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"available-typed-arrays": "^1.0.7",
-				"call-bind": "^1.0.8",
-				"call-bound": "^1.0.4",
-				"for-each": "^0.3.5",
-				"get-proto": "^1.0.1",
-				"gopd": "^1.2.0",
-				"has-tostringtag": "^1.0.2"
-			},
-			"engines": {
-				"node": ">= 0.4"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/ljharb"
-			}
-		},
-		"node_modules/word-wrap": {
-			"version": "1.2.5",
-			"resolved": "https://registry.npmjs.org/word-wrap/-/word-wrap-1.2.5.tgz",
-			"integrity": "sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=0.10.0"
-			}
-		},
-		"node_modules/wrap-ansi": {
-			"version": "7.0.0",
-			"resolved": "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz",
-			"integrity": "sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"ansi-styles": "^4.0.0",
-				"string-width": "^4.1.0",
-				"strip-ansi": "^6.0.0"
-			},
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/chalk/wrap-ansi?sponsor=1"
-			}
-		},
-		"node_modules/y18n": {
-			"version": "5.0.8",
-			"resolved": "https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz",
-			"integrity": "sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==",
-			"dev": true,
-			"license": "ISC",
-			"engines": {
-				"node": ">=10"
-			}
-		},
-		"node_modules/yallist": {
-			"version": "3.1.1",
-			"resolved": "https://registry.npmjs.org/yallist/-/yallist-3.1.1.tgz",
-			"integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g==",
-			"dev": true,
-			"license": "ISC"
-		},
-		"node_modules/yargs": {
-			"version": "17.7.2",
-			"resolved": "https://registry.npmjs.org/yargs/-/yargs-17.7.2.tgz",
-			"integrity": "sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==",
-			"dev": true,
-			"license": "MIT",
-			"dependencies": {
-				"cliui": "^8.0.1",
-				"escalade": "^3.1.1",
-				"get-caller-file": "^2.0.5",
-				"require-directory": "^2.1.1",
-				"string-width": "^4.2.3",
-				"y18n": "^5.0.5",
-				"yargs-parser": "^21.1.1"
-			},
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/yargs-parser": {
-			"version": "21.1.1",
-			"resolved": "https://registry.npmjs.org/yargs-parser/-/yargs-parser-21.1.1.tgz",
-			"integrity": "sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==",
-			"dev": true,
-			"license": "ISC",
-			"engines": {
-				"node": ">=12"
-			}
-		},
-		"node_modules/yocto-queue": {
-			"version": "0.1.0",
-			"resolved": "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz",
-			"integrity": "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==",
-			"dev": true,
-			"license": "MIT",
-			"engines": {
-				"node": ">=10"
-			},
-			"funding": {
-				"url": "https://github.com/sponsors/sindresorhus"
-			}
-		},
-		"node_modules/zod": {
-			"version": "4.3.6",
-			"resolved": "https://registry.npmjs.org/zod/-/zod-4.3.6.tgz",
-			"integrity": "sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==",
-			"license": "MIT",
-			"funding": {
-				"url": "https://github.com/sponsors/colinhacks"
-			}
-		}
-	}
-}{
-	"name": "monorepo",
-	"version": "0.0.0",
-	"private": true,
-	"scripts": {
-		"dev": "concurrently --kill-others --raw \"npm run dev --prefix apps/web\"",
-		"build": "concurrently --raw \"npm run build --prefix apps/web\"",
-		"start": "concurrently --kill-others --raw",
-		"lint": "concurrently --raw \"npm run lint --prefix apps/web\""
-	},
-	"devDependencies": {
-		"concurrently": "^9.1.2"
-	},
-	"workspaces": [
-		"apps/*"
-	]
+
+<!doctype html>
+<html class="js" lang="pt-BR">
+  <head>
+   <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
+
+   
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PPNTNHJW');</script>
+<!-- End Google Tag Manager -->
+    <!-- Hotjar Tracking Code for Site 6387086 (nome ausente) -->
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:6387086,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+      <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-PZPR2FWL');
+        </script>
+      <!-- End Google Tag Manager -->
+      
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <link rel="canonical" href="https://www.voudeclick.com.br/"><link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin><title>
+      Vou de Click
+</title>
+
+    
+      <meta name="description" content="A Vou de Click é uma agência especializada em e-commerce e performance digital. Ajudamos empresas a crescer no digital com estratégia, tecnologia e propósito. Aqui, crescer junto não é um slogan, é o nosso jeito de existir.">
+    
+
+    
+
+<meta property="og:site_name" content="Vou de Click">
+<meta property="og:url" content="https://www.voudeclick.com.br/">
+<meta property="og:title" content="Vou de Click">
+<meta property="og:type" content="website">
+<meta property="og:description" content="A Vou de Click é uma agência especializada em e-commerce e performance digital. Ajudamos empresas a crescer no digital com estratégia, tecnologia e propósito. Aqui, crescer junto não é um slogan, é o nosso jeito de existir."><meta property="og:image" content="http://www.voudeclick.com.br/cdn/shop/files/VDCLogo.png?v=1755782053">
+  <meta property="og:image:secure_url" content="https://www.voudeclick.com.br/cdn/shop/files/VDCLogo.png?v=1755782053">
+  <meta property="og:image:width" content="288">
+  <meta property="og:image:height" content="209"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vou de Click">
+<meta name="twitter:description" content="A Vou de Click é uma agência especializada em e-commerce e performance digital. Ajudamos empresas a crescer no digital com estratégia, tecnologia e propósito. Aqui, crescer junto não é um slogan, é o nosso jeito de existir.">
+
+
+    <script src="//www.voudeclick.com.br/cdn/shop/t/51/assets/constants.js?v=132983761750457495441760378027" defer="defer"></script>
+    <script src="//www.voudeclick.com.br/cdn/shop/t/51/assets/pubsub.js?v=25310214064522200911760378060" defer="defer"></script>
+    <script src="//www.voudeclick.com.br/cdn/shop/t/51/assets/global.js?v=7301445359237545521760378029" defer="defer"></script>
+    <script src="//www.voudeclick.com.br/cdn/shop/t/51/assets/details-disclosure.js?v=13653116266235556501760378028" defer="defer"></script>
+    <script src="//www.voudeclick.com.br/cdn/shop/t/51/assets/details-modal.js?v=25581673532751508451760378028" defer="defer"></script>
+    <script src="//www.voudeclick.com.br/cdn/shop/t/51/assets/search-form.js?v=133129549252120666541760378062" defer="defer"></script><script src="//www.voudeclick.com.br/cdn/shop/t/51/assets/animations.js?v=88693664871331136111760378014" defer="defer"></script><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/75348967703/digital_wallets/dialog">
+<script async="async" src="/checkouts/internal/preloads.js?locale=pt-BR"></script>
+<script id="shopify-features" type="application/json">{"accessToken":"571da50cf256005a1aaf00c04ddcfaba","betas":["rich-media-storefront-analytics"],"domain":"www.voudeclick.com.br","predictiveSearch":true,"shopId":75348967703,"locale":"pt-br"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "vou-de-click-store.myshopify.com";
+Shopify.locale = "pt-BR";
+Shopify.currency = {"active":"BRL","rate":"1.0"};
+Shopify.country = "BR";
+Shopify.theme = {"name":"VDC- Tema atualizado - Out2025","id":181863088407,"schema_name":"Ride","schema_version":"15.4.0","theme_store_id":1500,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "www.voudeclick.com.br/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"index"}</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"shop-toast-manager":["modules/v2/loader.shop-toast-manager.pt-BR.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.pt-BR.esm.js"],"shop-button":["modules/v2/loader.shop-button.pt-BR.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.pt-BR.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.pt-BR.esm.js"],"avatar":["modules/v2/loader.avatar.pt-BR.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.pt-BR.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.pt-BR.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.pt-BR.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.pt-BR.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.pt-BR.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.pt-BR.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.pt-BR.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.pt-BR.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.pt-BR.esm.js"],"shop-login":["modules/v2/loader.shop-login.pt-BR.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.pt-BR.esm.js"],"pay-button":["modules/v2/loader.pay-button.pt-BR.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.pt-BR.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.pt-BR.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.pt-BR.esm.js"]};
+</script>
+<script>(function() {
+  var isLoaded = false;
+  function asyncLoad() {
+    if (isLoaded) return;
+    isLoaded = true;
+    var urls = ["https:\/\/cdn.nfcube.com\/instafeed-dada4e904c580cf048278ef9928bfa9b.js?shop=vou-de-click-store.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":75348967703,"offset":-10800,"reqid":"bcbb7fcd-1c49-47ac-81f5-315740de5fc9-1777241475","pageurl":"www.voudeclick.com.br\/?utm_term=marketing+marketing+digital\u0026utm_campaign=\u0026utm_source=adwords\u0026utm_medium=ppc\u0026hsa_acc=3669685799\u0026hsa_cam=23559953686\u0026hsa_grp=198353545892\u0026hsa_ad=797036683113\u0026hsa_src=g\u0026hsa_tgt=kwd-407482117157\u0026hsa_kw=marketing+marketing+digital\u0026hsa_mt=b\u0026hsa_net=adwords\u0026hsa_ver=3\u0026gad_source=1\u0026gad_campaignid=23559953686\u0026gbraid=0AAAAA_Gv6P0rcFG0gGHo8dzUUKowB2Kka\u0026gclid=Cj0KCQjw77bPBhC_ARIsAGAjjV9ZWl0dhl9sNG7NHKfkSarI82RIP0yClBM9JuuSIIZfwVlThRMgpHwaAvl2EALw_wcB","u":"256fc9cac3cd","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protegido por hCaptcha',privacyText:'Privacidade',termsText:'Termos'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//www.voudeclick.com.br/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://www.voudeclick.com.br/cdn/shopifycloud/portable-wallets/latest/portable-wallets.pt-br.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+<script id="sections-script" data-sections="header" defer="defer" src="//www.voudeclick.com.br/cdn/shop/t/51/compiled_assets/scripts.js?v=13236981096534551571761083645"></script>
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+
+    <style data-shopify>
+      @font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.voudeclick.com.br/cdn/fonts/roboto/roboto_n4.2019d890f07b1852f56ce63ba45b2db45d852cba.woff2") format("woff2"),
+       url("//www.voudeclick.com.br/cdn/fonts/roboto/roboto_n4.238690e0007583582327135619c5f7971652fa9d.woff") format("woff");
 }
+
+      @font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.voudeclick.com.br/cdn/fonts/roboto/roboto_n7.f38007a10afbbde8976c4056bfe890710d51dec2.woff2") format("woff2"),
+       url("//www.voudeclick.com.br/cdn/fonts/roboto/roboto_n7.94bfdd3e80c7be00e128703d245c207769d763f9.woff") format("woff");
+}
+
+      @font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//www.voudeclick.com.br/cdn/fonts/roboto/roboto_i4.57ce898ccda22ee84f49e6b57ae302250655e2d4.woff2") format("woff2"),
+       url("//www.voudeclick.com.br/cdn/fonts/roboto/roboto_i4.b21f3bd061cbcb83b824ae8c7671a82587b264bf.woff") format("woff");
+}
+
+      @font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  src: url("//www.voudeclick.com.br/cdn/fonts/roboto/roboto_i7.7ccaf9410746f2c53340607c42c43f90a9005937.woff2") format("woff2"),
+       url("//www.voudeclick.com.br/cdn/fonts/roboto/roboto_i7.49ec21cdd7148292bffea74c62c0df6e93551516.woff") format("woff");
+}
+
+      @font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//www.voudeclick.com.br/cdn/fonts/montserrat/montserrat_n7.3c434e22befd5c18a6b4afadb1e3d77c128c7939.woff2") format("woff2"),
+       url("//www.voudeclick.com.br/cdn/fonts/montserrat/montserrat_n7.5d9fa6e2cae713c8fb539a9876489d86207fe957.woff") format("woff");
+}
+
+
+      
+        :root,
+        .color-scheme-1 {
+          --color-background: 0,0,0;
+        
+          --gradient-background: #000000;
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 91,91,96;
+        --color-button: 255,198,0;
+        --color-button-text: 17,17,31;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 255,198,0;
+        --color-link: 255,198,0;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-2 {
+          --color-background: 0,0,0;
+        
+          --gradient-background: #000000;
+        
+
+        
+
+        --color-foreground: 0,0,0;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 255,255,255;
+        --color-button: 0,0,0;
+        --color-button-text: 31,31,33;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 255,255,255;
+        --color-link: 255,255,255;
+        --color-badge-foreground: 0,0,0;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 0,0,0;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-3 {
+          --color-background: 0,0,0;
+        
+          --gradient-background: rgba(0,0,0,0);
+        
+
+        
+
+        --color-foreground: 31,31,33;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 255,255,255;
+        --color-button: 255,255,255;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 31,31,33;
+        --color-link: 31,31,33;
+        --color-badge-foreground: 31,31,33;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 31,31,33;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-4 {
+          --color-background: 255,198,0;
+        
+          --gradient-background: #ffc600;
+        
+
+        
+
+        --color-foreground: 0,0,0;
+        --color-background-contrast: 128,99,0;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 255,198,0;
+        --color-secondary-button-text: 0,0,0;
+        --color-link: 0,0,0;
+        --color-badge-foreground: 0,0,0;
+        --color-badge-background: 255,198,0;
+        --color-badge-border: 0,0,0;
+        --payment-terms-background-color: rgb(255 198 0);
+      }
+      
+        
+        .color-scheme-5 {
+          --color-background: 0,252,237;
+        
+          --gradient-background: #00fced;
+        
+
+        
+
+        --color-foreground: 31,31,33;
+        --color-background-contrast: 0,125,117;
+        --color-shadow: 255,255,255;
+        --color-button: 31,31,33;
+        --color-button-text: 0,252,237;
+        --color-secondary-button: 0,252,237;
+        --color-secondary-button-text: 31,31,33;
+        --color-link: 31,31,33;
+        --color-badge-foreground: 31,31,33;
+        --color-badge-background: 0,252,237;
+        --color-badge-border: 31,31,33;
+        --payment-terms-background-color: rgb(0 252 237);
+      }
+      
+        
+        .color-scheme-d2516e20-a03c-4f87-8234-34f05067f2bb {
+          --color-background: 31,31,33;
+        
+          --gradient-background: #1f1f21;
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 43,43,46;
+        --color-shadow: 255,255,255;
+        --color-button: 227,252,2;
+        --color-button-text: 31,31,33;
+        --color-secondary-button: 31,31,33;
+        --color-secondary-button-text: 227,252,2;
+        --color-link: 227,252,2;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 31,31,33;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(31 31 33);
+      }
+      
+        
+        .color-scheme-91777361-564c-402d-9163-518d9fd3cae3 {
+          --color-background: 17,17,31;
+        
+          --gradient-background: #11111f;
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 121,121,182;
+        --color-shadow: 0,0,0;
+        --color-button: 255,198,0;
+        --color-button-text: 17,17,31;
+        --color-secondary-button: 17,17,31;
+        --color-secondary-button-text: 255,198,0;
+        --color-link: 255,198,0;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 17,17,31;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(17 17 31);
+      }
+      
+        
+        .color-scheme-3f534987-9f46-4850-a1af-dda9046589dd {
+          --color-background: 0,0,0;
+        
+          --gradient-background: #000000;
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 128,128,128;
+        --color-shadow: 0,0,0;
+        --color-button: 255,198,0;
+        --color-button-text: 17,17,31;
+        --color-secondary-button: 0,0,0;
+        --color-secondary-button-text: 255,198,0;
+        --color-link: 255,198,0;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 0,0,0;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(0 0 0);
+      }
+      
+        
+        .color-scheme-379d31bd-aebf-4203-998c-cd53c8a40670 {
+          --color-background: 255,198,0;
+        
+          --gradient-background: #ffc600;
+        
+
+        
+
+        --color-foreground: 0,0,0;
+        --color-background-contrast: 128,99,0;
+        --color-shadow: 0,0,0;
+        --color-button: 0,0,0;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 255,198,0;
+        --color-secondary-button-text: 0,0,0;
+        --color-link: 0,0,0;
+        --color-badge-foreground: 0,0,0;
+        --color-badge-background: 255,198,0;
+        --color-badge-border: 0,0,0;
+        --payment-terms-background-color: rgb(255 198 0);
+      }
+      
+        
+        .color-scheme-6c449e42-4961-470f-981f-80a43af0f502 {
+          --color-background: 17,17,31;
+        
+          --gradient-background: #11111f;
+        
+
+        
+
+        --color-foreground: 255,255,255;
+        --color-background-contrast: 121,121,182;
+        --color-shadow: 0,0,0;
+        --color-button: 255,198,0;
+        --color-button-text: 255,255,255;
+        --color-secondary-button: 17,17,31;
+        --color-secondary-button-text: 255,198,0;
+        --color-link: 255,198,0;
+        --color-badge-foreground: 255,255,255;
+        --color-badge-background: 17,17,31;
+        --color-badge-border: 255,255,255;
+        --payment-terms-background-color: rgb(17 17 31);
+      }
+      
+
+      body, .color-scheme-1, .color-scheme-2, .color-scheme-3, .color-scheme-4, .color-scheme-5, .color-scheme-d2516e20-a03c-4f87-8234-34f05067f2bb, .color-scheme-91777361-564c-402d-9163-518d9fd3cae3, .color-scheme-3f534987-9f46-4850-a1af-dda9046589dd, .color-scheme-379d31bd-aebf-4203-998c-cd53c8a40670, .color-scheme-6c449e42-4961-470f-981f-80a43af0f502 {
+        color: rgba(var(--color-foreground), 0.75);
+        background-color: rgb(var(--color-background));
+      }
+
+      :root {
+        --font-body-family: Roboto, sans-serif;
+        --font-body-style: normal;
+        --font-body-weight: 400;
+        --font-body-weight-bold: 700;
+
+        --font-heading-family: Montserrat, sans-serif;
+        --font-heading-style: normal;
+        --font-heading-weight: 700;
+
+        --font-body-scale: 1.1;
+        --font-heading-scale: 1.0909090909090908;
+
+        --media-padding: px;
+        --media-border-opacity: 1.0;
+        --media-border-width: 0px;
+        --media-radius: 20px;
+        --media-shadow-opacity: 0.0;
+        --media-shadow-horizontal-offset: 4px;
+        --media-shadow-vertical-offset: 4px;
+        --media-shadow-blur-radius: 40px;
+        --media-shadow-visible: 0;
+
+        --page-width: 160rem;
+        --page-width-margin: 0rem;
+
+        --product-card-image-padding: 0.0rem;
+        --product-card-corner-radius: 2.0rem;
+        --product-card-text-alignment: left;
+        --product-card-border-width: 0.0rem;
+        --product-card-border-opacity: 0.0;
+        --product-card-shadow-opacity: 0.0;
+        --product-card-shadow-visible: 0;
+        --product-card-shadow-horizontal-offset: 0.0rem;
+        --product-card-shadow-vertical-offset: 0.4rem;
+        --product-card-shadow-blur-radius: 0.5rem;
+
+        --collection-card-image-padding: 0.0rem;
+        --collection-card-corner-radius: 2.0rem;
+        --collection-card-text-alignment: left;
+        --collection-card-border-width: 0.0rem;
+        --collection-card-border-opacity: 0.0;
+        --collection-card-shadow-opacity: 0.0;
+        --collection-card-shadow-visible: 0;
+        --collection-card-shadow-horizontal-offset: 0.0rem;
+        --collection-card-shadow-vertical-offset: 0.4rem;
+        --collection-card-shadow-blur-radius: 0.5rem;
+
+        --blog-card-image-padding: 0.0rem;
+        --blog-card-corner-radius: 2.0rem;
+        --blog-card-text-alignment: left;
+        --blog-card-border-width: 0.0rem;
+        --blog-card-border-opacity: 1.0;
+        --blog-card-shadow-opacity: 1.0;
+        --blog-card-shadow-visible: 1;
+        --blog-card-shadow-horizontal-offset: 0.4rem;
+        --blog-card-shadow-vertical-offset: 0.4rem;
+        --blog-card-shadow-blur-radius: 4.0rem;
+
+        --badge-corner-radius: 2.0rem;
+
+        --popup-border-width: 1px;
+        --popup-border-opacity: 0.1;
+        --popup-corner-radius: 20px;
+        --popup-shadow-opacity: 0.0;
+        --popup-shadow-horizontal-offset: 0px;
+        --popup-shadow-vertical-offset: 4px;
+        --popup-shadow-blur-radius: 5px;
+
+        --drawer-border-width: 1px;
+        --drawer-border-opacity: 0.1;
+        --drawer-shadow-opacity: 0.0;
+        --drawer-shadow-horizontal-offset: 0px;
+        --drawer-shadow-vertical-offset: 4px;
+        --drawer-shadow-blur-radius: 5px;
+
+        --spacing-sections-desktop: 48px;
+        --spacing-sections-mobile: 34px;
+
+        --grid-desktop-vertical-spacing: 40px;
+        --grid-desktop-horizontal-spacing: 4px;
+        --grid-mobile-vertical-spacing: 20px;
+        --grid-mobile-horizontal-spacing: 2px;
+
+        --text-boxes-border-opacity: 1.0;
+        --text-boxes-border-width: 0px;
+        --text-boxes-radius: 20px;
+        --text-boxes-shadow-opacity: 0.6;
+        --text-boxes-shadow-visible: 1;
+        --text-boxes-shadow-horizontal-offset: 16px;
+        --text-boxes-shadow-vertical-offset: 0px;
+        --text-boxes-shadow-blur-radius: 40px;
+
+        --buttons-radius: 20px;
+        --buttons-radius-outset: 25px;
+        --buttons-border-width: 0px;
+        --buttons-border-opacity: 0.0;
+        --buttons-shadow-opacity: 0.0;
+        --buttons-shadow-visible: 0;
+        --buttons-shadow-horizontal-offset: 0px;
+        --buttons-shadow-vertical-offset: 4px;
+        --buttons-shadow-blur-radius: 0px;
+        --buttons-border-offset: 0.3px;
+
+        --inputs-radius: 0px;
+        --inputs-border-width: 1px;
+        --inputs-border-opacity: 0.55;
+        --inputs-shadow-opacity: 0.0;
+        --inputs-shadow-horizontal-offset: 0px;
+        --inputs-margin-offset: 0px;
+        --inputs-shadow-vertical-offset: 4px;
+        --inputs-shadow-blur-radius: 5px;
+        --inputs-radius-outset: 0px;
+
+        --variant-pills-radius: 40px;
+        --variant-pills-border-width: 1px;
+        --variant-pills-border-opacity: 0.55;
+        --variant-pills-shadow-opacity: 0.0;
+        --variant-pills-shadow-horizontal-offset: 0px;
+        --variant-pills-shadow-vertical-offset: 4px;
+        --variant-pills-shadow-blur-radius: 5px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: calc(var(--font-body-scale) * 62.5%);
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 100%;
+        min-height: 100%;
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0.06rem;
+        line-height: calc(1 + 0.8 / var(--font-body-scale));
+        font-family: var(--font-body-family);
+        font-style: var(--font-body-style);
+        font-weight: var(--font-body-weight);
+      }
+
+      @media screen and (min-width: 750px) {
+        body {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+
+    <link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/base.css?v=181296804073798426151761920727" rel="stylesheet" type="text/css" media="all" />
+    <link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/custom.css?v=57806228614480970001761920825" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-cart-items.css?v=13033300910818915211760378017" media="print" onload="this.media='all'">
+      <link rel="preload" as="font" href="//www.voudeclick.com.br/cdn/fonts/roboto/roboto_n4.2019d890f07b1852f56ce63ba45b2db45d852cba.woff2" type="font/woff2" crossorigin>
+      
+
+      <link rel="preload" as="font" href="//www.voudeclick.com.br/cdn/fonts/montserrat/montserrat_n7.3c434e22befd5c18a6b4afadb1e3d77c128c7939.woff2" type="font/woff2" crossorigin>
+      
+<script>
+      if (Shopify.designMode) {
+        document.documentElement.classList.add('shopify-design-mode');
+      }
+    </script>
+  
+
+
+
+<!-- BEGIN app block: shopify://apps/pandectes-gdpr/blocks/banner/58c0baa2-6cc1-480c-9ea6-38d6d559556a -->
+  
+    
+      <!-- TCF is active, scripts are loaded above -->
+      
+      <script>
+        
+          window.PandectesSettings = {"store":{"id":75348967703,"plan":"basic","theme":"[CUSTOM] Ride - Ajustes","primaryLocale":"pt","adminMode":false,"headless":false,"storefrontRootDomain":"","checkoutRootDomain":"","storefrontAccessToken":""},"tsPublished":1745931318,"declaration":{"declDays":"","declName":"","declPath":"","declType":"","isActive":false,"showType":true,"declHours":"","declYears":"","declDomain":"","declMonths":"","declMinutes":"","declPurpose":"","declSeconds":"","declSession":"","showPurpose":false,"declProvider":"","showProvider":true,"declIntroText":"","declRetention":"","declFirstParty":"","declThirdParty":"","showDateGenerated":true},"language":{"unpublished":[],"languageMode":"Single","fallbackLanguage":"pt","languageDetection":"locale","languagesSupported":[]},"texts":{"managed":{"headerText":{"pt":"Nós respeitamos sua privacidade"},"consentText":{"pt":"Este site usa cookies para garantir que você obtenha a melhor experiência."},"linkText":{"pt":"Saber mais"},"imprintText":{"pt":"Imprimir"},"googleLinkText":{"pt":"Termos de Privacidade do Google"},"allowButtonText":{"pt":"Aceitar"},"denyButtonText":{"pt":"Recusar"},"dismissButtonText":{"pt":"OK"},"leaveSiteButtonText":{"pt":"Saia deste site"},"preferencesButtonText":{"pt":"Preferências"},"cookiePolicyText":{"pt":"Política de Cookies"},"preferencesPopupTitleText":{"pt":"Gerenciar preferências de consentimento"},"preferencesPopupIntroText":{"pt":"Usamos cookies para otimizar a funcionalidade do site, analisar o desempenho e fornecer uma experiência personalizada para você. Alguns cookies são essenciais para que o site funcione e funcione corretamente. Esses cookies não podem ser desativados. Nesta janela você pode gerenciar sua preferência de cookies."},"preferencesPopupSaveButtonText":{"pt":"Salvar preferências"},"preferencesPopupCloseButtonText":{"pt":"Fechar"},"preferencesPopupAcceptAllButtonText":{"pt":"Aceitar tudo"},"preferencesPopupRejectAllButtonText":{"pt":"Rejeitar tudo"},"cookiesDetailsText":{"pt":"Detalhes de cookies"},"preferencesPopupAlwaysAllowedText":{"pt":"Sempre permitido"},"accessSectionParagraphText":{"pt":"Você tem o direito de acessar seus dados a qualquer momento."},"accessSectionTitleText":{"pt":"Portabilidade de dados"},"accessSectionAccountInfoActionText":{"pt":"Dados pessoais"},"accessSectionDownloadReportActionText":{"pt":"Baixar tudo"},"accessSectionGDPRRequestsActionText":{"pt":"Solicitações de titulares de dados"},"accessSectionOrdersRecordsActionText":{"pt":"Pedidos"},"rectificationSectionParagraphText":{"pt":"Você tem o direito de solicitar que seus dados sejam atualizados sempre que considerar apropriado."},"rectificationSectionTitleText":{"pt":"Retificação de Dados"},"rectificationCommentPlaceholder":{"pt":"Descreva o que você deseja que seja atualizado"},"rectificationCommentValidationError":{"pt":"O comentário é obrigatório"},"rectificationSectionEditAccountActionText":{"pt":"Solicite uma atualização"},"erasureSectionTitleText":{"pt":"Direito de ser esquecido"},"erasureSectionParagraphText":{"pt":"Você tem o direito de solicitar que todos os seus dados sejam apagados. Depois disso, você não poderá mais acessar sua conta."},"erasureSectionRequestDeletionActionText":{"pt":"Solicitar exclusão de dados pessoais"},"consentDate":{"pt":"Data de consentimento"},"consentId":{"pt":"ID de consentimento"},"consentSectionChangeConsentActionText":{"pt":"Alterar preferência de consentimento"},"consentSectionConsentedText":{"pt":"Você consentiu com a política de cookies deste site em"},"consentSectionNoConsentText":{"pt":"Você não concordou com a política de cookies deste site."},"consentSectionTitleText":{"pt":"Seu consentimento de cookies"},"consentStatus":{"pt":"preferência de consentimento"},"confirmationFailureMessage":{"pt":"Sua solicitação não foi verificada. Tente novamente e se o problema persistir, entre em contato com o proprietário da loja para obter ajuda"},"confirmationFailureTitle":{"pt":"Ocorreu um problema"},"confirmationSuccessMessage":{"pt":"Em breve entraremos em contato com você sobre sua solicitação."},"confirmationSuccessTitle":{"pt":"Sua solicitação foi verificada"},"guestsSupportEmailFailureMessage":{"pt":"Sua solicitação não foi enviada. Tente novamente e se o problema persistir, entre em contato com o proprietário da loja para obter ajuda."},"guestsSupportEmailFailureTitle":{"pt":"Ocorreu um problema"},"guestsSupportEmailPlaceholder":{"pt":"Endereço de e-mail"},"guestsSupportEmailSuccessMessage":{"pt":"Caso você esteja cadastrado como cliente desta loja, em breve receberá um e-mail com instruções de como proceder."},"guestsSupportEmailSuccessTitle":{"pt":"Obrigado pelo seu pedido"},"guestsSupportEmailValidationError":{"pt":"E-mail não é válido"},"guestsSupportInfoText":{"pt":"Faça login com sua conta de cliente para prosseguir."},"submitButton":{"pt":"Enviar"},"submittingButton":{"pt":"Enviando ..."},"cancelButton":{"pt":"Cancelar"},"declIntroText":{"pt":"Usamos cookies para otimizar a funcionalidade do site, analisar o desempenho e fornecer uma experiência personalizada para você. Alguns cookies são essenciais para que o site funcione e funcione corretamente. Esses cookies não podem ser desativados. Nesta janela pode gerir a sua preferência de cookies."},"declName":{"pt":"Nome"},"declPurpose":{"pt":"Propósito"},"declType":{"pt":"Modelo"},"declRetention":{"pt":"Retenção"},"declProvider":{"pt":"Fornecedor"},"declFirstParty":{"pt":"Origem"},"declThirdParty":{"pt":"Terceiro"},"declSeconds":{"pt":"segundos"},"declMinutes":{"pt":"minutos"},"declHours":{"pt":"horas"},"declDays":{"pt":"dias"},"declMonths":{"pt":"meses"},"declYears":{"pt":"anos"},"declSession":{"pt":"Sessão"},"declDomain":{"pt":"Domínio"},"declPath":{"pt":"Caminho"}},"categories":{"strictlyNecessaryCookiesTitleText":{"pt":"Cookies estritamente necessários"},"strictlyNecessaryCookiesDescriptionText":{"pt":"Esses cookies são essenciais para permitir que você navegue pelo site e use seus recursos, como acessar áreas seguras do site. O site não pode funcionar corretamente sem esses cookies."},"functionalityCookiesTitleText":{"pt":"Cookies funcionais"},"functionalityCookiesDescriptionText":{"pt":"Esses cookies permitem que o site forneça funcionalidade e personalização aprimoradas. Eles podem ser definidos por nós ou por fornecedores terceiros cujos serviços adicionamos às nossas páginas. Se você não permitir esses cookies, alguns ou todos esses serviços podem não funcionar corretamente."},"performanceCookiesTitleText":{"pt":"Cookies de desempenho"},"performanceCookiesDescriptionText":{"pt":"Esses cookies nos permitem monitorar e melhorar o desempenho do nosso site. Por exemplo, eles nos permitem contar visitas, identificar fontes de tráfego e ver quais partes do site são mais populares."},"targetingCookiesTitleText":{"pt":"Cookies de segmentação"},"targetingCookiesDescriptionText":{"pt":"Esses cookies podem ser definidos em nosso site por nossos parceiros de publicidade. Eles podem ser usados por essas empresas para construir um perfil de seus interesses e mostrar anúncios relevantes em outros sites. Eles não armazenam informações pessoais diretamente, mas se baseiam na identificação exclusiva de seu navegador e dispositivo de Internet. Se você não permitir esses cookies, terá publicidade menos direcionada."},"unclassifiedCookiesTitleText":{"pt":"Cookies não classificados"},"unclassifiedCookiesDescriptionText":{"pt":"Cookies não classificados são cookies que estamos em processo de classificação, juntamente com os fornecedores de cookies individuais."}},"auto":{}},"library":{"previewMode":false,"fadeInTimeout":0,"defaultBlocked":7,"showLink":true,"showImprintLink":false,"showGoogleLink":false,"enabled":true,"cookie":{"expiryDays":365,"secure":true,"domain":""},"dismissOnScroll":false,"dismissOnWindowClick":false,"dismissOnTimeout":false,"palette":{"popup":{"background":"#FFFFFF","backgroundForCalculations":{"a":1,"b":255,"g":255,"r":255},"text":"#11111F"},"button":{"background":"transparent","backgroundForCalculations":{"a":1,"b":255,"g":255,"r":255},"text":"#000000","textForCalculation":{"a":1,"b":0,"g":0,"r":0},"border":"#000000"}},"content":{"href":"/policies/privacy-policy","imprintHref":"","close":"&#10005;","target":"_blank","logo":""},"window":"<div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" id=\"pandectes-banner\" class=\"cc-window-wrapper cc-bottom-wrapper\"><div class=\"pd-cookie-banner-window cc-window {{classes}}\"><!--googleoff: all-->{{children}}<!--googleon: all--></div></div>","compliance":{"opt-both":"<div class=\"cc-compliance cc-highlight\">{{deny}}{{allow}}</div>"},"type":"opt-both","layouts":{"basic":"{{messagelink}}{{compliance}}{{close}}"},"position":"bottom","theme":"wired","revokable":false,"animateRevokable":false,"revokableReset":false,"revokableLogoUrl":"","revokablePlacement":"bottom-left","revokableMarginHorizontal":15,"revokableMarginVertical":15,"static":false,"autoAttach":true,"hasTransition":true,"blacklistPage":[""],"elements":{"close":"<button aria-label=\"dismiss cookie message\" type=\"button\" tabindex=\"0\" class=\"cc-close\">{{close}}</button>","dismiss":"<button aria-label=\"dismiss cookie message\" type=\"button\" tabindex=\"0\" class=\"cc-btn cc-btn-decision cc-dismiss\">{{dismiss}}</button>","allow":"<button aria-label=\"allow cookies\" type=\"button\" tabindex=\"0\" class=\"cc-btn cc-btn-decision cc-allow\">{{allow}}</button>","deny":"<button aria-label=\"deny cookies\" type=\"button\" tabindex=\"0\" class=\"cc-btn cc-btn-decision cc-deny\">{{deny}}</button>","preferences":"<button aria-label=\"settings cookies\" tabindex=\"0\" type=\"button\" class=\"cc-btn cc-settings\" onclick=\"Pandectes.fn.openPreferences()\">{{preferences}}</button>"}},"geolocation":{"auOnly":false,"brOnly":false,"caOnly":false,"chOnly":false,"euOnly":false,"jpOnly":false,"nzOnly":false,"thOnly":false,"zaOnly":false,"canadaOnly":false,"globalVisibility":true},"dsr":{"guestsSupport":false,"accessSectionDownloadReportAuto":false},"banner":{"resetTs":1742501635,"extraCss":"        .cc-banner-logo {max-width: 24em!important;}    @media(min-width: 768px) {.cc-window.cc-floating{max-width: 24em!important;width: 24em!important;}}    .cc-message, .pd-cookie-banner-window .cc-header, .cc-logo {text-align: left}    .cc-window-wrapper{z-index: 2147483647;}    .cc-window{z-index: 2147483647;font-family: roboto;}    .pd-cookie-banner-window .cc-header{font-family: roboto;}    .pd-cp-ui{font-family: roboto; background-color: #FFFFFF;color:#11111F;}    button.pd-cp-btn, a.pd-cp-btn{}    input + .pd-cp-preferences-slider{background-color: rgba(17, 17, 31, 0.3)}    .pd-cp-scrolling-section::-webkit-scrollbar{background-color: rgba(17, 17, 31, 0.3)}    input:checked + .pd-cp-preferences-slider{background-color: rgba(17, 17, 31, 1)}    .pd-cp-scrolling-section::-webkit-scrollbar-thumb {background-color: rgba(17, 17, 31, 1)}    .pd-cp-ui-close{color:#11111F;}    .pd-cp-preferences-slider:before{background-color: #FFFFFF}    .pd-cp-title:before {border-color: #11111F!important}    .pd-cp-preferences-slider{background-color:#11111F}    .pd-cp-toggle{color:#11111F!important}    @media(max-width:699px) {.pd-cp-ui-close-top svg {fill: #11111F}}    .pd-cp-toggle:hover,.pd-cp-toggle:visited,.pd-cp-toggle:active{color:#11111F!important}    .pd-cookie-banner-window {box-shadow: 0 0 18px rgb(0 0 0 / 20%);}  ","customJavascript":{"useButtons":true},"showPoweredBy":false,"logoHeight":40,"revokableTrigger":false,"hybridStrict":false,"cookiesBlockedByDefault":"7","isActive":true,"implicitSavePreferences":false,"cookieIcon":false,"blockBots":false,"showCookiesDetails":true,"hasTransition":true,"blockingPage":false,"showOnlyLandingPage":false,"leaveSiteUrl":"https://pandectes.io","linkRespectStoreLang":false},"cookies":{"0":[{"name":"localization","type":"http","domain":"vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"pt":"Localização da loja da Shopify"}},{"name":"keep_alive","type":"http","domain":"vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"30 minute(s)","expires":30,"unit":"declMinutes","purpose":{"pt":"Usado em conexão com a localização do comprador."}},{"name":"cart_currency","type":"http","domain":"vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"2 week(s)","expires":2,"unit":"declWeeks","purpose":{"pt":"O cookie é necessário para a função segura de checkout e pagamento no site. Esta função é fornecida por shopify.com."}},{"name":"secure_customer_sig","type":"http","domain":"vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"pt":"Usado em conexão com o login do cliente."}},{"name":"_tracking_consent","type":"http","domain":".vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"pt":"Preferências de rastreamento."}}],"1":[],"2":[{"name":"_shopify_y","type":"http","domain":".vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"1 year(s)","expires":1,"unit":"declYears","purpose":{"pt":"Análise da Shopify."}},{"name":"_shopify_s","type":"http","domain":".vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"30 minute(s)","expires":30,"unit":"declMinutes","purpose":{"pt":"Análise da Shopify."}},{"name":"_orig_referrer","type":"http","domain":".vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"2 week(s)","expires":2,"unit":"declWeeks","purpose":{"pt":"Rastreia páginas de destino."}},{"name":"_landing_page","type":"http","domain":".vou-de-click-store.myshopify.com","path":"/","provider":"Shopify","firstParty":true,"retention":"2 week(s)","expires":2,"unit":"declWeeks","purpose":{"pt":"Rastreia páginas de destino."}}],"4":[],"8":[]},"blocker":{"isActive":false,"googleConsentMode":{"id":"","analyticsId":"","adwordsId":"","isActive":false,"adStorageCategory":4,"analyticsStorageCategory":2,"personalizationStorageCategory":1,"functionalityStorageCategory":1,"customEvent":false,"securityStorageCategory":0,"redactData":false,"urlPassthrough":false,"dataLayerProperty":"dataLayer","waitForUpdate":500,"useNativeChannel":false,"debugMode":false},"facebookPixel":{"id":"","isActive":false,"ldu":false},"microsoft":{"isActive":false,"uetTags":""},"rakuten":{"isActive":false,"cmp":false,"ccpa":false},"klaviyoIsActive":false,"gpcIsActive":true,"defaultBlocked":7,"patterns":{"whiteList":[],"blackList":{"1":[],"2":[],"4":[],"8":[]},"iframesWhiteList":[],"iframesBlackList":{"1":[],"2":[],"4":[],"8":[]},"beaconsWhiteList":[],"beaconsBlackList":{"1":[],"2":[],"4":[],"8":[]}}}};
+        
+        window.addEventListener('DOMContentLoaded', function(){
+          const script = document.createElement('script');
+          
+            script.src = "https://cdn.shopify.com/extensions/019db9eb-203f-76a8-ae15-01b9c5d5a05b/gdpr-cookie-consent-311/assets/pandectes-core.js";
+          
+          script.defer = true;
+          document.body.appendChild(script);
+        })
+      </script>
+    
+  
+
+
+<!-- END app block --><script src="https://cdn.shopify.com/extensions/32c0b5b2-1d43-4ac6-8e26-7ee8cdb06775/forms-2385/assets/shopify-forms-loader.js" type="text/javascript" defer="defer"></script>
+<script src="https://cdn.shopify.com/extensions/019dbf75-fcec-7dd8-8e72-dcdb525b72e8/js-client-274/assets/pushowl-shopify.js" type="text/javascript" defer="defer"></script>
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 75348967703,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>
+  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
+</script>
+<script id="web-pixels-manager-setup">(function e(e,d,r,n,o){if(void 0===o&&(o={}),!Boolean(null===(a=null===(i=window.Shopify)||void 0===i?void 0:i.analytics)||void 0===a?void 0:a.replayQueue)){var i,a;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),u="modern"===l?"modern":"legacy",c=(null!=n?n:{modern:"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:d,hashVersion:r,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:r,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{o.browserTarget=l,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach((function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)})),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return m.emit({status:"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)?c:"",scriptDataAttributes:o}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 75348967703,storefrontBaseUrl: "https://www.voudeclick.com.br",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["72028870","2dca8a86","d5bdd5d0","5476ea20"],webPixelsConfigList: [{"id":"2588836119","configuration":"{\"subdomain\":\"vou-de-click-store\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"c35482b6b2cc46ff1af7ffc6ed1ed137","type":"APP","apiClientId":1615517,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"1247281431","configuration":"{\"pixel_id\":\"1882518189203752\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"d72ab942028ee4f6bccc581083be605e","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"1162346775","configuration":"{\"config\":\"{\\\"google_tag_ids\\\":[\\\"G-VVB2EZMS31\\\",\\\"GTM-PPNTNHJW\\\"],\\\"target_country\\\":\\\"ZZ\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-VVB2EZMS31\\\",\\\"AW-16939739389\\\/mTByCJ7m76waEP3Rv40_\\\"]},{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-VVB2EZMS31\\\",\\\"AW-16939739389\\\/PBkxCJro76waEP3Rv40_\\\"]},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-VVB2EZMS31\\\",\\\"AW-16939739389\\\/xnV3CJfo76waEP3Rv40_\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-VVB2EZMS31\\\",\\\"AW-16939739389\\\/X6FVCJvm76waEP3Rv40_\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-VVB2EZMS31\\\",\\\"AW-16939739389\\\/W4rVCJTo76waEP3Rv40_\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-VVB2EZMS31\\\",\\\"AW-16939739389\\\/qnhWCJ3o76waEP3Rv40_\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-VVB2EZMS31\\\",\\\"AW-16939739389\\\/eou0CKHm76waEP3Rv40_\\\"]}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"5a723296a9ab7d2cddda5d574ded9c79","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Vou de Click","paymentSettings":{"currencyCode":"BRL"},"myshopifyDomain":"vou-de-click-store.myshopify.com","countryCode":"BR","storefrontUrl":"https:\/\/www.voudeclick.com.br"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},"https://www.voudeclick.com.br/cdn","1b8942c4w45c4d9d5pb7622108m7815b9e1",{"modern":"","legacy":""},{"trekkieShim":true,"shopId":"75348967703","storefrontBaseUrl":"https:\/\/www.voudeclick.com.br","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"72028870\", \"2dca8a86\", \"d5bdd5d0\", \"5476ea20\"]","isMerchantRequest":"false","hashVersion":"1b8942c4w45c4d9d5pb7622108m7815b9e1","publish":"custom","events":"[[\"page_viewed\",{}]]"});</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'BRL';
+  var meta = {"page":{"pageType":"home","requestId":"bcbb7fcd-1c49-47ac-81f5-315740de5fc9-1777241475"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        if (window.__TREKKIE_SHIM_QUEUE && (method == 'track' || method == 'page')) {
+          try {
+            window.__TREKKIE_SHIM_QUEUE.push({
+              from: 'trekkie-stub',
+              method: method,
+              args: args.slice(1)
+            });
+          } catch (e) {
+            // no-op
+          }
+        }
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.onerror = function(e) {
+  var scriptFallback = document.createElement('script');
+  scriptFallback.type = 'text/javascript';
+  scriptFallback.onerror = function(error) {
+          var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 75348967703,
+      theme_id: 181863088407,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//www.voudeclick.com.br/cdn/s/trekkie.storefront.40cf76d5f324d17d3a4347e25c36a3e219ef9f79.min.js"});
+
+  };
+  scriptFallback.async = true;
+  scriptFallback.src = '//www.voudeclick.com.br/cdn/s/trekkie.storefront.40cf76d5f324d17d3a4347e25c36a3e219ef9f79.min.js';
+  first.parentNode.insertBefore(scriptFallback, first);
+};
+script.async = true;
+script.src = '//www.voudeclick.com.br/cdn/s/trekkie.storefront.40cf76d5f324d17d3a4347e25c36a3e219ef9f79.min.js';
+first.parentNode.insertBefore(script, first);
+
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":75348967703,"isMerchantRequest":null,"themeId":181863088407,"themeCityHash":"11092358581719945968","contentLanguage":"pt-BR","currency":"BRL","eventMetadataId":"8c3c5a0c-1147-4e97-a4b0-30cc24044000"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"home","requestId":"bcbb7fcd-1c49-47ac-81f5-315740de5fc9-1777241475","shopifyEmitted":true});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "//www.voudeclick.com.br/cdn/shopifycloud/storefront/assets/shop_events_listener-3da45d37.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+})();</script>
+<script
+  defer
+  src="https://www.voudeclick.com.br/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.3.1.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="75348967703"
+  data-render-region="gcp-us-east1"
+  data-page-type="index"
+  data-theme-instance-id="181863088407"
+  data-theme-name="Ride"
+  data-theme-version="15.4.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://www.voudeclick.com.br/api/collect"
+></script>
+</head>
+
+  <body class="gradient animate--hover-default">
+   <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPNTNHJW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZPR2FWL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+      Pular para o conteúdo
+    </a><!-- BEGIN sections: header-group -->
+<div id="shopify-section-sections--25386515792151__announcement-bar" class="shopify-section shopify-section-group-header-group announcement-bar-section"><link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-slideshow.css?v=17933591812325749411760378025" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-slider.css?v=14039311878856620671760378025" rel="stylesheet" type="text/css" media="all" />
+
+  <link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-list-social.css?v=35792976012981934991760378020" rel="stylesheet" type="text/css" media="all" />
+
+
+<div
+  class="utility-bar color-scheme-1 gradient"
+>
+  <div class="page-width utility-bar__grid"><div class="localization-wrapper">
+</div>
+  </div>
+</div>
+<style>
+  #custom-announcement-bar {
+    font-size: 13px!important;
+  }
+  @media (max-width: 767px) {
+    #custom-announcement-bar {
+      font-size: 10px!important;
+    }
+  }
+</style>
+
+
+</div><div id="shopify-section-sections--25386515792151__header" class="shopify-section shopify-section-group-header-group section-header">
+<link rel="stylesheet" href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-list-menu.css?v=151968516119678728991760378020" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-search.css?v=165164710990765432851760378025" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-menu-drawer.css?v=147478906057189667651760378021" media="print" onload="this.media='all'">
+<link
+  rel="stylesheet"
+  href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-cart-notification.css?v=54116361853792938221760378017"
+  media="print"
+  onload="this.media='all'"
+><style>
+  header-drawer {
+    justify-self: start;
+    margin-left: -1.2rem;
+  }.scrolled-past-header .header__heading-logo-wrapper {
+      width: 75%;
+    }@media screen and (min-width: 990px) {
+      header-drawer {
+        display: none;
+      }
+    }.menu-drawer-container {
+    display: flex;
+  }
+
+  .list-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-menu--inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  summary.list-menu__item {
+    padding-right: 2.7rem;
+  }
+
+  .list-menu__item {
+    display: flex;
+    align-items: center;
+    line-height: calc(1 + 0.3 / var(--font-body-scale));
+  }
+
+  .list-menu__item--link {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+  }
+
+  @media screen and (min-width: 750px) {
+    .list-menu__item--link {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+</style><style data-shopify>.header {
+    padding: 4px 3rem 0px 3rem;
+  }
+
+  .section-header {
+    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-header {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .header {
+      padding-top: 8px;
+      padding-bottom: 0px;
+    }
+  }</style><script src="//www.voudeclick.com.br/cdn/shop/t/51/assets/cart-notification.js?v=133508293167896966491760378015" defer="defer"></script>
+
+<sticky-header
+  
+    data-sticky-type="reduce-logo-size"
+  
+  class="header-wrapper color-scheme-1 gradient"
+><header class="header header--middle-left header--mobile-center page-width header--has-menu header--has-social header--has-account">
+
+<header-drawer data-breakpoint="tablet">
+  <details id="Details-menu-drawer-container" class="menu-drawer-container">
+    <summary
+      class="header__icon header__icon--menu header__icon--summary link focus-inset"
+      aria-label="Menu"
+    >
+      <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-hamburger" viewBox="0 0 18 16"><path fill="currentColor" d="M1 .5a.5.5 0 1 0 0 1h15.71a.5.5 0 0 0 0-1zM.5 8a.5.5 0 0 1 .5-.5h15.71a.5.5 0 0 1 0 1H1A.5.5 0 0 1 .5 8m0 7a.5.5 0 0 1 .5-.5h15.71a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-close" viewBox="0 0 18 17"><path fill="currentColor" d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z"/></svg>
+</span>
+    </summary>
+    <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-scheme-1">
+      <div class="menu-drawer__inner-container">
+        <div class="menu-drawer__navigation-container">
+          <nav class="menu-drawer__navigation">
+            <ul class="menu-drawer__menu has-submenu list-menu" role="list"><li><a
+                      id="HeaderDrawer-home"
+                      href="/"
+                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset menu-drawer__menu-item--active"
+                      
+                        aria-current="page"
+                      
+                    >
+                      Home
+                    </a></li><li><a
+                      id="HeaderDrawer-quem-somos"
+                      href="/pages/quem-somos"
+                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset"
+                      
+                    >
+                      Quem Somos
+                    </a></li><li><a
+                      id="HeaderDrawer-servicos"
+                      href="/pages/servicos"
+                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset"
+                      
+                    >
+                      Serviços
+                    </a></li><li><a
+                      id="HeaderDrawer-clientes"
+                      href="/pages/cases"
+                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset"
+                      
+                    >
+                      Clientes
+                    </a></li><li><a
+                      id="HeaderDrawer-blog"
+                      href="/blogs/blog"
+                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset"
+                      
+                    >
+                      Blog
+                    </a></li><li><a
+                      id="HeaderDrawer-contato"
+                      href="/pages/contato"
+                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset"
+                      
+                    >
+                      Contato
+                    </a></li></ul>
+          </nav>
+          <div class="menu-drawer__utility-links"><a
+                href="https://www.voudeclick.com.br/customer_authentication/redirect?locale=pt-BR&region_country=BR"
+                class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
+                rel="nofollow"
+              ><span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-account" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M6 4.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8m5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15M9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35" clip-rule="evenodd"/></svg>
+</span>Fazer login</a><div class="menu-drawer__localization header-localization">
+</div><ul class="list list-social list-unstyled" role="list"><li class="list-social__item">
+                  <a href="https://www.facebook.com/agenciaVouDeClick/" class="list-social__link link">
+                    <span class="svg-wrapper"><svg class="icon icon-facebook" viewBox="0 0 20 20"><path fill="currentColor" d="M18 10.049C18 5.603 14.419 2 10 2s-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951"/></svg>
+</span>
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li><li class="list-social__item">
+                  <a href="https://www.instagram.com/voudeclick/" class="list-social__link link">
+                    <span class="svg-wrapper"><svg class="icon icon-instagram" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.4 2.4 0 0 0-.912.593 2.5 2.5 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23s.01 2.39.046 3.229c.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046s2.39-.01 3.23-.046c.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23s-.01-2.39-.055-3.229c-.027-.784-.164-1.204-.274-1.495a2.4 2.4 0 0 0-.593-.913 2.6 2.6 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045a63 63 0 0 1 3.302.045c.664.014 1.321.14 1.943.374a4 4 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.9 3.9 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.15 4.15 0 0 1-1.414-.922 4.1 4.1 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.4 4.4 0 0 1 .92-1.414 4.2 4.2 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805m1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93m5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355" clip-rule="evenodd"/></svg>
+</span>
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </details>
+</header-drawer>
+<h1 class="header__heading"><a href="/" class="header__heading-link link link--text focus-inset"><div class="header__heading-logo-wrapper customgui">
+            
+             <div class="logo-scroll" style="display: none;">
+                <img src="//www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=600" alt="Vou de Click" srcset="//www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=210 210w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=315 315w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=420 420w" width="210" height="51.16751269035532" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 420px) 50vw, 210px">
+              </div>
+              <div class="logo-padrão">
+                <img src="//www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=600" alt="Vou de Click" srcset="//www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=210 210w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=315 315w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=420 420w" width="210" height="51.16751269035532" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 420px) 50vw, 210px">
+              </div>
+
+          </div></a></h1>
+
+<nav class="header__inline-menu">
+  <ul class="list-menu list-menu--inline" role="list"><li><a
+            id="HeaderMenu-home"
+            href="/"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            
+              aria-current="page"
+            
+          >
+            <span
+                class="header__active-menu-item"
+              
+            >Home</span>
+          </a></li><li><a
+            id="HeaderMenu-quem-somos"
+            href="/pages/quem-somos"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            
+          >
+            <span
+            >Quem Somos</span>
+          </a></li><li><a
+            id="HeaderMenu-servicos"
+            href="/pages/servicos"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            
+          >
+            <span
+            >Serviços</span>
+          </a></li><li><a
+            id="HeaderMenu-clientes"
+            href="/pages/cases"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            
+          >
+            <span
+            >Clientes</span>
+          </a></li><li><a
+            id="HeaderMenu-blog"
+            href="/blogs/blog"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            
+          >
+            <span
+            >Blog</span>
+          </a></li><li><a
+            id="HeaderMenu-contato"
+            href="/pages/contato"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            
+          >
+            <span
+            >Contato</span>
+          </a></li></ul>
+</nav>
+
+<div class="header__icons">
+      <div class="desktop-localization-wrapper">
+</div>
+      
+
+<details-modal class="header__search">
+  <details>
+    <summary
+      class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle"
+      aria-haspopup="dialog"
+      aria-label="Pesquisar"
+    >
+      <span>
+        <span class="svg-wrapper"><svg fill="none" class="icon icon-search" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 1 1 2.85 3.5a5.784 5.784 0 0 1 8.18 8.18m.26 1.12a6.78 6.78 0 1 1 .72-.7l5.4 5.4a.5.5 0 1 1-.71.7z" clip-rule="evenodd"/></svg>
+</span>
+        <span class="svg-wrapper header__icon-close"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-close" viewBox="0 0 18 17"><path fill="currentColor" d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z"/></svg>
+</span>
+      </span>
+    </summary>
+    <div
+      class="search-modal modal__content gradient"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Pesquisar"
+    >
+      <div class="modal-overlay"></div>
+      <div
+        class="search-modal__content search-modal__content-bottom"
+        tabindex="-1"
+      ><search-form class="search-modal__form"><form action="/search" method="get" role="search" class="search search-modal__form">
+          <div class="field">
+            <input
+              class="search__input field__input"
+              id="Search-In-Modal"
+              type="search"
+              name="q"
+              value=""
+              placeholder="Pesquisar">
+            <label class="field__label" for="Search-In-Modal">Pesquisar</label>
+            <input type="hidden" name="options[prefix]" value="last">
+            <button
+              type="reset"
+              class="reset__button field__button hidden"
+              aria-label="Limpar termo de pesquisa"
+            >
+              <span class="svg-wrapper"><svg fill="none" stroke="currentColor" class="icon icon-close" viewBox="0 0 18 18"><circle cx="9" cy="9" r="8.5" stroke-opacity=".2"/><path stroke-linecap="round" stroke-linejoin="round" d="M11.83 11.83 6.172 6.17M6.229 11.885l5.544-5.77"/></svg>
+</span>
+            </button>
+            <button class="search__button field__button" aria-label="Pesquisar">
+              <span class="svg-wrapper"><svg fill="none" class="icon icon-search" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 1 1 2.85 3.5a5.784 5.784 0 0 1 8.18 8.18m.26 1.12a6.78 6.78 0 1 1 .72-.7l5.4 5.4a.5.5 0 1 1-.71.7z" clip-rule="evenodd"/></svg>
+</span>
+            </button>
+          </div></form></search-form><button
+          type="button"
+          class="search-modal__close-button modal__close-button link link--text focus-inset"
+          aria-label="Fechar"
+        >
+          <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-close" viewBox="0 0 18 17"><path fill="currentColor" d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z"/></svg>
+</span>
+        </button>
+      </div>
+    </div>
+  </details>
+</details-modal>
+
+<a
+          href="https://www.voudeclick.com.br/customer_authentication/redirect?locale=pt-BR&region_country=BR"
+          class="header__icon header__icon--account link focus-inset small-hide"
+          rel="nofollow"
+        ><span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-account" viewBox="0 0 18 19"><path fill="currentColor" fill-rule="evenodd" d="M6 4.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-4a4 4 0 1 0 0 8 4 4 0 0 0 0-8m5.58 12.15c1.12.82 1.83 2.24 1.91 4.85H1.51c.08-2.6.79-4.03 1.9-4.85C4.66 11.75 6.5 11.5 9 11.5s4.35.26 5.58 1.15M9 10.5c-2.5 0-4.65.24-6.17 1.35C1.27 12.98.5 14.93.5 18v.5h17V18c0-3.07-.77-5.02-2.33-6.15-1.52-1.1-3.67-1.35-6.17-1.35" clip-rule="evenodd"/></svg>
+</span><span class="visually-hidden">Fazer login</span>
+        </a><a href="/cart" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        
+          <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-cart-empty" viewBox="0 0 40 40"><path fill="currentColor" fill-rule="evenodd" d="M15.75 11.8h-3.16l-.77 11.6a5 5 0 0 0 4.99 5.34h7.38a5 5 0 0 0 4.99-5.33L28.4 11.8zm0 1h-2.22l-.71 10.67a4 4 0 0 0 3.99 4.27h7.38a4 4 0 0 0 4-4.27l-.72-10.67h-2.22v.63a4.75 4.75 0 1 1-9.5 0zm8.5 0h-7.5v.63a3.75 3.75 0 1 0 7.5 0z"/></svg>
+</span>
+        
+        <span class="visually-hidden">Carrinho</span></a>
+    </div>
+  </header>
+</sticky-header>
+
+<cart-notification>
+  <div class="cart-notification-wrapper page-width">
+    <div
+      id="cart-notification"
+      class="cart-notification focus-inset color-scheme-1 gradient"
+      aria-modal="true"
+      aria-label="Item adicionado ao carrinho"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="cart-notification__header">
+        <h2 class="cart-notification__heading caption-large text-body"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-checkmark" viewBox="0 0 12 9"><path fill="currentColor" fill-rule="evenodd" d="M11.35.643a.5.5 0 0 1 .006.707l-6.77 6.886a.5.5 0 0 1-.719-.006L.638 4.845a.5.5 0 1 1 .724-.69l2.872 3.011 6.41-6.517a.5.5 0 0 1 .707-.006z" clip-rule="evenodd"/></svg>
+Item adicionado ao carrinho
+        </h2>
+        <button
+          type="button"
+          class="cart-notification__close modal__close-button link link--text focus-inset"
+          aria-label="Fechar"
+        >
+          <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-close" viewBox="0 0 18 17"><path fill="currentColor" d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z"/></svg>
+</span>
+        </button>
+      </div>
+      <div id="cart-notification-product" class="cart-notification-product"></div>
+      <div class="cart-notification__links">
+        <a
+          href="/cart"
+          id="cart-notification-button"
+          class="button button--secondary button--full-width"
+        >Ver carrinho</a>
+        <form action="/cart" method="post" id="cart-notification-form">
+          <button class="button button--primary button--full-width" name="checkout">
+            Finalizar a compra
+          </button>
+        </form>
+        <button type="button" class="link button-label">Voltar à loja</button>
+      </div>
+    </div>
+  </div>
+</cart-notification>
+<style data-shopify>
+  .cart-notification {
+    display: none;
+  }
+</style>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Vou de Click",
+    
+      "logo": "https:\/\/www.voudeclick.com.br\/cdn\/shop\/files\/logo-removebg-preview_1.png?v=1749646441\u0026width=500",
+    
+    "sameAs": [
+      "",
+      "https:\/\/www.facebook.com\/agenciaVouDeClick\/",
+      "https:\/\/www.linkedin.com\/company\/vou-de-click-\/",
+''
+      "",
+      "https:\/\/www.instagram.com\/voudeclick\/",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "url": "https:\/\/www.voudeclick.com.br"
+  }
+</script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "Vou de Click",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https:\/\/www.voudeclick.com.br\/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "url": "https:\/\/www.voudeclick.com.br"
+    }
+  </script><script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 200) { // Ajuste o valor conforme necessário
+      document.getElementsByClassName('logo-scroll')[0].style.display = 'block';
+      document.getElementsByClassName('logo-padrão')[0].style.display = 'none';
+
+      } else {
+      document.getElementsByClassName('logo-scroll')[0].style.display = 'none';
+      document.getElementsByClassName('logo-padrão')[0].style.display = 'block';
+      }
+    });
+  });
+</script>
+
+
+</div>
+<!-- END sections: header-group -->
+
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+      <section id="shopify-section-template--25386515497239__slideshow_MkLiBn" class="shopify-section section"><link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/section-image-banner.css?v=139257356297270396351760378065" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-slider.css?v=14039311878856620671760378025" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-slideshow.css?v=17933591812325749411760378025" rel="stylesheet" type="text/css" media="all" />
+<slideshow-component
+  class="slider-mobile-gutter mobile-text-below"
+  role="region"
+  aria-roledescription="Carrossel"
+  aria-label="Apresentação de slides sobre nossa marca"
+><div class="slideshow__controls slideshow__controls--top slider-buttons slideshow__controls--border-radius-mobile">
+      <button
+        type="button"
+        class="slider-button slider-button--prev"
+        name="previous"
+        aria-label="Slide anterior"
+        aria-controls="Slider-template--25386515497239__slideshow_MkLiBn"
+      >
+        <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"/></svg>
+</span>
+      </button>
+      <div class="slider-counter slider-counter--dots"><div class="slideshow__control-wrapper"><button
+                class="slider-counter__link slider-counter__link--dots link"
+                aria-label="Carregar slide 1 de 2"
+                aria-controls="Slider-template--25386515497239__slideshow_MkLiBn"
+              ><span class="dot"></span></button><button
+                class="slider-counter__link slider-counter__link--dots link"
+                aria-label="Carregar slide 2 de 2"
+                aria-controls="Slider-template--25386515497239__slideshow_MkLiBn"
+              ><span class="dot"></span></button></div></div>
+      <button
+        type="button"
+        class="slider-button slider-button--next"
+        name="next"
+        aria-label="Próximo slide"
+        aria-controls="Slider-template--25386515497239__slideshow_MkLiBn"
+      >
+        <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"/></svg>
+</span>
+      </button><button
+          type="button"
+          class="slideshow__autoplay slider-button"
+          aria-label="Pausar apresentação de slides"
+        >
+          <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-pause" viewBox="0 0 8 12"><path fill="currentColor" d="M1.2.75c-.387 0-.7.235-.7.525v9.45c0 .29.313.525.7.525s.7-.235.7-.525v-9.45c0-.29-.313-.525-.7-.525m5.6 0c-.387 0-.7.235-.7.525v9.45c0 .29.313.525.7.525s.7-.235.7-.525v-9.45c0-.29-.313-.525-.7-.525"/></svg>
+</span>
+          <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-play" viewBox="0 0 10 14"><path fill="currentColor" fill-rule="evenodd" d="M1.482.815A1 1 0 0 0 0 1.69v10.517a1 1 0 0 0 1.525.851L10.54 7.5a1 1 0 0 0-.043-1.728z" clip-rule="evenodd"/></svg>
+</span>
+        </button></div><div
+    class="slideshow banner banner--small grid grid--1-col slider slider--everywhere banner--mobile-bottom scroll-trigger animate--fade-in"
+    id="Slider-template--25386515497239__slideshow_MkLiBn"
+    aria-live="polite"
+    aria-atomic="true"
+    data-autoplay="true"
+    data-speed="5"
+  ><style>
+        #Slide-template--25386515497239__slideshow_MkLiBn-1 .banner__media::after {
+          opacity: 0.0;
+        }
+      </style>
+      <div
+        class="slideshow__slide grid__item grid--1-col slider__slide"
+        id="Slide-template--25386515497239__slideshow_MkLiBn-1"
+        
+        role="group"
+        aria-roledescription="Slide"
+        aria-label="1 de 2"
+        tabindex="-1"
+      >
+      <div id="image_desktop">
+        <div class="slideshow__media banner__media media">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=3840" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=375 375w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=550 550w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=1100 1100w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=1780 1780w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_20.png?v=1761597373&amp;width=3840 3840w" height="500" sizes="100vw" fetchpriority="high" style="object-position:73.7299% 7.9679%;">
+</div>
+      </div>
+      
+      
+      
+      <div id="image_Mobile" style="display: none;">
+      <div class="slideshow__media banner__media media">
+            <img src="//www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=3840" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=375 375w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=550 550w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=1100 1100w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=1780 1780w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_27_de_out._de_2025_16_16_07.png?v=1761592643&amp;width=3840 3840w" height="500" sizes="100vw" fetchpriority="high" style="object-position:46.4237% 9.7662%;">
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </div>
+        <div class="slideshow__text-wrapper banner__content banner__content--bottom-left page-width scroll-trigger animate--slide-in">
+          <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-scheme-1 gradient slideshow__text--left slideshow__text-mobile--left"><h2 class="banner__heading inline-richtext">
+                VDC FlashCommerce — sua loja online pronta para vender
+              </h2><div class="banner__text rte">
+                <p class="subtitle">Implantação rápida e escalável de e-commerces de alta performance, com design profissional e integração total.</p>
+              </div><div class="banner__buttons">
+                <a
+                  
+                    href="/pages/vdc-flashcommerce"
+                  
+                  class="button button--primary"
+                >Saiba mais</a>
+              </div></div>
+        </div>
+      </div><style>
+        #Slide-template--25386515497239__slideshow_MkLiBn-2 .banner__media::after {
+          opacity: 0.0;
+        }
+      </style>
+      <div
+        class="slideshow__slide grid__item grid--1-col slider__slide"
+        id="Slide-template--25386515497239__slideshow_MkLiBn-2"
+        
+        role="group"
+        aria-roledescription="Slide"
+        aria-label="2 de 2"
+        tabindex="-1"
+      >
+      <div id="image_desktop">
+        <div class="slideshow__media banner__media media"><img src="//www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=3840" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=375 375w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=550 550w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=1100 1100w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=1780 1780w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/Design_sem_nome_21.png?v=1761598898&amp;width=3840 3840w" height="500" loading="lazy" sizes="100vw" style="object-position:16.377% 7.3262%;">
+</div>
+      </div>
+      
+      
+      
+      <div id="image_Mobile" style="display: none;">
+      <div class="slideshow__media banner__media media"><img src="//www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=3840" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=375 375w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=550 550w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=1100 1100w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=1780 1780w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/ChatGPT_Image_26_de_out._de_2025_09_59_41.png?v=1761591106&amp;width=3840 3840w" height="500" loading="lazy" sizes="100vw" style="object-position:37.7121% 7.2902%;">
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      </div>
+        <div class="slideshow__text-wrapper banner__content banner__content--middle-right page-width">
+          <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-scheme-1 gradient slideshow__text--left slideshow__text-mobile--left"><h2 class="banner__heading inline-richtext">
+                VDC SearchAds — domine o topo do Google
+              </h2><div class="banner__text rte">
+                <p class="subtitle">Gestão estratégica de campanhas que geram resultado real e leads qualificados para o seu negócio.</p>
+              </div><div class="banner__buttons">
+                <a
+                  
+                    href="/pages/vdc-searchads"
+                  
+                  class="button button--primary"
+                >Ver serviço</a>
+              </div></div>
+        </div>
+      </div></div></slideshow-component><style>
+  
+  .banner__heading.inline-richtext {
+    font-size: 23px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 749px) {
+    .banner__heading.inline-richtext {
+      font-size: 20px;
+    }
+    .subtitle {
+      font-size: 14px;
+    }
+    #image_desktop {
+      display: none;
+    }
+    #image_Mobile {
+      display: block!important;
+    }
+  }
+</style>
+
+</section><div id="shopify-section-template--25386515497239__carrossel_logo_GiArG6" class="shopify-section"><style data-shopify>
+  .section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 .logos-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 .logos-marquee-content {
+    display: inline-flex;
+    animation: marquee 50s linear infinite;
+  }
+
+  .section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 .logos-item {
+    margin: 0 10px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+
+.section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 .logo-img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  padding:10px;
+  width: 180px;
+  height: auto;
+}
+
+.section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 .logo-img:hover {
+  filter: grayscale(0%);
+}
+
+  .section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 .logos-marquee:hover .logos-marquee-content {
+    animation-play-state: paused;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 h3{
+    text-align: center;
+    font-size: 30px;
+  }
+  .section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 h4{
+    text-align: center;
+    font-weight: 400;
+    font-family: var(--font-body-family);
+    color: rgba(var(--color-foreground), 0.75);
+    font-size: 20px;
+  }
+  @media (max-width: 750px) {
+    .section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 h3{
+      font-size: 20px;
+    }
+    .section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6 h4{
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+
+  .section-template--25386515497239__carrossel_logo_GiArG6-padding {
+    padding-top: 30px;
+    padding-bottom: 39px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--25386515497239__carrossel_logo_GiArG6-padding {
+      padding-top: 40px;
+      padding-bottom: 52px;
+    }
+  }
+</style>
+<div class="section-template--25386515497239__carrossel_logo_GiArG6-padding">
+  <div class="section-carrossel-logos section-carrossel-logos--template--25386515497239__carrossel_logo_GiArG6"><h3>Nosso Parceiros</h3><div class="logos-marquee">
+      <div class="logos-marquee-content">
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Wake-logo_2_small.png?v=1771943992" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Vtex-logo_small.png?v=1771943576" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Googleo-logo_1_small.png?v=1771943497" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Tray-logo_small.png?v=1771943544" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Gendata-logo_small.png?v=1771943429" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Wbuy-logo_1_small.png?v=1771943254" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Uappi-logo_small.png?v=1771943072" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Olist-logo_small.png?v=1771943003" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Aura_small.png?v=1771942385" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Shopify_1_small.png?v=1771942474" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Flow_small.png?v=1771940915" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Bling_small.png?v=1771940928" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Meta_small.png?v=1771940944" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Nuvem_small.png?v=1771940967" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Wake-logo_2_small.png?v=1771943992" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Vtex-logo_small.png?v=1771943576" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Googleo-logo_1_small.png?v=1771943497" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Tray-logo_small.png?v=1771943544" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Gendata-logo_small.png?v=1771943429" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Wbuy-logo_1_small.png?v=1771943254" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Uappi-logo_small.png?v=1771943072" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Olist-logo_small.png?v=1771943003" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Aura_small.png?v=1771942385" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Shopify_1_small.png?v=1771942474" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Flow_small.png?v=1771940915" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Bling_small.png?v=1771940928" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Meta_small.png?v=1771940944" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Nuvem_small.png?v=1771940967" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Wake-logo_2_small.png?v=1771943992" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Vtex-logo_small.png?v=1771943576" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Googleo-logo_1_small.png?v=1771943497" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Tray-logo_small.png?v=1771943544" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Gendata-logo_small.png?v=1771943429" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Wbuy-logo_1_small.png?v=1771943254" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Uappi-logo_small.png?v=1771943072" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Olist-logo_small.png?v=1771943003" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Aura_small.png?v=1771942385" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Shopify_1_small.png?v=1771942474" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Flow_small.png?v=1771940915" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Bling_small.png?v=1771940928" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Meta_small.png?v=1771940944" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Nuvem_small.png?v=1771940967" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Wake-logo_2_small.png?v=1771943992" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Vtex-logo_small.png?v=1771943576" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Googleo-logo_1_small.png?v=1771943497" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Tray-logo_small.png?v=1771943544" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Gendata-logo_small.png?v=1771943429" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Wbuy-logo_1_small.png?v=1771943254" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Uappi-logo_small.png?v=1771943072" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Olist-logo_small.png?v=1771943003" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Aura_small.png?v=1771942385" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Shopify_1_small.png?v=1771942474" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Flow_small.png?v=1771940915" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Bling_small.png?v=1771940928" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Meta_small.png?v=1771940944" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+          
+            <a href="" target="_blank" class="logos-item">
+              <img src="//www.voudeclick.com.br/cdn/shop/files/Nuvem_small.png?v=1771940967" alt="Logo" class="logo-img" width="180" height="auto">
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><section id="shopify-section-template--25386515497239__multicolumn_36wFA3" class="shopify-section section"><link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/section-multicolumn.css?v=81420361875458722681760378066" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-slider.css?v=14039311878856620671760378025" rel="stylesheet" type="text/css" media="all" />
+<style data-shopify>.section-template--25386515497239__multicolumn_36wFA3-padding {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--25386515497239__multicolumn_36wFA3-padding {
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+  }</style><div class="multicolumn color-scheme-1 gradient background-primary">
+  <div
+    class="page-width section-template--25386515497239__multicolumn_36wFA3-padding isolate scroll-trigger animate--slide-in"
+    
+      data-cascade
+    
+  ><div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+        <h2 class="title inline-richtext h2">
+          Nossos Serviços
+        </h2><p class="multicolumn-subheading">Implantação, performance e tecnologia para e-commerces que querem crescer com estratégia e inovação.</p></div><slider-component class="slider-mobile-gutter"><ul
+        class="multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--3-col-desktop"
+        id="Slider-template--25386515497239__multicolumn_36wFA3"
+        role="list"
+      ><li
+            id="Slide-template--25386515497239__multicolumn_36wFA3-1"
+            class="multicolumn-list__item grid__item center scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 1;"
+            
+          >
+            <div class="multicolumn-card content-container">
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--third-width multicolumn-card-spacing">
+                  <div
+                    class="media media--transparent media--adapt"
+                    
+                      style="padding-bottom: 85.38205980066444%;"
+                    
+                  >
+                    <img src="//www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=3200" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=50 50w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=75 75w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=100 100w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=150 150w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=200 200w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=300 300w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=400 400w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=500 500w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=1000 1000w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=1250 1250w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=1750 1750w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=2250 2250w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=2500 2500w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=2750 2750w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/FlashStore-2.png?v=1761402235&amp;width=3200 3200w" width="3200" height="2732" sizes="
+                      (min-width: 1600px) calc((1600px - 108px) * 0.33 /  3),
+                      (min-width: 990px) calc((100vw - 108px) * 0.33 / 3),
+                      (min-width: 750px) calc((100vw - 100px) * 0.33 / 1),
+                      calc((100vw - 30px) * 0.33 / 1)
+                    " class="multicolumn-card__image">
+                  </div>
+                </div><div class="multicolumn-card__info"><h3 class="inline-richtext">VDC Commerce</h3><div class="rte"><p>Implantação completa de lojas virtuais com foco em design, UX e integração com os principais ERPs e meios de pagamento.</p></div><a
+                    class="link animate-arrow"
+                    
+                      href="/pages/vdc-commerce"
+                    
+                  >Saiba mais<span class="svg-wrapper"
+                      ><span class="icon-wrap">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-arrow" viewBox="0 0 14 10"><path fill="currentColor" fill-rule="evenodd" d="M8.537.808a.5.5 0 0 1 .817-.162l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L11.793 5.5H1a.5.5 0 0 1 0-1h10.793L8.646 1.354a.5.5 0 0 1-.109-.546" clip-rule="evenodd"/></svg>
+</span></span
+                    >
+                  </a></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_36wFA3-2"
+            class="multicolumn-list__item grid__item center scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 2;"
+            
+          >
+            <div class="multicolumn-card content-container">
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--third-width multicolumn-card-spacing">
+                  <div
+                    class="media media--transparent media--adapt"
+                    
+                      style="padding-bottom: 85.38205980066444%;"
+                    
+                  >
+                    <img src="//www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=3200" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=50 50w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=75 75w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=100 100w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=150 150w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=200 200w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=300 300w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=400 400w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=500 500w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=1000 1000w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=1250 1250w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=1750 1750w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=2250 2250w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=2500 2500w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=2750 2750w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/VDC_SearchAds_2.png?v=1761401928&amp;width=3200 3200w" width="3200" height="3164" sizes="
+                      (min-width: 1600px) calc((1600px - 108px) * 0.33 /  3),
+                      (min-width: 990px) calc((100vw - 108px) * 0.33 / 3),
+                      (min-width: 750px) calc((100vw - 100px) * 0.33 / 1),
+                      calc((100vw - 30px) * 0.33 / 1)
+                    " class="multicolumn-card__image">
+                  </div>
+                </div><div class="multicolumn-card__info"><h3 class="inline-richtext">VDC SearchAds</h3><div class="rte"><p>Gestão profissional de Google Ads com inteligência de performance e otimização contínua.<br/><br/></p></div><a
+                    class="link animate-arrow"
+                    
+                      href="/pages/vdc-searchads"
+                    
+                  >Saiba mais<span class="svg-wrapper"
+                      ><span class="icon-wrap">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-arrow" viewBox="0 0 14 10"><path fill="currentColor" fill-rule="evenodd" d="M8.537.808a.5.5 0 0 1 .817-.162l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L11.793 5.5H1a.5.5 0 0 1 0-1h10.793L8.646 1.354a.5.5 0 0 1-.109-.546" clip-rule="evenodd"/></svg>
+</span></span
+                    >
+                  </a></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_36wFA3-3"
+            class="multicolumn-list__item grid__item center scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 3;"
+            
+          >
+            <div class="multicolumn-card content-container">
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--third-width multicolumn-card-spacing">
+                  <div
+                    class="media media--transparent media--adapt"
+                    
+                      style="padding-bottom: 85.38205980066444%;"
+                    
+                  >
+                    <img src="//www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=3200" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=50 50w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=75 75w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=100 100w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=150 150w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=200 200w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=300 300w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=400 400w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=500 500w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=1000 1000w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=1250 1250w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=1750 1750w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=2250 2250w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=2500 2500w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=2750 2750w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/VDC_PerformanceUP-2.png?v=1761402242&amp;width=3200 3200w" width="3200" height="3264" sizes="
+                      (min-width: 1600px) calc((1600px - 108px) * 0.33 /  3),
+                      (min-width: 990px) calc((100vw - 108px) * 0.33 / 3),
+                      (min-width: 750px) calc((100vw - 100px) * 0.33 / 1),
+                      calc((100vw - 30px) * 0.33 / 1)
+                    " class="multicolumn-card__image">
+                  </div>
+                </div><div class="multicolumn-card__info"><h3 class="inline-richtext">VDC PerformanceUP</h3><div class="rte"><p>Otimização técnica e de performance para aumentar conversão e velocidade.</p></div><a
+                    class="link animate-arrow"
+                    
+                      href="/pages/vdc-performanceup"
+                    
+                  >Saiba mais<span class="svg-wrapper"
+                      ><span class="icon-wrap">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-arrow" viewBox="0 0 14 10"><path fill="currentColor" fill-rule="evenodd" d="M8.537.808a.5.5 0 0 1 .817-.162l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L11.793 5.5H1a.5.5 0 0 1 0-1h10.793L8.646 1.354a.5.5 0 0 1-.109-.546" clip-rule="evenodd"/></svg>
+</span></span
+                    >
+                  </a></div>
+            </div>
+          </li></ul></slider-component>
+    <div class="center"><a
+          class="button button--primary"
+          
+            href="/pages/servicos"
+          
+        >
+          Ver todos os serviços
+        </a></div>
+  </div>
+</div>
+
+
+<style> #shopify-section-template--25386515497239__multicolumn_36wFA3 .multicolumn-card__info .link {display: inline-block; padding: 10px 20px; background-color: #ffc600; color: black !important; text-decoration: none; border-radius: 30px; font-weight: 500;} #shopify-section-template--25386515497239__multicolumn_36wFA3 .multicolumn-card__info .link:hover {background-color: #fff;} #shopify-section-template--25386515497239__multicolumn_36wFA3 .multicolumn-card {border-radius: 20px;} </style></section><section id="shopify-section-template--25386515497239__multicolumn_WcRDcA" class="shopify-section section"><link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/section-multicolumn.css?v=81420361875458722681760378066" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-slider.css?v=14039311878856620671760378025" rel="stylesheet" type="text/css" media="all" />
+<style data-shopify>.section-template--25386515497239__multicolumn_WcRDcA-padding {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--25386515497239__multicolumn_WcRDcA-padding {
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+  }</style><div class="multicolumn color-scheme-1 gradient background-primary">
+  <div
+    class="page-width section-template--25386515497239__multicolumn_WcRDcA-padding isolate scroll-trigger animate--slide-in"
+    
+      data-cascade
+    
+  ><div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+        <h2 class="title inline-richtext h2">
+          Cases de Sucesso
+        </h2><p class="multicolumn-subheading">Resultados reais que comprovam nosso impacto no crescimento de marcas em diversos segmentos.</p></div><slider-component class="slider-mobile-gutter"><ul
+        class="multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--3-col-desktop"
+        id="Slider-template--25386515497239__multicolumn_WcRDcA"
+        role="list"
+      ><li
+            id="Slide-template--25386515497239__multicolumn_WcRDcA-1"
+            class="multicolumn-list__item grid__item scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 1;"
+            
+          >
+            <div class="multicolumn-card content-container">
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width multicolumn-card-spacing">
+                  <div
+                    class="media media--transparent media--adapt"
+                    
+                      style="padding-bottom: 72.24719101123596%;"
+                    
+                  >
+                    <img src="//www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=3200" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=50 50w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=75 75w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=100 100w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=150 150w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=200 200w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=300 300w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=400 400w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=500 500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=1000 1000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=1250 1250w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=1750 1750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=2250 2250w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=2500 2500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=2750 2750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-lojacvscesta.com.br.png?v=1761441620&amp;width=3200 3200w" width="3200" height="2312" loading="lazy" sizes="
+                      (min-width: 1600px) calc((1600px - 108px) * 1 /  3),
+                      (min-width: 990px) calc((100vw - 108px) * 1 / 3),
+                      (min-width: 750px) calc((100vw - 100px) * 1 / 1),
+                      calc((100vw - 30px) * 1 / 1)
+                    " class="multicolumn-card__image">
+                  </div>
+                </div><div class="multicolumn-card__info"><h3 class="inline-richtext">CVS Cestas</h3><div class="rte"><p>+20% em faturamento com novos módulos e layout.<br/></p></div><a
+                    class="link animate-arrow"
+                    
+                      href="/pages/cvs-cestas"
+                    
+                  >Ver case<span class="svg-wrapper"
+                      ><span class="icon-wrap">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-arrow" viewBox="0 0 14 10"><path fill="currentColor" fill-rule="evenodd" d="M8.537.808a.5.5 0 0 1 .817-.162l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L11.793 5.5H1a.5.5 0 0 1 0-1h10.793L8.646 1.354a.5.5 0 0 1-.109-.546" clip-rule="evenodd"/></svg>
+</span></span
+                    >
+                  </a></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_WcRDcA-2"
+            class="multicolumn-list__item grid__item scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 2;"
+            
+          >
+            <div class="multicolumn-card content-container">
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width multicolumn-card-spacing">
+                  <div
+                    class="media media--transparent media--adapt"
+                    
+                      style="padding-bottom: 72.24719101123596%;"
+                    
+                  >
+                    <img src="//www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=3200" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=50 50w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=75 75w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=100 100w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=150 150w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=200 200w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=300 300w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=400 400w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=500 500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=1000 1000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=1250 1250w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=1750 1750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=2250 2250w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=2500 2500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=2750 2750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-www.watchspot.com.br.png?v=1761441635&amp;width=3200 3200w" width="3200" height="2312" loading="lazy" sizes="
+                      (min-width: 1600px) calc((1600px - 108px) * 1 /  3),
+                      (min-width: 990px) calc((100vw - 108px) * 1 / 3),
+                      (min-width: 750px) calc((100vw - 100px) * 1 / 1),
+                      calc((100vw - 30px) * 1 / 1)
+                    " class="multicolumn-card__image">
+                  </div>
+                </div><div class="multicolumn-card__info"><h3 class="inline-richtext">Watchspot</h3><div class="rte"><p>Marketplace C2C escalável e de alta performance.<br/></p></div><a
+                    class="link animate-arrow"
+                    
+                      href="/pages/watchspot"
+                    
+                  >Ver case<span class="svg-wrapper"
+                      ><span class="icon-wrap">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-arrow" viewBox="0 0 14 10"><path fill="currentColor" fill-rule="evenodd" d="M8.537.808a.5.5 0 0 1 .817-.162l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L11.793 5.5H1a.5.5 0 0 1 0-1h10.793L8.646 1.354a.5.5 0 0 1-.109-.546" clip-rule="evenodd"/></svg>
+</span></span
+                    >
+                  </a></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_WcRDcA-3"
+            class="multicolumn-list__item grid__item scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 3;"
+            
+          >
+            <div class="multicolumn-card content-container">
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--full-width multicolumn-card-spacing">
+                  <div
+                    class="media media--transparent media--adapt"
+                    
+                      style="padding-bottom: 72.24719101123596%;"
+                    
+                  >
+                    <img src="//www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=3200" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=50 50w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=75 75w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=100 100w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=150 150w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=200 200w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=300 300w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=400 400w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=500 500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=750 750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=1000 1000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=1250 1250w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=1500 1500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=1750 1750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=2000 2000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=2250 2250w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=2500 2500w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=2750 2750w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=3000 3000w, //www.voudeclick.com.br/cdn/shop/files/iPad-PRO-11-fassboutique.com.png?v=1761441645&amp;width=3200 3200w" width="3200" height="2312" loading="lazy" sizes="
+                      (min-width: 1600px) calc((1600px - 108px) * 1 /  3),
+                      (min-width: 990px) calc((100vw - 108px) * 1 / 3),
+                      (min-width: 750px) calc((100vw - 100px) * 1 / 1),
+                      calc((100vw - 30px) * 1 / 1)
+                    " class="multicolumn-card__image">
+                  </div>
+                </div><div class="multicolumn-card__info"><h3 class="inline-richtext">Fass Boutique</h3><div class="rte"><p>Recriação total de layout com +40% em conversão.<br/></p></div><a
+                    class="link animate-arrow"
+                    
+                      href="/pages/case-fassboutique"
+                    
+                  >Ver case<span class="svg-wrapper"
+                      ><span class="icon-wrap">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-arrow" viewBox="0 0 14 10"><path fill="currentColor" fill-rule="evenodd" d="M8.537.808a.5.5 0 0 1 .817-.162l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 1 1-.708-.708L11.793 5.5H1a.5.5 0 0 1 0-1h10.793L8.646 1.354a.5.5 0 0 1-.109-.546" clip-rule="evenodd"/></svg>
+</span></span
+                    >
+                  </a></div>
+            </div>
+          </li></ul></slider-component>
+    <div class="center"><a
+          class="button button--primary"
+          
+            href="/pages/cases"
+          
+        >
+          Ver todos os cases
+        </a></div>
+  </div>
+</div>
+
+
+<style> #shopify-section-template--25386515497239__multicolumn_WcRDcA .multicolumn-card__info .link {display: inline-block; padding: 10px 20px; background-color: #ffc600; color: black !important; text-decoration: none; border-radius: 30px; font-weight: 500;} #shopify-section-template--25386515497239__multicolumn_WcRDcA .multicolumn-card__info .link:hover {background-color: #fff;} #shopify-section-template--25386515497239__multicolumn_WcRDcA .multicolumn-card {border-radius: 20px;} </style></section><section id="shopify-section-template--25386515497239__multicolumn_PWNVE4" class="shopify-section section"><link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/section-multicolumn.css?v=81420361875458722681760378066" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-slider.css?v=14039311878856620671760378025" rel="stylesheet" type="text/css" media="all" />
+<style data-shopify>.section-template--25386515497239__multicolumn_PWNVE4-padding {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--25386515497239__multicolumn_PWNVE4-padding {
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+  }</style><div class="multicolumn color-scheme-1 gradient background-primary">
+  <div
+    class="page-width section-template--25386515497239__multicolumn_PWNVE4-padding isolate scroll-trigger animate--slide-in"
+    
+      data-cascade
+    
+  ><div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title">
+        <h2 class="title inline-richtext h2">
+          O que dizem nossos clientes
+        </h2><p class="multicolumn-subheading">Histórias de parceria e resultados compartilhados.</p></div><slider-component class="slider-mobile-gutter"><ul
+        class="multicolumn-list contains-content-container grid grid--1-col-tablet-down grid--3-col-desktop slider slider--everywhere slider--tablet grid--peek"
+        id="Slider-template--25386515497239__multicolumn_PWNVE4"
+        role="list"
+      ><li
+            id="Slide-template--25386515497239__multicolumn_PWNVE4-1"
+            class="multicolumn-list__item grid__item slider__slide scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 1;"
+            
+          >
+            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><div class="rte"><h6>“Como CEO da Lauda venho falar com prazer da satisfação que foi contratar os serviços da Vou de click, foram extremamente pontuais na entrega, ouvintes nas nossas necessidades e entregaram um excelente trabalho. Tivemos uma ótima experiência, obrigada pessoal, vocês foram excepcionais.”</h6><h6><br/><strong>Weidila Magenski<br/>CEO Lauda Brand</strong></h6></div></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_PWNVE4-2"
+            class="multicolumn-list__item grid__item slider__slide scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 2;"
+            
+          >
+            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><div class="rte"><h6>“Desde o início da nossa parceria com a VDC, temos encontrado não apenas uma equipe com alto conhecimento técnico, mas também um atendimento extremamente eficiente, ágil e sempre disponível. Graças à eles conseguimos manter nossa operação digital super estável e em constante evolução!”</h6><h6><br/><strong>Daniel Guazzelli<br/>CEO Luminox Brasil</strong></h6></div></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_PWNVE4-3"
+            class="multicolumn-list__item grid__item slider__slide scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 3;"
+            
+          >
+            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><div class="rte"><h6>“A agência VDC tem sido uma parceira estratégica essencial no desenvolvimento de códigos, funcionalidades e customizações da nossa loja Shopify. <br/>Além de sempre cumprirem os prazos com excelência, destacam-se pela comunicação transparente, pela atenção aos detalhes e pela capacidade de traduzir nossas ideias <br/>em soluções práticas e eficientes. Demonstram um profundo conhecimento da plataforma, oferecendo sugestões inteligentes que elevam a experiência do nosso e-commerce. <br/>Com um atendimento próximo, proativo e altamente profissional, a VDC se tornou uma extensão do nosso time, contribuindo diretamente para o crescimento e evolução da Lahtref.”</h6><h6><br/><strong>Frederico Erthal<br/>CEO Lahtref</strong></h6></div></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_PWNVE4-4"
+            class="multicolumn-list__item grid__item slider__slide scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 4;"
+            
+          >
+            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><div class="rte"><h6>“Trabalhar diretamente com a Vanessa tem sido uma verdadeira alegria e motivo de orgulho. A energia flui bem, com organização e presteza, sempre buscando soluções pra atender às necessidades do cliente. Estou muito satisfeita com o resultado que estamos atingindo.”</h6><h6><br/><strong>Aileen<br/>Lauda Brand</strong></h6></div></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_PWNVE4-5"
+            class="multicolumn-list__item grid__item slider__slide scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 5;"
+            
+          >
+            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><div class="rte"><h6>“Após ter experiência com três outras integradoras Shopify, tive o privilégio de ser um dos primeiros clientes da VDC. Desde o início, fiquei impressionado com o profissionalismo, a agilidade e a dedicação de toda a equipe. A Van, em especial, sempre esteve presente, com atenção e comprometimento em cada etapa do processo. Só tenho elogios a fazer. Vida longa à VDC!”</h6><h6><br/><strong>Arthur Goldemberg<br/>CEO Trocatech</strong></h6></div></div>
+            </div>
+          </li><li
+            id="Slide-template--25386515497239__multicolumn_PWNVE4-6"
+            class="multicolumn-list__item grid__item slider__slide scroll-trigger animate--slide-in"
+            
+            
+              data-cascade
+              style="--animation-order: 6;"
+            
+          >
+            <div class="multicolumn-card content-container"><div class="multicolumn-card__info"><div class="rte"><h6>“Somos clientes há 3 anos da Vou de Click, uma agência que transforma nosso site com soluções de desenvolvimento e aprimoramento de UX de alto nível.<br/>É um serviço premium que entrega resultados excepcionais! Excelência, transparência e um atendimento impecável definem essa empresa. Recomendo sem hesitação!”</h6><h6><br/><strong>Renata Tonelli<br/>CEO Nanui Swin</strong></h6></div></div>
+            </div>
+          </li></ul><div class="slider-buttons">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="Deslizar para a esquerda"
+          >
+            <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"/></svg>
+</span>
+          </button>
+          <div class="slider-counter caption">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">de</span>
+            <span class="slider-counter--total">6</span>
+          </div>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="Deslizar para a direita"
+          >
+            <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"/></svg>
+</span>
+          </button>
+        </div></slider-component>
+    <div class="center small-hide medium-hide large-up-hide"></div>
+  </div>
+</div>
+
+
+</section><section id="shopify-section-template--25386515497239__featured_blog_n9n6Uj" class="shopify-section"><link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-slider.css?v=14039311878856620671760378025" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-card.css?v=120341546515895839841760378017" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-article-card.css?v=47105078945762260691760378016" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/section-featured-blog.css?v=36629982431115873811760378064" rel="stylesheet" type="text/css" media="all" />
+<style data-shopify>.section-template--25386515497239__featured_blog_n9n6Uj-padding {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--25386515497239__featured_blog_n9n6Uj-padding {
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+  }</style><div class="blog color-scheme-379d31bd-aebf-4203-998c-cd53c8a40670 gradient">
+  <div class="page-width-desktop isolate section-template--25386515497239__featured_blog_n9n6Uj-padding"><div class="title-wrapper-with-link title-wrapper--self-padded-tablet-down title-wrapper--no-top-margin">
+        <h2
+          id="SectionHeading-template--25386515497239__featured_blog_n9n6Uj"
+          class="blog__title inline-richtext h2 scroll-trigger animate--slide-in"
+          
+            data-cascade
+          
+        >
+          Conteúdos Recentes
+        </h2><a
+            href="/blogs/blog"
+            class="link underlined-link large-up-hide scroll-trigger animate--slide-in"
+          >
+            Ver tudo
+          </a><p class="blog-subheading">Insights e estratégias para evoluir o seu e-commerce.</p></div><slider-component class="slider-mobile-gutter scroll-trigger animate--slide-in">
+      <ul
+        id="Slider-template--25386515497239__featured_blog_n9n6Uj"
+        class="blog__posts articles-wrapper contains-card contains-card--article grid grid--peek grid--2-col-tablet grid--3-col-desktop slider slider--tablet"
+        role="list"
+      ><li
+              id="Slide-template--25386515497239__featured_blog_n9n6Uj-1"
+              class="blog__post grid__item article slider__slide slider__slide--full-width scroll-trigger animate--slide-in"
+              
+                data-cascade
+                style="--animation-order: 1;"
+              
+            >
+              
+<div class="article-card-wrapper card-wrapper underline-links-hover">
+    
+    <div
+      class="
+        card article-card
+        card--card
+        
+         card--media
+         color-scheme-379d31bd-aebf-4203-998c-cd53c8a40670 gradient
+        
+      "
+      style="--ratio-percent: 60.24096385542169%;"
+    >
+      <div
+        class="card__inner  ratio"
+        style="--ratio-percent: 60.24096385542169%;"
+      ><div class="article-card__image-wrapper card__media">
+            <div
+              class="article-card__image media media--hover-effect"
+              
+            >
+              
+              <img
+                srcset="//www.voudeclick.com.br/cdn/shop/articles/magnifying-glass-with-seo-concepts_4ba70438-40b2-4e5e-8f59-cdce3ca3ce0d.jpg?v=1769000907&width=165 165w,//www.voudeclick.com.br/cdn/shop/articles/magnifying-glass-with-seo-concepts_4ba70438-40b2-4e5e-8f59-cdce3ca3ce0d.jpg?v=1769000907&width=360 360w,//www.voudeclick.com.br/cdn/shop/articles/magnifying-glass-with-seo-concepts_4ba70438-40b2-4e5e-8f59-cdce3ca3ce0d.jpg?v=1769000907&width=533 533w,//www.voudeclick.com.br/cdn/shop/articles/magnifying-glass-with-seo-concepts_4ba70438-40b2-4e5e-8f59-cdce3ca3ce0d.jpg?v=1769000907&width=720 720w,//www.voudeclick.com.br/cdn/shop/articles/magnifying-glass-with-seo-concepts_4ba70438-40b2-4e5e-8f59-cdce3ca3ce0d.jpg?v=1769000907&width=1000 1000w,//www.voudeclick.com.br/cdn/shop/articles/magnifying-glass-with-seo-concepts_4ba70438-40b2-4e5e-8f59-cdce3ca3ce0d.jpg?v=1769000907&width=1500 1500w,//www.voudeclick.com.br/cdn/shop/articles/magnifying-glass-with-seo-concepts_4ba70438-40b2-4e5e-8f59-cdce3ca3ce0d.jpg?v=1769000907 5616w"
+                
+                src="//www.voudeclick.com.br/cdn/shop/articles/magnifying-glass-with-seo-concepts_4ba70438-40b2-4e5e-8f59-cdce3ca3ce0d.jpg?v=1769000907&width=533"
+                sizes="(min-width: 1600px) 750px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="Como o Campo Semântico e Lexical Turbina o SEO da Sua Loja Online"
+                class="motion-reduce"
+                
+                  loading="lazy"
+                
+                width="5616"
+                height="3744"
+              >
+              
+            </div>
+          </div><div class="card__content">
+          <div class="card__information">
+            <h3 class="card__heading h2">
+              <a href="/blogs/blog/como-o-campo-semantico-e-lexical-turbina-o-seo-da-sua-loja-online" class="full-unstyled-link">
+                Como o Campo Semântico e Lexical Turbina o SEO ...
+              </a>
+            </h3>
+            <div class="article-card__info caption-with-letter-spacing h5"><span class="circle-divider"><time datetime="2026-01-21T13:08:47Z">21 de janeiro de 2026</time></span></div><p class="article-card__excerpt rte-width">Quando falamos de SEO, não basta repetir palavras-chave: é preciso mostrar ao Google que você entende o assunto. É aí que entram o campo semântico e o lexical — estratégias...
+</p><div class="article-card__footer"></div></div></div>
+      </div>
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading h2">
+            <a href="/blogs/blog/como-o-campo-semantico-e-lexical-turbina-o-seo-da-sua-loja-online" class="full-unstyled-link">
+              Como o Campo Semântico e Lexical Turbina o SEO ...
+            </a>
+          </h3>
+          <div class="article-card__info caption-with-letter-spacing h5"><span class="circle-divider"><time datetime="2026-01-21T13:08:47Z">21 de janeiro de 2026</time></span></div><p class="article-card__excerpt rte-width">Quando falamos de SEO, não basta repetir palavras-chave: é preciso mostrar ao Google que você entende o assunto. É aí que entram o campo semântico e o lexical — estratégias...
+</p><div class="article-card__footer"></div></div></div>
+    </div>
+  </div>
+            </li><li
+              id="Slide-template--25386515497239__featured_blog_n9n6Uj-2"
+              class="blog__post grid__item article slider__slide slider__slide--full-width scroll-trigger animate--slide-in"
+              
+                data-cascade
+                style="--animation-order: 2;"
+              
+            >
+              
+<div class="article-card-wrapper card-wrapper underline-links-hover">
+    
+    <div
+      class="
+        card article-card
+        card--card
+        
+         card--media
+         color-scheme-379d31bd-aebf-4203-998c-cd53c8a40670 gradient
+        
+      "
+      style="--ratio-percent: 60.24096385542169%;"
+    >
+      <div
+        class="card__inner  ratio"
+        style="--ratio-percent: 60.24096385542169%;"
+      ><div class="article-card__image-wrapper card__media">
+            <div
+              class="article-card__image media media--hover-effect"
+              
+            >
+              
+              <img
+                srcset="//www.voudeclick.com.br/cdn/shop/articles/post_thumbnail-84511ce7d5ec45a0411f48cbd01612cd_9b05aa47-69a8-449d-939e-d57afe811e5e.jpg?v=1769000872&width=165 165w,//www.voudeclick.com.br/cdn/shop/articles/post_thumbnail-84511ce7d5ec45a0411f48cbd01612cd_9b05aa47-69a8-449d-939e-d57afe811e5e.jpg?v=1769000872&width=360 360w,//www.voudeclick.com.br/cdn/shop/articles/post_thumbnail-84511ce7d5ec45a0411f48cbd01612cd_9b05aa47-69a8-449d-939e-d57afe811e5e.jpg?v=1769000872&width=533 533w,//www.voudeclick.com.br/cdn/shop/articles/post_thumbnail-84511ce7d5ec45a0411f48cbd01612cd_9b05aa47-69a8-449d-939e-d57afe811e5e.jpg?v=1769000872&width=720 720w,//www.voudeclick.com.br/cdn/shop/articles/post_thumbnail-84511ce7d5ec45a0411f48cbd01612cd_9b05aa47-69a8-449d-939e-d57afe811e5e.jpg?v=1769000872&width=1000 1000w,//www.voudeclick.com.br/cdn/shop/articles/post_thumbnail-84511ce7d5ec45a0411f48cbd01612cd_9b05aa47-69a8-449d-939e-d57afe811e5e.jpg?v=1769000872 1200w"
+                
+                src="//www.voudeclick.com.br/cdn/shop/articles/post_thumbnail-84511ce7d5ec45a0411f48cbd01612cd_9b05aa47-69a8-449d-939e-d57afe811e5e.jpg?v=1769000872&width=533"
+                sizes="(min-width: 1600px) 750px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="Palavras-chave no SEO: o que são, como usar e por que elas importam de verdade"
+                class="motion-reduce"
+                
+                  loading="lazy"
+                
+                width="1200"
+                height="675"
+              >
+              
+            </div>
+          </div><div class="card__content">
+          <div class="card__information">
+            <h3 class="card__heading h2">
+              <a href="/blogs/blog/palavras-chave-no-seo-o-que-sao-como-usar-e-por-que-elas-importam-de-verdade" class="full-unstyled-link">
+                Palavras-chave no SEO: o que são, como usar e p...
+              </a>
+            </h3>
+            <div class="article-card__info caption-with-letter-spacing h5"><span class="circle-divider"><time datetime="2026-01-21T13:08:47Z">21 de janeiro de 2026</time></span></div><p class="article-card__excerpt rte-width">Palavras-chave são muito mais do que termos; elas são a ponte entre o que o cliente busca e o conteúdo que sua loja oferece. Usá-las com inteligência transforma acessos em...
+</p><div class="article-card__footer"></div></div></div>
+      </div>
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading h2">
+            <a href="/blogs/blog/palavras-chave-no-seo-o-que-sao-como-usar-e-por-que-elas-importam-de-verdade" class="full-unstyled-link">
+              Palavras-chave no SEO: o que são, como usar e p...
+            </a>
+          </h3>
+          <div class="article-card__info caption-with-letter-spacing h5"><span class="circle-divider"><time datetime="2026-01-21T13:08:47Z">21 de janeiro de 2026</time></span></div><p class="article-card__excerpt rte-width">Palavras-chave são muito mais do que termos; elas são a ponte entre o que o cliente busca e o conteúdo que sua loja oferece. Usá-las com inteligência transforma acessos em...
+</p><div class="article-card__footer"></div></div></div>
+    </div>
+  </div>
+            </li><li
+              id="Slide-template--25386515497239__featured_blog_n9n6Uj-3"
+              class="blog__post grid__item article slider__slide slider__slide--full-width scroll-trigger animate--slide-in"
+              
+                data-cascade
+                style="--animation-order: 3;"
+              
+            >
+              
+<div class="article-card-wrapper card-wrapper underline-links-hover">
+    
+    <div
+      class="
+        card article-card
+        card--card
+        
+         card--media
+         color-scheme-379d31bd-aebf-4203-998c-cd53c8a40670 gradient
+        
+      "
+      style="--ratio-percent: 60.24096385542169%;"
+    >
+      <div
+        class="card__inner  ratio"
+        style="--ratio-percent: 60.24096385542169%;"
+      ><div class="article-card__image-wrapper card__media">
+            <div
+              class="article-card__image media media--hover-effect"
+              
+            >
+              
+              <img
+                srcset="//www.voudeclick.com.br/cdn/shop/articles/seo_on-page_e_off-pa-2-1024x512_8dfb2fbc-5355-44a8-98f5-0dd27d199600.png?v=1756385711&width=165 165w,//www.voudeclick.com.br/cdn/shop/articles/seo_on-page_e_off-pa-2-1024x512_8dfb2fbc-5355-44a8-98f5-0dd27d199600.png?v=1756385711&width=360 360w,//www.voudeclick.com.br/cdn/shop/articles/seo_on-page_e_off-pa-2-1024x512_8dfb2fbc-5355-44a8-98f5-0dd27d199600.png?v=1756385711&width=533 533w,//www.voudeclick.com.br/cdn/shop/articles/seo_on-page_e_off-pa-2-1024x512_8dfb2fbc-5355-44a8-98f5-0dd27d199600.png?v=1756385711&width=720 720w,//www.voudeclick.com.br/cdn/shop/articles/seo_on-page_e_off-pa-2-1024x512_8dfb2fbc-5355-44a8-98f5-0dd27d199600.png?v=1756385711&width=1000 1000w,//www.voudeclick.com.br/cdn/shop/articles/seo_on-page_e_off-pa-2-1024x512_8dfb2fbc-5355-44a8-98f5-0dd27d199600.png?v=1756385711 1024w"
+                
+                src="//www.voudeclick.com.br/cdn/shop/articles/seo_on-page_e_off-pa-2-1024x512_8dfb2fbc-5355-44a8-98f5-0dd27d199600.png?v=1756385711&width=533"
+                sizes="(min-width: 1600px) 750px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                alt="URLs Amigáveis: Melhore a Legibilidade, SEO e Confiança do Seu E-commerce"
+                class="motion-reduce"
+                
+                  loading="lazy"
+                
+                width="1024"
+                height="512"
+              >
+              
+            </div>
+          </div><div class="card__content">
+          <div class="card__information">
+            <h3 class="card__heading h2">
+              <a href="/blogs/blog/urls-amigaveis-melhore-a-legibilidade-seo-e-confianca-do-seu-e-commerce" class="full-unstyled-link">
+                URLs Amigáveis: Melhore a Legibilidade, SEO e C...
+              </a>
+            </h3>
+            <div class="article-card__info caption-with-letter-spacing h5"><span class="circle-divider"><time datetime="2025-11-21T18:48:13Z">21 de novembro de 2025</time></span></div><p class="article-card__excerpt rte-width">A maneira como você estrutura as URLs do seu site é um detalhe simples, mas de grande impacto,  ajudando visitantes e buscadores a entender melhor sua loja online. Um URL...
+</p><div class="article-card__footer"></div></div></div>
+      </div>
+      <div class="card__content">
+        <div class="card__information">
+          <h3 class="card__heading h2">
+            <a href="/blogs/blog/urls-amigaveis-melhore-a-legibilidade-seo-e-confianca-do-seu-e-commerce" class="full-unstyled-link">
+              URLs Amigáveis: Melhore a Legibilidade, SEO e C...
+            </a>
+          </h3>
+          <div class="article-card__info caption-with-letter-spacing h5"><span class="circle-divider"><time datetime="2025-11-21T18:48:13Z">21 de novembro de 2025</time></span></div><p class="article-card__excerpt rte-width">A maneira como você estrutura as URLs do seu site é um detalhe simples, mas de grande impacto,  ajudando visitantes e buscadores a entender melhor sua loja online. Um URL...
+</p><div class="article-card__footer"></div></div></div>
+    </div>
+  </div>
+            </li></ul><div class="slider-buttons">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="Deslizar para a esquerda"
+          >
+            <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"/></svg>
+</span>
+          </button>
+          <div class="slider-counter caption">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">de</span>
+            <span class="slider-counter--total">3</span>
+          </div>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="Deslizar para a direita"
+          >
+            <span class="svg-wrapper"><svg class="icon icon-caret" viewBox="0 0 10 6"><path fill="currentColor" fill-rule="evenodd" d="M9.354.646a.5.5 0 0 0-.708 0L5 4.293 1.354.646a.5.5 0 0 0-.708.708l4 4a.5.5 0 0 0 .708 0l4-4a.5.5 0 0 0 0-.708" clip-rule="evenodd"/></svg>
+</span>
+          </button>
+        </div></slider-component><div
+        class="blog__view-all center small-hide medium-hide scroll-trigger animate--slide-in"
+        
+          data-cascade
+        
+      >
+        <a
+          href="/blogs/blog"
+          id="ViewAll-template--25386515497239__featured_blog_n9n6Uj"
+          class="blog__button button"
+          aria-labelledby="ViewAll-template--25386515497239__featured_blog_n9n6Uj SectionHeading-template--25386515497239__featured_blog_n9n6Uj"
+        >
+          Ver tudo
+        </a>
+      </div></div>
+</div>
+
+
+</section>
+    </main>
+
+    <!-- BEGIN sections: footer-group -->
+<div id="shopify-section-sections--25386515759383__footer" class="shopify-section shopify-section-group-footer-group">
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/section-footer.css?v=60318643098753476351760378065" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-newsletter.css?v=4727253280200485261760378022" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-list-menu.css?v=151968516119678728991760378020" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-list-payment.css?v=69253961410771838501760378020" rel="stylesheet" type="text/css" media="all" />
+<link href="//www.voudeclick.com.br/cdn/shop/t/51/assets/component-list-social.css?v=35792976012981934991760378020" rel="stylesheet" type="text/css" media="all" />
+<style data-shopify>.footer {
+    margin-top: 0px;
+  }
+
+  .section-sections--25386515759383__footer-padding {
+    padding-top: 27px;
+    padding-bottom: 0px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .footer {
+      margin-top: 0px;
+    }
+
+    .section-sections--25386515759383__footer-padding {
+      padding-top: 36px;
+      padding-bottom: 0px;
+    }
+  }</style><footer class="footer color-scheme-1 gradient section-sections--25386515759383__footer-padding"><div class="footer__content-top page-width"><div
+            class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet  scroll-trigger animate--slide-in"
+            
+              data-cascade
+            
+          ><div
+                class="footer-block grid__item scroll-trigger animate--slide-in"
+                
+                
+                  data-cascade
+                  style="--animation-order: 1;"
+                
+              ><div class="footer-block__brand-info"><div
+                          class="footer-block__image-wrapper"
+                          style="max-width: min(100%, 200px);"
+                        >
+                          <img src="//www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=1100" alt="" srcset="//www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=50 50w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=100 100w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=150 150w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=200 200w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=300 300w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=400 400w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=550 550w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=800 800w, //www.voudeclick.com.br/cdn/shop/files/logo-removebg-preview_1.png?v=1749646441&amp;width=1100 1100w" width="200" height="48.73096446700507" loading="lazy">
+                        </div><div class="rte"><p>Crescer junto é o que nos move.<br/></p></div>
+
+<ul class="list-unstyled list-social footer__list-social" role="list"><li class="list-social__item">
+      <a href="https://www.facebook.com/agenciaVouDeClick/" class="link list-social__link">
+        <span class="svg-wrapper"><svg class="icon icon-facebook" viewBox="0 0 20 20"><path fill="currentColor" d="M18 10.049C18 5.603 14.419 2 10 2s-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951"/></svg>
+</span>
+        <span class="visually-hidden">Facebook</span>
+      </a>
+    </li><li class="list-social__item">
+      <a href="https://www.instagram.com/voudeclick/" class="link list-social__link">
+        <span class="svg-wrapper"><svg class="icon icon-instagram" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.4 2.4 0 0 0-.912.593 2.5 2.5 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23s.01 2.39.046 3.229c.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046s2.39-.01 3.23-.046c.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23s-.01-2.39-.055-3.229c-.027-.784-.164-1.204-.274-1.495a2.4 2.4 0 0 0-.593-.913 2.6 2.6 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045a63 63 0 0 1 3.302.045c.664.014 1.321.14 1.943.374a4 4 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.9 3.9 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.15 4.15 0 0 1-1.414-.922 4.1 4.1 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.4 4.4 0 0 1 .92-1.414 4.2 4.2 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805m1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93m5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355" clip-rule="evenodd"/></svg>
+</span>
+        <span class="visually-hidden">Instagram</span>
+      </a>
+    </li><li class="list-social__item">
+     
+      <a href="https://www.linkedin.com/company/vou-de-click-/" class="link list-social__link">
+        <span class="svg-wrapper"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero"><g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.895,-2 -2,-2zM10.954,22h-2.95v-9.492h2.95zM9.449,11.151c-0.951,0 -1.72,-0.771 -1.72,-1.72c0,-0.949 0.77,-1.719 1.72,-1.719c0.948,0 1.719,0.771 1.719,1.719c0,0.949 -0.771,1.72 -1.719,1.72zM22.004,22h-2.948v-4.616c0,-1.101 -0.02,-2.517 -1.533,-2.517c-1.535,0 -1.771,1.199 -1.771,2.437v4.696h-2.948v-9.492h2.83v1.297h0.04c0.394,-0.746 1.356,-1.533 2.791,-1.533c2.987,0 3.539,1.966 3.539,4.522z"></path></g></g></svg></span>
+        <span class="visually-hidden">Translation missing: pt-BR.general.social.links.linkedin</span>
+      </a>
+    </li></ul>
+</div></div><div
+                class="footer-block grid__item footer-block--menu scroll-trigger animate--slide-in"
+                
+                
+                  data-cascade
+                  style="--animation-order: 2;"
+                
+              ><h2 class="footer-block__heading inline-richtext">Menu</h2><ul class="footer-block__details-content list-unstyled"><li>
+                            <a
+                              href="/"
+                              class="link link--text list-menu__item list-menu__item--link list-menu__item--active"
+                            >
+                              Home
+                            </a>
+                          </li><li>
+                            <a
+                              href="/pages/quem-somos"
+                              class="link link--text list-menu__item list-menu__item--link"
+                            >
+                              Quem Somos
+                            </a>
+                          </li><li>
+                            <a
+                              href="/pages/servicos"
+                              class="link link--text list-menu__item list-menu__item--link"
+                            >
+                              Serviços
+                            </a>
+                          </li><li>
+                            <a
+                              href="/pages/cases"
+                              class="link link--text list-menu__item list-menu__item--link"
+                            >
+                              Clientes
+                            </a>
+                          </li><li>
+                            <a
+                              href="/blogs/blog"
+                              class="link link--text list-menu__item list-menu__item--link"
+                            >
+                              Blog
+                            </a>
+                          </li><li>
+                            <a
+                              href="/pages/contato"
+                              class="link link--text list-menu__item list-menu__item--link"
+                            >
+                              Contato
+                            </a>
+                          </li></ul></div><div
+                class="footer-block grid__item scroll-trigger animate--slide-in"
+                
+                
+                  data-cascade
+                  style="--animation-order: 3;"
+                
+              ><h2 class="footer-block__heading inline-richtext">Contato</h2><div class="footer-block__details-content rte">
+                      <p>comercial@voudeclick.com.br<br/>(11) 97853-9029<br/>Segunda a sexta, das 09h às 18h<br/><br/><br/></p><p></p>
+                    </div></div></div><div
+          class="footer-block--newsletter scroll-trigger animate--slide-in"
+          
+            data-cascade
+          
+        ></div>
+      </div><div
+    class="footer__content-bottom scroll-trigger animate--slide-in"
+    
+      data-cascade
+    
+  >
+    <div class="footer__content-bottom-wrapper page-width">
+      <div class="footer__column footer__localization isolate"></div>
+      <div class="footer__column footer__column--info"></div>
+    </div>
+    <div class="footer__content-bottom-wrapper page-width footer__content-bottom-wrapper--center">
+      <div class="footer__copyright caption">
+        <small class="copyright__content"
+          >&copy; 2026, <a href="/" title="">Vou de Click</a></small>
+        <small class="copyright__content"><a target="_blank" rel="nofollow" href="https://pt.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Com tecnologia da Shopify</a></small><ul class="policies list-unstyled"><li>
+                  <small class="copyright__content"
+                    ><a href="/policies/privacy-policy">Política de privacidade</a></small
+                  >
+                </li></ul></div>
+    </div>
+    
+  </div>
+
+</footer>
+
+
+<style> #shopify-section-sections--25386515759383__footer .footer svg, #shopify-section-sections--25386515759383__footer .footer .icon {width: 30px !important; height: 30px !important; min-width: 30px !important; min-height: 30px !important;} </style></div>
+<!-- END sections: footer-group -->
+
+    <ul hidden>
+      <li id="a11y-refresh-page-message">Ao escolher uma seleção, a página inteira é atualizada.</li>
+      <li id="a11y-new-window-message">Abre em uma nova janela.</li>
+    </ul>
+
+    <script>
+      window.shopUrl = 'https://www.voudeclick.com.br';
+      window.routes = {
+        cart_add_url: '/cart/add',
+        cart_change_url: '/cart/change',
+        cart_update_url: '/cart/update',
+        cart_url: '/cart',
+        predictive_search_url: '/search/suggest',
+      };
+
+      window.cartStrings = {
+        error: `Ocorreu um erro ao atualizar o carrinho. Tente de novo.`,
+        quantityError: `É possível adicionar apenas [quantity] unidade(s) desse item ao carrinho.`,
+      };
+
+      window.variantStrings = {
+        addToCart: `Adicionar ao carrinho`,
+        soldOut: `Esgotado`,
+        unavailable: `Indisponível`,
+        unavailable_with_option: `[value] – indisponível`,
+      };
+
+      window.quickOrderListStrings = {
+        itemsAdded: `[quantity] itens adicionados`,
+        itemAdded: `[quantity] item adicionado`,
+        itemsRemoved: `[quantity] itens removidos`,
+        itemRemoved: `[quantity] item removido`,
+        viewCart: `Ver carrinho`,
+        each: `[money]/cada`,
+        min_error: `Este item apresenta um mínimo de [min]`,
+        max_error: `Este item apresenta um máximo de [max]`,
+        step_error: `Só é possível adicionar este item em incrementos de [step]`,
+      };
+
+      window.accessibilityStrings = {
+        imageAvailable: `A imagem [index] está disponível no visualizador da galeria`,
+        shareSuccess: `Link copiado para a área de transferência`,
+        pauseSlideshow: `Pausar apresentação de slides`,
+        playSlideshow: `Reproduzir apresentação de slides`,
+        recipientFormExpanded: `Formulário de destinatário do cartão-presente expandido`,
+        recipientFormCollapsed: `Formulário de destinatário do cartão-presente recolhido`,
+        countrySelectorSearchCount: `[count] países/regiões encontrados`,
+      };
+    </script><script>
+        window.WidgetWhatsConfig = {
+  "userId": 915575,
+  "accountId": 739785,
+  "funnelId": 828343,
+  "sequenceId": 1,
+  "whatsappNumber": "+5511978539029",
+  "companyName": "Vou de Click",
+  "whatsappMessage": "Olá, gostaria de falar com um atendente!",
+  "entity": "organization",
+  "deal": true,
+  "fields": [
+    {
+      "name": "name",
+      "label": "Nome",
+      "type": "text",
+      "required": true,
+      "customField": false
+    },
+    {
+      "name": "email",
+      "label": "E-mail",
+      "type": "email",
+      "required": true,
+      "customField": false
+    },
+    {
+      "name": "whatsapp",
+      "label": "WhatsApp",
+      "type": "text",
+      "required": true,
+      "customField": false
+    },
+    {
+      "name": "legalName",
+      "label": "Razão social",
+      "type": "text",
+      "required": true,
+      "customField": false
+    },
+    {
+      "name": "Faturamento Mensal",
+      "identifier": "faturamento_mensal",
+      "label": "Faturamento Mensal",
+      "type": "select",
+      "required": true,
+      "customField": true,
+      "customFieldOptions": [
+        {
+          "id": 32590,
+          "option": "0 a R$50.000",
+          "order": 1
+        },
+        {
+          "id": 32588,
+          "option": "R$50.000 a R$100.000",
+          "order": 2
+        },
+        {
+          "id": 32589,
+          "option": "R$100.000 a R$500.000",
+          "order": 3
+        },
+        {
+          "id": 32951,
+          "option": "R$500.000 a R$1.000.000",
+          "order": 4
+        },
+        {
+          "id": 32952,
+          "option": "Acima de R$1.000.000",
+          "order": 5
+        }
+      ]
+    }
+  ]
+};
+      </script>
+      <script src="https://widgets.agendor.com.br/whatsapp.js" defer></script>
+  <div id="shopify-block-AcThYNTRkUW1SdzMyZ__6610233760104865948" class="shopify-block shopify-app-block"><script>
+  window.pushowlSubdomain = "vou-de-click-store.myshopify.com".split(".")[0]
+  window.isPushowlThemeAppExtentionEnabled = true
+  window.pushowlGUID = "02c8be9b-80fe-4a77-9481-0358e0140989"
+  window.pushowlEnvironment = "production"
+  window.pushowlConfigSource = "shopify"
+  window.pushowlConfigUrl = "https://cdn.shopify.com/s/files/1/0753/4896/7703/files/pushowl_config_env_production_subdomain_voudeclickstore_website_id_301595.json?v=1777035115"
+</script>
+
+
+
+
+</div></body>
+</html>
