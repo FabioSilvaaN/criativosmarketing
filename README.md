@@ -1,2 +1,988 @@
 
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home | Design studio template</title><meta name="description" content="Page-specific description"><meta name="keywords" content="Page-specific keywords"><link rel="shortcut icon" href="favicon.ico"><link rel="shortcut icon" href="static/images/favicons/favicon.png" type="image/x-icon"><link rel="apple-touch-icon" href="static/images/favicons/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="static/images/favicons/apple-touch-icon-precomposed.png"><link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet" type="text/css"><link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"><link rel="stylesheet" href="static/css/screen.min.css"><link rel="stylesheet" href="static/css/custom.min.css"></head><body><!-- $Page header--><header class="page-header js-header"><div class="page-header__inner"><div class="page-header__logo"><h1>Bak-one</h1>&nbsp;<span>One page flat template</span></div><nav class="page-header__nav js-nav"><ul><li><a class="page-header__nav-link js-anchor js-link is-active" href="#home">Home</a></li><li><a class="page-header__nav-link js-anchor js-link" href="#portfolio">Portfolio</a></li><li><a class="page-header__nav-link js-anchor js-link" href="#team">About</a></li><li><a class="page-header__nav-link js-anchor js-link" href="#contact">Contact</a></li></ul></nav></div></header><!-- $Promo section--><section class="promo js-jumbo" id="home"><h2 class="promo__title">We build<span>brand</span></h2><p class="promo__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p><a class="promo__btn" href="#">Learn more</a><a class="promo__go-next js-anchor" href="#portfolio">Scroll down</a></section><!-- $Portfolio section--><section class="portfolio js-portfolio" id="portfolio"><div class="portfolio__inner"><h2 class="portfolio__title">Portfolio</h2><p class="portfolio__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p><nav class="portfolio__filter"><ul><li class="portfolio__filter-btn is-selected js-filter" data-filter="all">All</li><li class="portfolio__filter-btn js-filter" data-filter="web">Web design</li><li class="portfolio__filter-btn js-filter" data-filter="graphic">Graphic design</li><li class="portfolio__filter-btn js-filter" data-filter="flat">Flat design</li></ul></nav><ul class="portfolio__content"><li class="portfolio__item js-item" data-cat="all flat"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/port1.png" alt=""><div class="portfolio__item-caption"><span class="portfolio__item-title">Example title</span><span class="portfolio__item-cat">Flat design</span></div></a></li><li class="portfolio__item js-item" data-cat="all web"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/port2.png" alt=""><div class="portfolio__item-caption"><span class="portfolio__item-title">Example title</span><span class="portfolio__item-cat">Web design</span></div></a></li><li class="portfolio__item js-item" data-cat="all graphic"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/port3.png" alt=""><div class="portfolio__item-caption"><span class="portfolio__item-title">Example title</span><span class="portfolio__item-cat">Graphic design</span></div></a></li><li class="portfolio__item js-item" data-cat="all graphic web"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/port4.png" alt=""><div class="portfolio__item-caption"><span class="portfolio__item-title">Example title</span><span class="portfolio__item-cat">Graphic design</span></div></a></li><li class="portfolio__item js-item" data-cat="all graphic flat"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/port6.png" alt=""><div class="portfolio__item-caption"><span class="portfolio__item-title">Example title</span><span class="portfolio__item-cat">Flat design</span></div></a></li><li class="portfolio__item js-item" data-cat="all web"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/port5.png" alt=""><div class="portfolio__item-caption"><span class="portfolio__item-title">Example title</span><span class="portfolio__item-cat">Web design</span></div></a></li><li class="portfolio__item js-item" data-cat="all flat web"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/port1.png" alt=""><div class="portfolio__item-caption"><span class="portfolio__item-title">Example title</span><span class="portfolio__item-cat">Flat design</span></div></a></li><li class="portfolio__item js-item" data-cat="all web"><a href="#"><img class="portfolio__item-img js-lazy" src="static/images/port2.png" alt=""><div class="portfolio__item-caption"><span class="portfolio__item-title">Example title</span><span class="portfolio__item-cat">Web design</span></div></a></li></ul></div></section><!-- $Team section--><section class="team" id="team"><div class="team__inner"><h2 class="team__title">About us</h2><p class="team__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p><div class="team__member"><img src="static/images/ava1.jpg" alt="Melanie Doe"><div class="team__member-info"><h3 class="team__member-name">Melannie Doe</h3><span class="team__member-role">Project manager</span><p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div><ul class="team__member-soc"><li><a class="team__member-icon fb" href="#">My Facebook</a></li><li><a class="team__member-icon tw" href="#">Follow me on twitter</a></li><li><a class="team__member-icon gplus" href="#">My Google+</a></li><li><a class="team__member-icon db" href="#">I am on Dribble</a></li></ul></div><div class="team__member"><img src="static/images/ava2.jpg" alt="Jhonie Doe"><div class="team__member-info"><h3 class="team__member-name">Jhonnie Doe</h3><span class="team__member-role">Graphic designer</span><p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div><ul class="team__member-soc"><li><a class="team__member-icon fb" href="#">My Facebook</a></li><li><a class="team__member-icon tw" href="#">Follow me on twitter</a></li><li><a class="team__member-icon gplus" href="#">My Google+</a></li><li><a class="team__member-icon db" href="#">I am on Dribble</a></li></ul></div><div class="team__member"><img src="static/images/ava3.jpg" alt="Daniel Doe"><div class="team__member-info"><h3 class="team__member-name">Daniel Doe</h3><span class="team__member-role">Web designer</span><p class="team__member-descr">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p></div><ul class="team__member-soc"><li><a class="team__member-icon fb" href="#">My Facebook</a></li><li><a class="team__member-icon tw" href="#">Follow me on twitter</a></li><li><a class="team__member-icon gplus" href="#">My Google+</a></li><li><a class="team__member-icon db" href="#">I am on Dribble</a></li></ul></div></div></section><!-- $Contact section--><section class="contact" id="contact"><div class="contact__inner"><h2 class="contact__title">Contact us</h2><p class="contact__descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p><form class="contact__form" action="#" method="post"><input class="contact__form-input" id="name" type="text" name="name" placeholder="Your name"> <input class="contact__form-input" id="email" type="email" name="email" placeholder="Your email"> <textarea class="contact__form-tarea" id="message" name="message" placeholder="Your message"></textarea> <input class="contact__form-submit" type="submit" value="Submit"></form><div class="contact__card vcard"><h3 class="contact__card-title">Information</h3><div class="contact__card-item place"><div class="fn org">Bak-One Company</div><div class="adr"><div class="street-address">12345 Hollywood Bvld Street</div><span class="locality">Los Angeles</span>,<span class="region">California</span></div></div><div class="contact__card-item tel">+444<span class="type">&nbsp;(Phone)&nbsp;</span>123456</div><div class="contact__card-item fax tel">+123<span class="type">&nbsp;(FAX)&nbsp;</span>0011223</div><a class="contact__card-item email" href="#">info@companyname.com</a></div></div></section><!-- $Page footer--><footer class="page-footer"><div class="page-footer__inner"><span class="page-footer__copyright">&copy; Copyright 2013 Bak-One | One Page Flat Template</span><a class="page-footer__gotop js-anchor" href="#home">Go to top</a></div></footer><script src="static/js/body.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixology - Building Digital Product</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">Pixology</a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">Pixology</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#feature" class="navbar-link" data-nav-link>Features</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#project" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="btn btn-primary has-before has-after">Let’s Talk 👋</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">
+              Building Digital <span class="has-before">Product</span>, Brand and Experience
+            </h1>
+
+            <p class="hero-text">
+              At Pixology we specialize in designing, building, shipping and scaling beautiful, usable products with
+              blazing-fast
+              efficiency
+            </p>
+
+            <div class="wrapper">
+              <a href="#" class="btn btn-primary has-before has-after">How It Works</a>
+
+              <button class="hero-btn" aria-label="pixology promo">
+                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Behind the scenes</span>
+              </button>
+            </div>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(241, 77%, 63%);">
+                  <ion-icon name="logo-facebook"></ion-icon>
+
+                  <span class="span">Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(0, 100%, 50%);">
+                  <ion-icon name="logo-youtube"></ion-icon>
+
+                  <span class="span">Youtube</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="--color: hsl(203, 89%, 53%);">
+                  <ion-icon name="logo-twitter"></ion-icon>
+
+                  <span class="span">Twitter</span>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="794" height="637" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="service" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Our Services</p>
+
+          <h2 class="h2 section-title text-center">Managing you business with our <span class="has-before">best
+              service</span></h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card" style="--color: 174, 77%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Product Management</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 267, 76%, 57%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-2.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Web & Mobile Development</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 17, 100%, 68%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Fast Customer Support</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 343, 98%, 60%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-4.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Human Resources</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 210, 100%, 53%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-5.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Design and Vreatives</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 157, 89%, 44%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-6.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Meketing and Communication</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 52, 98%, 50%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-7.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Business Development</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="link-card" style="--color: 203, 97%, 75%">
+                <span class="span">04 More Service</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" id="feature" aria-label="feature">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./assets/images/feature-banner.png" width="582" height="585" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle has-before">Why Choose us</p>
+
+            <h2 class="h2 section-title">
+              Specialist in aviding clients of financial <span class="has-before">challenges</span>
+            </h2>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 174, 77%, 50%">
+                    <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Fast working process</h3>
+
+                    <p class="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="people-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Didicated team</h3>
+
+                    <p class="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 343, 98%, 60%;">
+                    <ion-icon name="headset-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">24/7 hours support</h3>
+
+                    <p class="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" id="project" aria-label="project">
+        <div class="container">
+
+          <p class="section-subtitle has-before text-center">Projects</p>
+
+          <h2 class="h2 section-title text-center">
+            Pixology complete <span class="has-before">project</span>
+          </h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn active" data-filter-btn>Website</button>
+            </li>
+
+            <li>
+              <button class="filter-btn" data-filter-btn>Landing Page</button>
+            </li>
+
+            <li>
+              <button class="filter-btn" data-filter-btn>iOS App</button>
+            </li>
+
+            <li>
+              <button class="filter-btn" data-filter-btn>Landing Page</button>
+            </li>
+
+            <li>
+              <button class="filter-btn" data-filter-btn>Branding Design</button>
+            </li>
+
+          </ul>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
+                  <img src="./assets/images/project-1.jpg" width="835" height="429" loading="lazy" alt="Book art design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Book art design</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Branding</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/project-2.jpg" width="416" height="429" loading="lazy" alt="Graphic Design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Graphic Design</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/project-3.jpg" width="416" height="429" loading="lazy" alt="3d Digital Art"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">3d Digital Art</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/project-4.jpg" width="416" height="429" loading="lazy" alt="Web Design"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Web Design</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 429;">
+                  <img src="./assets/images/project-5.jpg" width="416" height="429" loading="lazy"
+                    alt="Mobile App Design" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mobile App Design</a>
+                  </h3>
+
+                  <a href="#" class="card-tag">Design</a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="section newsletter has-bg-image" aria-label="newsletter"
+        style="background-image: url('./assets/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <figure class="newsletter-banner">
+            <img src="./assets/images/newsletter-banner.png" width="355" height="356" loading="lazy"
+              alt="newsletter banner" class="w-100">
+          </figure>
+
+          <div class="newsletter-content">
+
+            <p class="section-subtitle has-before">Get every update</p>
+
+            <h2 class="h2 section-title">Subscribe newslater get latest updates and deals</h2>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Enter your mail" required class="email-field">
+
+              <button type="submit" class="btn btn-secondary has-before has-after">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle text-center has-before">Blog Post</p>
+
+          <h2 class="h2 section-title text-center">
+            Popular <span class="has-before">blog post</span>
+          </h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card large">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-1.jpg" width="644" height="363" loading="lazy"
+                    alt="Godaddy user flow solution..." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="#" class="tag">Development</a>
+
+                    <a href="#" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">July 22, 2022</span>
+                    </a>
+                  </div>
+
+                  <h3>
+                    <a href="#" class="card-title">Godaddy user flow solution...</a>
+                  </h3>
+
+                  <p class="card-text">
+                    At Pixology we specialize in designing, building, shipping and scaling beautifu. At Pixology we
+                    specialize in designing,
+                    building, shipping and scaling beautiful.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-2.jpg" width="202" height="162" loading="lazy"
+                    alt="Godaddy user flow solution for every individual" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="#" class="tag">Development</a>
+
+                    <a href="#" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">July 21, 2020</span>
+                    </a>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Godaddy user flow solution for every individual</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-3.png" width="202" height="162" loading="lazy"
+                    alt="Business solution for every individual" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="#" class="tag">Development</a>
+
+                    <a href="#" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">July 21, 2020</span>
+                    </a>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Business solution for every individual</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/blog-4.png" width="202" height="162" loading="lazy"
+                    alt="How to gain pro experience ar figma update version" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="#" class="tag">Development</a>
+
+                    <a href="#" class="publish-date">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">July 21, 2020</span>
+                    </a>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">How to gain pro experience ar figma update version</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <p class="footer-list-title">About Pixology</p>
+
+          <p class="footer-text">
+            A new way to make the payments easy, reliable and 100% secure. claritatem itamconse quat. Exerci tationulla
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-skype"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Usefull Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">How it Works</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Create</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Explore</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Services</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Community</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Help Center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Partners</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Suggestions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Newsletters</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Instagram post</p>
+          </li>
+
+          <li>
+            <ul class="insta-post">
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-1.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-2.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-3.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-4.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-5.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="insta-card">
+
+                  <figure class="post-banner">
+                    <img src="./assets/images/insta-post-6.jpg" width="77" height="63" loading="lazy"
+                      alt="instagram post" class="img-cover">
+                  </figure>
+
+                  <a href="#" class="card-content">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2022 Pixology. All Rights Reserved by codewithsadee
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Terms and conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Login / Signup</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
